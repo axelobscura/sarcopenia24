@@ -6,18 +6,21 @@ export default function Home() {
       <Head>
         <title>CAPULET APP</title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet"></link>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;700&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <main>
+      <main style={{ margin: 0, padding: 0 }}>
         <div className="container">
           <div className="row">
-            <h1>PROYECTO CAPULET</h1>
+            <h1 style={{ fontFamily: 'Oswald' }}>PROYECTO CAPULET</h1>
+            <p>contenidos</p>
           </div>
         </div>
       </main>
+
       <footer>
-        <p>2020 - Todos los Derechos Reservados.</p>
+        <p className="p-0 m-0">2020 - PROYECTO CAPULET. Todos los Derechos Reservados.</p>
       </footer>
 
       <style jsx>{`
@@ -28,7 +31,12 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          font-family: font-family: 'Quicksand', sans-serif;
+          font-family: 'Oswald', sans-serif;
+          font-weight: 100;
+        }
+
+        p {
+          font-family: 'Oswald', sans-serif;
         }
 
         main {
@@ -47,13 +55,20 @@ export default function Home() {
           display: flex;
           justify-content: center;
           align-items: center;
-          font-family: font-family: 'Quicksand', sans-serif !important;
+          font-family: 'Oswald', sans-serif;
         }
 
         h1 {
-          font-family: font-family: 'Quicksand', sans-serif !important;
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 100;
+          font-size: 3em;
+          margin: 0;
+          padding: 0;
         }
+
       `}</style>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </div>
   )
 }
