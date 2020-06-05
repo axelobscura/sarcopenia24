@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
     return (
-        <header id="header" className="header-scrolled">
+        <header id="header" className="header-scrolled" style={{ background: '#04091A' }}>
             <div className="container">
                 <div id="logo" class="pull-left">
                     <Link href="/" class="scrollto">
@@ -22,7 +22,7 @@ export default function Header() {
                         <li><a href="#supporters">Sponsors</a></li>
                         <li><a href="#contact">Contact</a></li>
                         */}
-                        <li className="buy-tickets"><Link href="/registro">Registrarse</Link></li>
+                        <li className="buy-tickets"><Link href="/registro">LOGIN | REGISTRO</Link></li>
                     </ul>
                 </nav>
             </div>
