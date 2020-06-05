@@ -7,6 +7,7 @@ export default function Home() {
         <title>CAPULET APP</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"></link>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></link>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;700&display=swap" rel="stylesheet"></link>
       </Head>
 
