@@ -4,8 +4,8 @@ export default function Header() {
     return (
         <header id="header" className="header-scrolled" style={{ background: '#04091A' }}>
             <div className="container">
-                <div id="logo" class="pull-left">
-                    <Link href="/" class="scrollto">
+                <div id="logo" className="pull-left">
+                    <Link href="/">
                         <img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} />
                     </Link>
                 </div>

@@ -21,7 +21,9 @@ class Layout extends Component {
                 </Head>
 
                 <Header />
+
                 <main>{children}</main>
+
                 <Footer />
 
                 <script src="assets/vendor/jquery/jquery.min.js"></script>
