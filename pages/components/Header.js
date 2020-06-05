@@ -4,7 +4,7 @@ export default function Header() {
             <div className="container">
                 <div id="logo" class="pull-left">
                     <a href="index.html" class="scrollto">
-                        <img src="assets/img/logo.png" alt="" title="" />
+                        <img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} />
                     </a>
                 </div>
                 <nav id="nav-menu-container">
