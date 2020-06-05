@@ -1,15 +1,17 @@
+import Link from 'next/link';
+
 export default function Header() {
     return (
-        <header id="header">
+        <header id="header" className="header-scrolled">
             <div className="container">
                 <div id="logo" class="pull-left">
-                    <a href="index.html" class="scrollto">
+                    <Link href="/" class="scrollto">
                         <img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} />
-                    </a>
+                    </Link>
                 </div>
                 <nav id="nav-menu-container">
                     <ul className="nav-menu">
-                        <li className="menu-active"><a href="index.html">Home</a></li>
+                        <li className="menu-active"><Link href="/">Home</Link></li>
                         {/* 
                         <li><a href="#about">About</a></li>
                         <li><a href="#speakers">Speakers</a></li>
@@ -20,7 +22,7 @@ export default function Header() {
                         <li><a href="#supporters">Sponsors</a></li>
                         <li><a href="#contact">Contact</a></li>
                         */}
-                        <li className="buy-tickets"><a href="#buy-tickets">Registrarse</a></li>
+                        <li className="buy-tickets"><Link href="/registro">Registrarse</Link></li>
                     </ul>
                 </nav>
             </div>
