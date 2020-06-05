@@ -1,80 +1,49 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Header from './components/Header';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>CAPULET APP</title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"></link>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;700&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet" />
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+        <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+        <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />>
       </Head>
 
-      <main style={{ margin: 0, padding: 0 }}>
-        <div className="container">
-          <div className="row flex-column">
-            <div align="center">
-              <img src="/images/logo.png" alt="CAPULET" title="CAPULET" style={{ width: '200px' }} />
-            </div>
-            <hr />
-            <h1 style={{ fontFamily: 'Oswald' }}>PROYECTO CAPULET</h1>
-            <hr />
-            <p>contenidos</p>
+      <main>
+        <Header />
+
+        <section id="intro">
+          <div className="intro-container wow fadeIn">
+            <h1 className="mb-4 pb-0">Soluciones en<br /><span>Administración</span> de Datos</h1>
+            <p className="mb-4 pb-0">comunica y conecta de una manera eficaz, certera, intuitiva y oportuna.</p>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+            <a href="#about" className="about-btn scrollto">Registrarse</a>
           </div>
-        </div>
+        </section>
+
+
       </main>
 
-      <footer>
-        <p className="p-0 m-0">2020 - PROYECTO CAPULET. Todos los Derechos Reservados.</p>
-      </footer>
-
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          font-family: 'Oswald', sans-serif;
-          font-weight: 100;
-        }
-
-        p {
-          font-family: 'Oswald', sans-serif;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-family: 'Oswald', sans-serif;
-        }
-
-        h1 {
-          font-family: 'Quicksand', sans-serif;
-          font-weight: 100;
-          font-size: 3em;
-          margin: 0;
-          padding: 0;
-        }
-
       `}</style>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <script src="assets/vendor/jquery/jquery.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/wow/wow.min.js"></script>
+      <script src="assets/vendor/venobox/venobox.min.js"></script>
+      <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+      <script src="assets/vendor/superfish/superfish.min.js"></script>
+      <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
+      <script src="assets/js/main.js"></script>
     </div>
   )
 }
