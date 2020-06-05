@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Paquetes from './components/Paquetes';
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
           <Link href="/registro"><a className="about-btn scrollto">LOGIN | REGISTRO</a></Link>
         </div>
       </section>
+
+      <Paquetes />
 
       <style jsx>{`
       `}</style>

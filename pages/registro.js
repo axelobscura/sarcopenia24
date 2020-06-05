@@ -39,6 +39,10 @@ export default function Registro() {
                                     <div className="validate"></div>
                                 </div>
                                 <div className="form-group col-md-12">
+                                    <input type="email" className="form-control" name="email" id="email" placeholder="Correo Electrónico" data-rule="email" data-msg="Please enter a valid email" />
+                                    <div className="validate"></div>
+                                </div>
+                                <div className="form-group col-md-12">
                                     <input type="password" className="form-control" name="email" id="email" placeholder="Contraseña" data-rule="email" data-msg="Please enter a valid email" />
                                     <div className="validate"></div>
                                 </div>
