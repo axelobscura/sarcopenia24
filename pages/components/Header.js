@@ -6,12 +6,12 @@ export default function Header() {
             <div className="container">
                 <div id="logo" className="pull-left">
                     <Link href="/">
-                        <img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} />
+                        <a><img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} /></a>
                     </Link>
                 </div>
                 <nav id="nav-menu-container">
                     <ul className="nav-menu">
-                        <li className="menu-active"><Link href="/">Home</Link></li>
+                        <li className="menu-active"><Link href="/"><a>Home</a></Link></li>
                         {/* 
                         <li><a href="#about">About</a></li>
                         <li><a href="#speakers">Speakers</a></li>
@@ -22,7 +22,7 @@ export default function Header() {
                         <li><a href="#supporters">Sponsors</a></li>
                         <li><a href="#contact">Contact</a></li>
                         */}
-                        <li className="buy-tickets"><Link href="/registro">LOGIN | REGISTRO</Link></li>
+                        <li className="buy-tickets"><Link href="/registro"><a>LOGIN | REGISTRO</a></Link></li>
                     </ul>
                 </nav>
             </div>
