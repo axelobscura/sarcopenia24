@@ -12,8 +12,13 @@ export default function Home() {
 
       <main style={{ margin: 0, padding: 0 }}>
         <div className="container">
-          <div className="row">
+          <div className="row flex-column">
+            <div align="center">
+              <img src="/images/logo.png" alt="CAPULET" title="CAPULET" style={{ width: '200px' }} />
+            </div>
+            <hr />
             <h1 style={{ fontFamily: 'Oswald' }}>PROYECTO CAPULET</h1>
+            <hr />
             <p>contenidos</p>
           </div>
         </div>
