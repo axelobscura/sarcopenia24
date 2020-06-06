@@ -2,8 +2,8 @@ export default function Footer() {
     return (
         <footer id="footer">
             <div className="footer-top">
-                <div className="container">
-                    <div className="row">
+                <div className="container-fluid">
+                    <div className="row pl-4">
 
                         <div className="col-lg-3 col-md-6 footer-info">
                             <img src="images/logo-blanco.svg" alt="TheEvenet" />

@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Header() {
     return (
         <header id="header" className="header-scrolled" style={{ background: '#04091A' }}>
-            <div className="container">
+            <div className="container-fluid">
                 <div id="logo" className="pull-left">
                     <Link href="/">
                         <a><img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} /></a>

@@ -6,17 +6,17 @@ export default function MenuUsuario() {
             <ul className="nav">
                 <li className="nav-item">
                     <Link href="/registro">
-                        <a className="nav-link-p activo">Active</a>
+                        <a className="nav-link-p activo"><i class="fa fa-angle-right"></i> Panel de Control</a>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link href="/registro">
-                        <a className="nav-link-p">Active</a>
+                        <a className="nav-link-p"><i class="fa fa-angle-right"></i> Calendario de Actividades</a>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link href="/registro">
-                        <a className="nav-link-p">Active</a>
+                        <a className="nav-link-p"><i class="fa fa-angle-right"></i> Eventos y Conferencias</a>
                     </Link>
                 </li>
             </ul>
@@ -38,15 +38,15 @@ export default function MenuUsuario() {
                     padding: 15px;
                     padding-left:20px;
                     margin-bottom:2px;
-                    font-weight:900;
-                    text-transform: uppercase;
+                    font-weight:100;
                     transition: all 1s;
                 }
                 li a.nav-link-p.activo {
                     background: #F82149;
+                    font-weight:900;
                 }
                 li a.nav-link-p:hover {
-                    background: #222222;
+                    background: #F82149;
                 }
             `}</style>
         </div>
