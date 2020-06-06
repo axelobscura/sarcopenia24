@@ -33,7 +33,7 @@ export default function Registro() {
                             <i className="ion-ios-location-outline"></i>
                             <h3>LOGIN DE USUARIOS</h3>
                             <hr />
-                            <form onSubmit={handleUsuario} className="php-email-form">
+                            <form onSubmit={handleUsuario}>
                                 <div className="form-group col-md-12">
                                     <input type="text" name="nameUsuario" className="form-control" id="nameUsuario" placeholder="Nombre de Usuario" data-rule="minlen:4" data-msg="Ingrese por lo menos 4 letras" />
                                     <div className="validate"></div>
@@ -51,7 +51,7 @@ export default function Registro() {
                             <i className="ion-ios-location-outline"></i>
                             <h3>REGISTRO DE USUARIOS</h3>
                             <hr />
-                            <form onSubmit={handleRegistro} className="php-email-form">
+                            <form onSubmit={handleRegistro}>
                                 <div className="form-group col-md-12">
                                     <input type="text" name="nameRegistro" className="form-control" id="nameRegistro" placeholder="Nombre de Usuario" data-rule="minlen:4" data-msg="Ingrese por lo menos 4 letras" />
                                     <div className="validate"></div>
