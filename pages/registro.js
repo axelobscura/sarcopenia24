@@ -1,4 +1,15 @@
 export default function Registro() {
+
+    const handleUsuario = (e) => {
+        e.preventDefault();
+        console.log('Usuario');
+    };
+
+    const handleRegistro = (e) => {
+        e.preventDefault();
+        console.log('Registro');
+    };
+
     return (
         <section id="contact" className="section-bg wow fadeInUp mt-5 pt-5">
 
@@ -15,13 +26,13 @@ export default function Registro() {
                             <i className="ion-ios-location-outline"></i>
                             <h3>LOGIN DE USUARIOS</h3>
                             <hr />
-                            <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                            <form onSubmit={handleUsuario} className="php-email-form">
                                 <div className="form-group col-md-12">
-                                    <input type="text" name="name" className="form-control" id="name" placeholder="Nombre de Usuario" data-rule="minlen:4" data-msg="Ingrese por lo menos 4 letras" />
+                                    <input type="text" name="nameUsuario" className="form-control" id="nameUsuario" placeholder="Nombre de Usuario" data-rule="minlen:4" data-msg="Ingrese por lo menos 4 letras" />
                                     <div className="validate"></div>
                                 </div>
                                 <div className="form-group col-md-12">
-                                    <input type="password" className="form-control" name="email" id="email" placeholder="Contraseña" data-rule="email" data-msg="Please enter a valid email" />
+                                    <input type="password" className="form-control" name="email" id="email" placeholder="Contraseña" />
                                     <div className="validate"></div>
                                 </div>
                                 <div className="text-center"><button type="submit">Ingresar a su cuenta</button></div>
@@ -33,17 +44,17 @@ export default function Registro() {
                             <i className="ion-ios-location-outline"></i>
                             <h3>REGISTRO DE USUARIOS</h3>
                             <hr />
-                            <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                            <form onSubmit={handleRegistro} className="php-email-form">
                                 <div className="form-group col-md-12">
-                                    <input type="text" name="name" className="form-control" id="name" placeholder="Nombre de Usuario" data-rule="minlen:4" data-msg="Ingrese por lo menos 4 letras" />
+                                    <input type="text" name="nameRegistro" className="form-control" id="nameRegistro" placeholder="Nombre de Usuario" data-rule="minlen:4" data-msg="Ingrese por lo menos 4 letras" />
                                     <div className="validate"></div>
                                 </div>
                                 <div className="form-group col-md-12">
-                                    <input type="email" className="form-control" name="email" id="email" placeholder="Correo Electrónico" data-rule="email" data-msg="Please enter a valid email" />
+                                    <input type="email" className="form-control" name="emailRegistro" id="emailRegistro" placeholder="Correo Electrónico" data-rule="email" data-msg="Por favor ingrese un correo eletrónico válido" />
                                     <div className="validate"></div>
                                 </div>
                                 <div className="form-group col-md-12">
-                                    <input type="password" className="form-control" name="email" id="email" placeholder="Contraseña" data-rule="email" data-msg="Please enter a valid email" />
+                                    <input type="password" className="form-control" name="passwordRegistro" id="passwordRegistro" placeholder="Contraseña" />
                                     <div className="validate"></div>
                                 </div>
                                 <div className="text-center"><button type="submit">Enviar datos de registro</button></div>
