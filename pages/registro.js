@@ -1,8 +1,15 @@
+import Router from 'next/router';
+
 export default function Registro() {
 
     const handleUsuario = (e) => {
         e.preventDefault();
-        console.log('Usuario');
+        let nombre = e.target.value;
+        console.log(nombre);
+        Router.push({
+            pathname: '/administrador',
+            query: { name: 'usuario' },
+        })
     };
 
     const handleRegistro = (e) => {
