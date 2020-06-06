@@ -1,9 +1,11 @@
-export default function Calendario() {
+import 'isomorphic-fetch';
+
+export default function Calendario(props) {
     return (
         <section id="schedule" className="section-with-bg">
             <div className="container wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
                 <div className="section-header">
-                    <h2>Calendario de Actividades</h2>
+                    <h2>Calendario de Actividades: {props.title}</h2>
                     <p>Aquí puede consultar el calendario de actividades de nuestro congreso 2020</p>
                 </div>
 
@@ -25,10 +27,10 @@ export default function Calendario() {
                     </li>
                 </ul>
             </div>
-            <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
+            <h3 className="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
           necessitatibus voluptatem quis labore perspiciatis quia.</h3>
-            <div class="tab-content row justify-content-center">
-                <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+            <div className="tab-content row justify-content-center">
+                <div role="tabpanel" className="col-lg-9 tab-pane fade show active" id="day-1">
 
                     <div class="row schedule-item">
                         <div class="col-md-2"><time>09:30 AM</time></div>
@@ -83,4 +85,11 @@ export default function Calendario() {
             </div>
         </section>
     )
+}
+
+Calendario.getInitialProps = async (ctx) => {
+    const res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    const json = await res.json();
+    console.log('chihuhauha');
+    return { title: json.title }
 }

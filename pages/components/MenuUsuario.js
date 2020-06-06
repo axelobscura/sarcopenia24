@@ -6,17 +6,17 @@ export default function MenuUsuario() {
             <ul className="nav">
                 <li className="nav-item">
                     <Link href="/registro">
-                        <a className="nav-link-p activo"><i class="fa fa-angle-right"></i> Panel de Control</a>
+                        <a className="nav-link-p activo"><i className="fa fa-angle-right"></i> Panel de Control</a>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link href="/registro">
-                        <a className="nav-link-p"><i class="fa fa-angle-right"></i> Calendario de Actividades</a>
+                        <a className="nav-link-p"><i className="fa fa-angle-right"></i> Calendario de Actividades</a>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link href="/registro">
-                        <a className="nav-link-p"><i class="fa fa-angle-right"></i> Eventos y Conferencias</a>
+                        <a className="nav-link-p"><i className="fa fa-angle-right"></i> Eventos y Conferencias</a>
                     </Link>
                 </li>
             </ul>
