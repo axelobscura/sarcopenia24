@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import UserContext from './components/UserContext';
+import UserContext from '../UserContext';
 import Router from 'next/router';
 
 export default function Registro() {

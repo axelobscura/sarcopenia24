@@ -1,5 +1,5 @@
-import { useState, useContext } from 'react';
-import UserContext from '../components/UserContext';
+import { useContext } from 'react';
+import UserContext from '../../UserContext';
 import Link from 'next/link';
 
 export default function Header() {
@@ -25,8 +25,8 @@ export default function Header() {
                         <li><a href="#supporters">Sponsors</a></li>
                         <li><a href="#contact">Contact</a></li>
                         */}
-                        {usuario !== "" ?
-                            <li className="buy-tickets"><a onClick={signOut}>LOGOUT</a></li>
+                        {usuario ?
+                            <li className="buy-tickets"><a onClick={signOut}>{usuario} LOGOUT</a></li>
                             :
                             <li className="buy-tickets"><Link href="/registro"><a>LOGIN | REGISTRO</a></Link></li>
                         }

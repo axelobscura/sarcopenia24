@@ -2,7 +2,7 @@ import React from 'react';
 import Router from 'next/router';
 import App from 'next/app';
 import Layout from './components/Layout';
-import UserContext from './components/UserContext';
+import { UserProvider } from '../UserContext';
 
 export default class MyApp extends App {
     state = {
@@ -21,6 +21,7 @@ export default class MyApp extends App {
     signIn = (usuario, password) => {
         console.log('el signin del contexto');
         localStorage.setItem('usuario', usuario);
+        console.log('el signinnn del contexto');
         this.setState(
             {
                 usuario: usuario
@@ -40,11 +41,11 @@ export default class MyApp extends App {
     render() {
         const { Component, pageProps } = this.props;
         return (
-            <UserContext.Provider value={{ usuario: this.state.usuario, signIn: this.signIn, signOut: this.signOut }}>
+            <UserProvider value={{ usuario: this.state.usuario, signIn: this.signIn, signOut: this.signOut }}>
                 <Layout>
                     <Component {...pageProps} />
                 </Layout>
-            </UserContext.Provider>
+            </UserProvider>
         )
     }
 }

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import UserContext from '../components/UserContext';
+import UserContext from '../../UserContext';
 import 'isomorphic-fetch';
 
 export default function Calendario(props) {
@@ -35,18 +35,18 @@ export default function Calendario(props) {
             <div className="tab-content row justify-content-center">
                 <div role="tabpanel" className="col-lg-9 tab-pane fade show active" id="day-1">
 
-                    <div class="row schedule-item">
-                        <div class="col-md-2"><time>09:30 AM</time></div>
-                        <div class="col-md-10">
+                    <div className="row schedule-item">
+                        <div className="col-md-2"><time>09:30 AM</time></div>
+                        <div className="col-md-10">
                             <h4>Registro del evento</h4>
                             <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
                         </div>
                     </div>
 
-                    <div class="row schedule-item">
-                        <div class="col-md-2"><time>10:00 AM</time></div>
-                        <div class="col-md-10">
-                            <div class="speaker">
+                    <div className="row schedule-item">
+                        <div className="col-md-2"><time>10:00 AM</time></div>
+                        <div clasNames="col-md-10">
+                            <div className="speaker">
                                 <img src="assets/img/speakers/1.jpg" alt="Brenden Legros" />
                             </div>
                             <h4>Dr. Juan García <span>Laboratorios Mexicanos</span></h4>
@@ -55,12 +55,12 @@ export default function Calendario(props) {
                     </div>
 
                 </div>
-                <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+                <div role="tabpanel" className="col-lg-9  tab-pane fade" id="day-2">
 
-                    <div class="row schedule-item">
-                        <div class="col-md-2"><time>10:00 AM</time></div>
-                        <div class="col-md-10">
-                            <div class="speaker">
+                    <div className="row schedule-item">
+                        <div className="col-md-2"><time>10:00 AM</time></div>
+                        <div className="col-md-10">
+                            <div className="speaker">
                                 <img src="assets/img/speakers/1.jpg" alt="Brenden Legros" />
                             </div>
                             <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
@@ -70,12 +70,12 @@ export default function Calendario(props) {
 
                 </div>
 
-                <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+                <div role="tabpanel" className="col-lg-9  tab-pane fade" id="day-3">
 
-                    <div class="row schedule-item">
-                        <div class="col-md-2"><time>10:00 AM</time></div>
-                        <div class="col-md-10">
-                            <div class="speaker">
+                    <div className="row schedule-item">
+                        <div className="col-md-2"><time>10:00 AM</time></div>
+                        <div className="col-md-10">
+                            <div className="speaker">
                                 <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe" />
                             </div>
                             <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
