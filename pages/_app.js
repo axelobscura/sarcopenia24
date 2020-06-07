@@ -20,10 +20,7 @@ export default class MyApp extends App {
     };
     signIn = (usuario, password) => {
         console.log('el signin del contexto');
-
         localStorage.setItem('usuario', usuario);
-        localStorage.setItem('password', password);
-
         this.setState(
             {
                 usuario: usuario

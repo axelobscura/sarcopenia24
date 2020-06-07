@@ -58,12 +58,11 @@ export default function MenuUsuario() {
                     background: #F82149;
                 }
                 span.lnr {
-                    background: #111;
+                    background: #F82149;
                     padding: 5px;
                     color: #fff;
                     border-radius: 30px;
                     margin-right: 5px;
-                    border: 2px solid #F81F49;
                 }
             `}</style>
         </div>
