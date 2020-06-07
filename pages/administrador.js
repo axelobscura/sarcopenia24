@@ -2,6 +2,7 @@ import MenuUsuario from './components/MenuUsuario';
 import Calendario from './components/Calendario';
 
 export default function Administrador() {
+
     return (
         <section id="administrador" className="section-bg wow fadeInUp mt-5 pt-5">
             <div className="container-fluid m-0 p-0">

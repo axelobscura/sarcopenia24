@@ -1,9 +1,17 @@
+import { useContext } from 'react';
+import UserContext from '../components/UserContext';
 import Link from 'next/link';
 
 export default function MenuUsuario() {
+    const { usuario, signOut } = useContext(UserContext);
     return (
         <div>
             <ul className="nav">
+                <li className="nav-item">
+                    <Link href="/registro">
+                        <a className="nav-link-p activo d-flex"><span className="lnr lnr-user" style={{ background: '#fff', padding: '5px', color: 'red', borderRadius: '30px', marginRight: '5px' }}></span> {usuario}</a>
+                    </Link>
+                </li>
                 <li className="nav-item">
                     <Link href="/registro">
                         <a className="nav-link-p activo"><i className="fa fa-angle-right"></i> Panel de Control</a>

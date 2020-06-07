@@ -11,6 +11,7 @@ class Layout extends Component {
                 <Head>
                     <title>CAPULET APP</title>
                     <link rel="icon" href="/favicon.ico" />
+                    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet" />
                     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
                     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
