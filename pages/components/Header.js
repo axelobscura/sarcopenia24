@@ -14,7 +14,7 @@ export default function Header() {
                 </div>
                 <nav id="nav-menu-container">
                     <ul className="nav-menu">
-                        <li className="menu-active"><Link href="/"><a>Home</a></Link></li>
+                        <li className="menu-active"><Link href="/"><a>INICIO</a></Link></li>
                         {/* 
                         <li><a href="#about">About</a></li>
                         <li><a href="#speakers">Speakers</a></li>
@@ -26,9 +26,9 @@ export default function Header() {
                         <li><a href="#contact">Contact</a></li>
                         */}
                         {usuario ?
-                            <li className="buy-tickets"><a onClick={signOut}>{usuario} LOGOUT</a></li>
+                            <li className="buy-tickets"><a onClick={signOut}>{usuario} | SALIR</a></li>
                             :
-                            <li className="buy-tickets"><Link href="/registro"><a>LOGIN | REGISTRO</a></Link></li>
+                            <li className="buy-tickets"><Link href="/registro"><a>INGRESAR | REGISTRO</a></Link></li>
                         }
                     </ul>
                 </nav>

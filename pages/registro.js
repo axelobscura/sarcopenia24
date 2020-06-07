@@ -16,7 +16,7 @@ export default function Registro() {
         if (usuario != '' || password != '') {
             signIn(usuario, password);
         } else {
-            setMessage('Please enter your username and password');
+            setMessage('Por favor ingrese un usuario y contraseñas válidos...');
         }
         /*
         Router.push({
