@@ -48,7 +48,7 @@ export default function MenuUsuario() {
                     margin-bottom:2px;
                     font-weight:100;
                     transition: all 1s;
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                 }
                 li a.nav-link-p.activo {
                     background: #F82149;
