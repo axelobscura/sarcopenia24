@@ -1,11 +1,14 @@
+import { useContext } from 'react';
+import UserContext from '../components/UserContext';
 import 'isomorphic-fetch';
 
 export default function Calendario(props) {
+    const { usuario } = useContext(UserContext);
     return (
         <section id="schedule" className="section-with-bg">
             <div className="container wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
                 <div className="section-header">
-                    <h2>Calendario de Actividades: {props.title}</h2>
+                    <h2>Calendario de Actividades<br />{usuario}</h2>
                     <p>Aquí puede consultar el calendario de actividades de nuestro congreso 2020</p>
                 </div>
 

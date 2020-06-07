@@ -9,22 +9,22 @@ export default function MenuUsuario() {
             <ul className="nav">
                 <li className="nav-item">
                     <Link href="/registro">
-                        <a className="nav-link-p activo d-flex"><span className="lnr lnr-user" style={{ background: '#fff', padding: '5px', color: 'red', borderRadius: '30px', marginRight: '5px' }}></span> {usuario}</a>
+                        <a className="nav-link-p activo d-flex"><span className="lnr lnr-user"></span> {usuario}</a>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link href="/registro">
-                        <a className="nav-link-p activo"><i className="fa fa-angle-right"></i> Panel de Control</a>
+                        <a className="nav-link-p"><span className="lnr lnr-chevron-right"></span> Panel de Control</a>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link href="/registro">
-                        <a className="nav-link-p"><i className="fa fa-angle-right"></i> Calendario de Actividades</a>
+                        <a className="nav-link-p activo"><span className="lnr lnr-chevron-right"></span> Calendario de Actividades</a>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link href="/registro">
-                        <a className="nav-link-p"><i className="fa fa-angle-right"></i> Eventos y Conferencias</a>
+                        <a className="nav-link-p"><span className="lnr lnr-chevron-right"></span> Eventos y Conferencias</a>
                     </Link>
                 </li>
             </ul>
@@ -48,6 +48,7 @@ export default function MenuUsuario() {
                     margin-bottom:2px;
                     font-weight:100;
                     transition: all 1s;
+                    font-size: 0.8rem;
                 }
                 li a.nav-link-p.activo {
                     background: #F82149;
@@ -55,6 +56,14 @@ export default function MenuUsuario() {
                 }
                 li a.nav-link-p:hover {
                     background: #F82149;
+                }
+                span.lnr {
+                    background: #111;
+                    padding: 5px;
+                    color: #fff;
+                    border-radius: 30px;
+                    margin-right: 5px;
+                    border: 2px solid #F81F49;
                 }
             `}</style>
         </div>

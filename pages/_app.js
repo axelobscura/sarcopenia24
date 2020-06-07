@@ -34,9 +34,9 @@ export default class MyApp extends App {
         );
     };
     signOut = () => {
-        localStorage.removeItem('coolapp-user');
+        localStorage.removeItem('usuario');
         this.setState({
-            user: null
+            usuario: null
         });
         Router.push('/');
     };

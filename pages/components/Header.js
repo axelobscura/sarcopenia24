@@ -3,7 +3,7 @@ import UserContext from '../components/UserContext';
 import Link from 'next/link';
 
 export default function Header() {
-    const { user, signOut } = useContext(UserContext);
+    const { usuario, signOut } = useContext(UserContext);
     return (
         <header id="header" className="header-scrolled" style={{ background: '#04091A' }}>
             <div className="container-fluid">
@@ -25,8 +25,11 @@ export default function Header() {
                         <li><a href="#supporters">Sponsors</a></li>
                         <li><a href="#contact">Contact</a></li>
                         */}
-                        <li className="buy-tickets"><Link href="/registro"><a>LOGIN | REGISTRO</a></Link></li>
-                        <li className="buy-tickets"><a onClick={signOut}>LOGOUT</a></li>
+                        {usuario !== "" ?
+                            <li className="buy-tickets"><a onClick={signOut}>LOGOUT</a></li>
+                            :
+                            <li className="buy-tickets"><Link href="/registro"><a>LOGIN | REGISTRO</a></Link></li>
+                        }
                     </ul>
                 </nav>
             </div>
