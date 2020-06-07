@@ -32,7 +32,7 @@ export default function Registro() {
     };
 
     return (
-        <section id="contact" className="section-bg wow fadeInUp mt-5 pt-5">
+        <section id="contact" className="section-bg wow fadeInUp">
 
             <div className="container">
 
