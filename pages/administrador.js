@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import MenuUsuario from './components/MenuUsuario';
 import Calendario from './components/Calendario';
 
@@ -15,11 +16,13 @@ export default function Administrador() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-6 p-0">
-                        <div className="tarjeta">
-                            <div className="bkg"></div>
-                            <h1>AMGG TV</h1>
-                            <img src="https://images.pexels.com/photos/3758756/pexels-photo-3758756.jpeg" className="img-fluid" alt="" />
-                        </div>
+                        <Link href="/conferencias">
+                            <div className="tarjeta">
+                                <div className="bkg"></div>
+                                <h1>AMGG TV</h1>
+                                <img src="https://images.pexels.com/photos/3758756/pexels-photo-3758756.jpeg" className="img-fluid" alt="" />
+                            </div>
+                        </Link>
                     </div>
                     <div className="col-md-6 p-0">
                         <div className="tarjeta">
@@ -40,7 +43,7 @@ export default function Administrador() {
                     <div className="col-md-6 p-0">
                         <div className="tarjeta">
                             <div className="bkg"></div>
-                            <h1>PROGRAMA ACDÉMICO</h1>
+                            <h1>PROGRAMA ACADÉMICO</h1>
                             <img src="https://images.pexels.com/photos/273153/pexels-photo-273153.jpeg" className="img-fluid" alt="" />
                         </div>
                     </div>

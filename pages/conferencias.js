@@ -1,7 +1,7 @@
 import MenuUsuario from './components/MenuUsuario';
 import Calendario from './components/Calendario';
 
-export default function Administrador() {
+export default function Conferencias() {
 
     return (
         <section id="administrador" className="section-bg wow fadeInUp m-0 p-0" style={{ paddingTop: '200px' }}>
