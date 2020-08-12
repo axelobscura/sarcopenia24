@@ -1641,3 +1641,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ddd;
 }
+
+.tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 350px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.tarjeta h1 {
+  position: absolute;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tarjeta .bkg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.tarjeta:hover .bkg {
+  background: rgba(0,0,0,0.9);
+}
