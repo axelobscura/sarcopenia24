@@ -36,7 +36,7 @@ export default function Administrador() {
                     <div className="col-md-6 p-0">
                         <div className="tarjeta">
                             <div className="bkg"></div>
-                            <h1>ALIADOS ESTRATÉGICOS</h1>
+                            <h1>ALIADOS ESTRATÉGICOS (banners aliados)</h1>
                             <img src="https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg" className="img-fluid" alt="" />
                         </div>
                     </div>
