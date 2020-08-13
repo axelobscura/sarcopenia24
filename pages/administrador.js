@@ -19,7 +19,7 @@ export default function Administrador() {
                         <Link href="/conferencias">
                             <div className="tarjeta">
                                 <div className="bkg"></div>
-                                <h1>AMGG TV</h1>
+                                <h1>AMGG TV (poner video corriendo)</h1>
                                 <img src="https://images.pexels.com/photos/3758756/pexels-photo-3758756.jpeg" className="img-fluid" alt="" />
                             </div>
                         </Link>
