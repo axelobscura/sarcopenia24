@@ -27,7 +27,7 @@ export default function Administrador() {
                     <div className="col-md-6 p-0">
                         <div className="tarjeta">
                             <div className="bkg"></div>
-                            <h1>PONENCIAS</h1>
+                            <h1>PONENCIAS (dividir con programa)</h1>
                             <img src="https://images.pexels.com/photos/3082452/pexels-photo-3082452.jpeg" className="img-fluid" alt="" />
                         </div>
                     </div>
