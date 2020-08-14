@@ -19,7 +19,7 @@ export default function Administrador() {
                         <Link href="/conferencias">
                             <div className="tarjeta">
                                 <div className="bkg"></div>
-                                <h1>AMGG TV (poner video corriendo)</h1>
+                                <h1>AMGG TV</h1>
                                 <img src="https://images.pexels.com/photos/3758756/pexels-photo-3758756.jpeg" className="img-fluid" alt="" />
                             </div>
                         </Link>
@@ -27,7 +27,7 @@ export default function Administrador() {
                     <div className="col-md-6 p-0">
                         <div className="tarjeta">
                             <div className="bkg"></div>
-                            <h1>PONENCIAS (dividir con programa)</h1>
+                            <h1>PONENCIAS</h1>
                             <img src="https://images.pexels.com/photos/3082452/pexels-photo-3082452.jpeg" className="img-fluid" alt="" />
                         </div>
                     </div>
@@ -36,7 +36,7 @@ export default function Administrador() {
                     <div className="col-md-6 p-0">
                         <div className="tarjeta">
                             <div className="bkg"></div>
-                            <h1>ALIADOS ESTRATÉGICOS (banners aliadoss)</h1>
+                            <h1>ALIADOS ESTRATÉGICOS</h1>
                             <img src="https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg" className="img-fluid" alt="" />
                         </div>
                     </div>
