@@ -45,6 +45,7 @@ export default function Registro() {
                     <div className="col-md-6">
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
+                            <h1>BIENVENIDOS!</h1>
                             <h3>LOGIN DE USUARIOS | DOCTORES ASOCIADOS | ENEFERMEROS | LICENCIADOS | GERONTÓLOGOS</h3>
                             {message != '' && <div className="message">{message}</div>}
                             <hr />
