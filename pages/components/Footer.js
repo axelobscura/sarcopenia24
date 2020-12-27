@@ -50,7 +50,7 @@ export default function Footer() {
 
             <div className="container">
                 <div className="copyright">
-                    &copy; 2019 - 2020 <strong>CAPULET MÉXICO</strong>. Todos Los Derechos Reservados.
+                    &copy; 2019 - 2021 <strong>CAPULET MÉXICO</strong>. Todos Los Derechos Reservados.
                 </div>
             </div>
         </footer>

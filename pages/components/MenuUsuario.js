@@ -7,6 +7,7 @@ export default function MenuUsuario() {
     return (
         <div>
             <ul className="nav">
+                <p>{signOut}</p>
                 <li>{signOut ? 'NO FIRMADO' : 'FIRMADO'}</li>
                 <li className="nav-item">
                     <Link href="/registro">
