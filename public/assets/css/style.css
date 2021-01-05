@@ -1669,3 +1669,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 .tarjeta:hover .bkg {
   background: rgba(0,0,0,0.9);
 }
+
+#qs {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.qs-container h1 {
+  font-weight: bold;
+}

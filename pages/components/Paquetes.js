@@ -5,7 +5,7 @@ export default function Paquetes() {
 
                 <div className="section-header">
                     <h2>MEMBRESÍAS</h2>
-                    <p>Elija el plan que más adecuado...</p>
+                    <p>Elija el plan de comunicación más adecuado...</p>
                 </div>
 
                 <div className="row">
