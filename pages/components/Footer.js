@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
     return (
         <footer id="footer">
@@ -12,11 +14,30 @@ export default function Footer() {
                         <div className="col-lg-3 col-md-6 footer-links">
                             <h4>Enlaces y Noticias</h4>
                             <ul>
-                                <li><i className="fa fa-angle-right"></i> <a href="#">Home</a></li>
-                                <li><i className="fa fa-angle-right"></i> <a href="#">Nosotros</a></li>
-                                <li><i className="fa fa-angle-right"></i> <a href="#">Servicios</a></li>
-                                <li><i className="fa fa-angle-right"></i> <a href="#">Términos y condiciones</a></li>
-                                <li><i className="fa fa-angle-right"></i> <a href="#">Política de Privacidad</a></li>
+                                <li>
+                                    <i className="fa fa-angle-right"></i> 
+                                    <Link href="/"><a>Home</a></Link>
+                                </li>
+                                <li>
+                                    <i className="fa fa-angle-right"></i> 
+                                    <Link href="/como-funciona"><a>Cómo Funciona</a></Link>
+                                </li>
+                                <li>
+                                    <i className="fa fa-angle-right"></i> 
+                                    <Link href="/como-funciona"><a>Nosotros</a></Link>
+                                </li>
+                                <li>
+                                    <i className="fa fa-angle-right"></i> 
+                                    <Link href="/como-funciona"><a>Servicios</a></Link>
+                                </li>
+                                <li>
+                                    <i className="fa fa-angle-right"></i> 
+                                    <Link href="/como-funciona"><a>Términos y condiciones</a></Link>
+                                </li>
+                                <li>
+                                    <i className="fa fa-angle-right"></i> 
+                                    <Link href="/como-funciona"><a>Política de Privacidad</a></Link>
+                                </li>
                             </ul>
                         </div>
 
