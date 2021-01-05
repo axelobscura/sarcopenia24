@@ -1,9 +1,11 @@
 import { useContext } from 'react';
+import { useRouter } from 'next/router';
 import UserContext from '../../UserContext';
 import Link from 'next/link';
 
 export default function Header() {
     const { usuario, signOut } = useContext(UserContext);
+    const router = useRouter();
     return (
         <header id="header" className="header-scrolled" style={{ background: '#04091A' }}>
             <div className="container-fluid">
@@ -14,8 +16,8 @@ export default function Header() {
                 </div>
                 <nav id="nav-menu-container">
                     <ul className="nav-menu">
-                        <li className="menu-active"><Link href="/"><a>INICIO</a></Link></li>
-                        <li><Link href="/como-funciona"><a>CÓMO FUNCIONA</a></Link></li>
+                        <li className={router.pathname == "/" ? "menu-active" : ""}><Link href="/"><a>INICIO</a></Link></li>
+                        <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a>CÓMO FUNCIONA</a></Link></li>
                         {/* 
                         <li><a href="#about">About</a></li>
                         <li><a href="#speakers">Speakers</a></li>

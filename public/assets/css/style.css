@@ -1676,8 +1676,68 @@ body.mobile-nav-active #mobile-nav-toggle {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: url(../img/qs_bg.jpg) top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
 
-.qs-container h1 {
+#qs:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#qs .qs-container {
+  z-index: 1000;
+}
+
+#qs .qs-container h1 {
   font-weight: bold;
+  color: #fff;
+  z-index: 100000;
+}
+
+#qs .qs-container p {
+ color: #fff;
+}
+
+#qs .pasos {
+  text-align: left;
+display: flex;
+flex-direction: column;
+justify-content: left;
+align-content: le;
+align-content: start;
+text-align: left;
+align-items: baseline;
+}
+
+#qs .pasos p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+#qs span.num {
+  font-size: 2rem;
+font-weight: bold;
+display: block;
+width: 70px;
+height: 70px;
+background: #f82249;
+border-radius: 50%;
+display: flex;
+align-content: center;
+justify-content: center;
+align-items: center;
+margin-right: 20px;
+font-weight: bold;
 }
