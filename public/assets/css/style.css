@@ -1785,3 +1785,10 @@ font-weight: bold;
 #administrador .col-md-9 {
   background:#101522;
 }
+
+#administrador .col-md-9 h2 {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
