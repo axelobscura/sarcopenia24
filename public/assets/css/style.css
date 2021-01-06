@@ -1741,3 +1741,47 @@ align-items: center;
 margin-right: 20px;
 font-weight: bold;
 }
+
+#administrador .col-md-3 {
+  background: #fff;
+}
+
+#administrador .col-md-3 h3 {
+  padding: 10px;
+  font-weight: bold;
+  background: #f82249;
+  color: #fff;
+  border-bottom: 3px solid #000;
+  margin-bottom: 0;
+}
+
+#administrador .col-md-3 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#administrador .col-md-3 ul li {
+  width: 100%;
+  text-align: left;
+}
+
+#administrador .col-md-3 ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #dedede;
+  margin-bottom: 2px;
+  color: #333;
+  font-weight: 100;
+  transition: all 1s;
+}
+
+#administrador .col-md-3 ul li a:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+#administrador .col-md-9 {
+  background:#101522;
+}
