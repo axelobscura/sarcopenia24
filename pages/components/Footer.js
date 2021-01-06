@@ -53,7 +53,7 @@ export default function Footer() {
 
                         <div className="col-lg-3 col-md-6 footer-contact">
                             <h4>Contacto</h4>
-                            <p>CDMX, México <br />535022<br />México <br /><strong>Teléfono:</strong> +1 5589 55488 55<br /><strong>Email:</strong> info@capuletbeta.com<br /></p>
+                            <p>CDMX, México <br /><strong>Teléfono:</strong> +52 55 5589 5548<br /><strong>Email:</strong> info@capuletbeta.com<br /></p>
 
                             <div className="social-links">
                                 <a href="#" className="twitter"><i className="fa fa-twitter"></i></a>

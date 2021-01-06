@@ -42,7 +42,7 @@ export default function Administrador() {
                     </div>
                     <div className="col-md-9">
                         <h2><i className="fa fa-user-circle-o mr-3" aria-hidden="true"></i>
- Bienvenido a su panel de control.</h2>
+ Bienvenido a su panel de control</h2>
                     <h3><i className="fa fa-angle-right"></i> EVENTOS CONTRATADOS</h3>
                     <div className="row">
                         <div className="col-lg-4">
