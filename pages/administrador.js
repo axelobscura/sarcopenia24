@@ -76,7 +76,7 @@ export default function Administrador() {
                                     <h6 className="card-price text-center">24 y 25 de septiembre, 2020</h6>
                                     <hr />
                                     <div className="text-center">
-                                        <button type="button" className="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">INGRESAR</button>
+                                        <button type="button" className="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">VER PAQUETES</button>
                                     </div>
                                 </div>
                             </div>
