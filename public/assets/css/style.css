@@ -1743,7 +1743,7 @@ font-weight: bold;
 }
 
 #administrador .col-md-3 {
-  background: #fff;
+  background: #101522;
 }
 
 #administrador .col-md-3 h3 {
@@ -1768,13 +1768,13 @@ font-weight: bold;
 
 #administrador .col-md-3 ul li a {
   display: block;
-  width: 100%;
-  padding: 10px;
-  background: #dedede;
-  margin-bottom: 2px;
-  color: #333;
-  font-weight: 100;
-  transition: all 1s;
+width: 100%;
+padding: 10px;
+background: #040919;
+margin-bottom: 2px;
+color: #fff;
+font-weight: bold;
+transition: all 1s;
 }
 
 #administrador .col-md-3 ul li a:hover {
@@ -1784,6 +1784,7 @@ font-weight: bold;
 
 #administrador .col-md-9 {
   background:#101522;
+  padding-bottom: 20px;
 }
 
 #administrador .col-md-9 h2 {
@@ -1791,4 +1792,30 @@ font-weight: bold;
   font-weight: bold;
   padding: 10px;
   border-bottom: 1px solid #fff;
+}
+
+#administrador .col-md-9 h3 {
+  color:#f82249;
+  font-weight: 100;
+  padding: 5px;
+}
+
+#administrador .col-md-9 .card {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#administrador .col-md-9 .card img {
+  max-width: 150px;
+}
+
+#administrador .col-md-9 .card h5.card-title {
+  font-size: 1rem;
+font-weight: bold;
+}
+
+#administrador .col-md-9 .card h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
 }
