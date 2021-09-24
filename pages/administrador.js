@@ -1,21 +1,17 @@
 import CardCurso from './components/CardCurso';
 import MenuAdmin from './components/MenuAdmin';
+import Loader from './components/Loader';
 
 import { useEntries, useCursos } from '../lib/swr-hooks';
 
 export default function Administrador() {
-
     //const { entries, isLoading } = useEntries();
     const { cursos, isLoadingCursos } = useCursos();
-
     if (isLoadingCursos && !cursos) {
         return(
-            <div>
-                LOADING
-            </div>
+            <Loader/>
         )
     };
-
     const ofertaCursos = cursos.map(curso => (
         <CardCurso
             imagen={curso.imagen}
@@ -24,7 +20,6 @@ export default function Administrador() {
             link={curso.link}
         />
     ));
-
     return (
         <section id="administrador" className="section-bg wow fadeInUp m-0 p-0">
             <div className="container-fluid">
@@ -33,7 +28,6 @@ export default function Administrador() {
                     <div className="col-md-9">
                         <h2><i className="fa fa-user-circle-o mr-3" aria-hidden="true"></i>
  Bienvenido a su panel de afiliado</h2>
-                    <h3><i className="fa fa-angle-right"></i> EVENTOS CONTRATADOS</h3>
                     <div className="row">
                         {ofertaCursos}
                     </div>

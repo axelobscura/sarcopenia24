@@ -31,6 +31,7 @@ export default function Footer() {
                                     <i className="fa fa-angle-right"></i> 
                                     <Link href="/como-funciona"><a>Servicios</a></Link>
                                 </li>
+                                {/* 
                                 <li>
                                     <i className="fa fa-angle-right"></i> 
                                     <Link href="/como-funciona"><a>Términos y condiciones</a></Link>
@@ -39,6 +40,7 @@ export default function Footer() {
                                     <i className="fa fa-angle-right"></i> 
                                     <Link href="/como-funciona"><a>Política de Privacidad</a></Link>
                                 </li>
+                                */}
                             </ul>
                         </div>
 
@@ -48,7 +50,6 @@ export default function Footer() {
                                 <li><i className="fa fa-angle-right"></i> <a href="#">Calendario</a></li>
                                 <li><i className="fa fa-angle-right"></i> <a href="#">Exponentes</a></li>
                                 <li><i className="fa fa-angle-right"></i> <a href="#">Servicios</a></li>
-                                <li><i className="fa fa-angle-right"></i> <a href="#">Usuarios</a></li>
                             </ul>
                         </div>
 
@@ -72,7 +73,7 @@ export default function Footer() {
 
             <div className="container">
                 <div className="copyright">
-                    &copy; 2019 - 2021 <strong>CAPULET MÉXICO</strong>. Todos Los Derechos Reservados.
+                    &copy; 2019 - 2022 <strong>CAPULET MÉXICO</strong>. Todos Los Derechos Reservados.
                 </div>
             </div>
         </footer>

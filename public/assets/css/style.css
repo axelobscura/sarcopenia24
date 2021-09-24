@@ -1842,6 +1842,7 @@ input.form-control {
   max-height: 180px;
   overflow: hidden;
   margin-bottom: 20px;
+  height: 150px;
 }
 
 .card-body {
@@ -1874,4 +1875,10 @@ transition: all 1s;
 background: #f82249;
 padding: 5px;
 margin-right: 10px;
+}
+
+.loader {
+  text-align: center;
+  padding: 90px 0;
+  background: #101522;
 }

@@ -13,7 +13,10 @@ export default function CardCurso({imagen,titulo,fecha,link}) {
           <h6 className="card-price text-center">{fecha}</h6>
           <hr />
           <div className="text-center">
-            <Link href={link}>
+            <Link href={{
+              pathname: '/programa',
+              query: { id: link },
+            }}>
               <button type="button" className="btn cardCurso" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">
                 VER PROGRAMA <ArrowRight/>
               </button>
