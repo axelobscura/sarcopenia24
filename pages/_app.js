@@ -6,7 +6,8 @@ import { UserProvider } from '../UserContext';
 
 export default class MyApp extends App {
     state = {
-        usuario: null
+        usuario: null,
+        nombre: null
     };
     componentDidMount = () => {
         const usuario = localStorage.getItem('usuario');
@@ -19,9 +20,7 @@ export default class MyApp extends App {
         }
     };
     signIn = (usuario, password) => {
-        console.log('el signin del contexto');
         localStorage.setItem('usuario', usuario);
-        console.log('el signinnn del contexto');
         this.setState(
             {
                 usuario: usuario

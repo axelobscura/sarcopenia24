@@ -14,6 +14,16 @@ export function useEntries() {
   }
 }
 
+export function useCursos() {
+  const { data, error } = useSWR(`/api/get-cursos`, fetcher)
+
+  return {
+    cursos: data,
+    isLoadingCursos: !error && !data,
+    isError: error,
+  }
+}
+
 export function useEntry(id: string) {
   return useSWR(`/api/get-entry?id=${id}`, fetcher)
 }

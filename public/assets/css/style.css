@@ -17,6 +17,7 @@ body {
 a {
   color: #f82249;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 a:hover, a:active, a:focus {
@@ -1768,13 +1769,14 @@ font-weight: bold;
 
 #administrador .col-md-3 ul li a {
   display: block;
-width: 100%;
-padding: 10px;
-background: #040919;
-margin-bottom: 2px;
-color: #fff;
-font-weight: bold;
-transition: all 1s;
+  width: 100%;
+  padding: 10px;
+  background: #040919;
+  margin-bottom: 2px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 1s;
+  border-top: 1px solid #333;
 }
 
 #administrador .col-md-3 ul li a:hover {
@@ -1822,16 +1824,17 @@ align-items: center;
 
 #administrador .col-md-9 .card h6 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
-  color: #f82249;
-  font-weight: bold;
+font-size: 0.9rem;
+color: #f82249;
+font-weight: lighter;
+text-transform: uppercase;
 }
 
 input.form-control {
   border-radius: 0 !important;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  border: 2px solid #f82249;
+  border: 2px solid #333;
   background: #f2f2f2;
 }
 
@@ -1848,4 +1851,27 @@ input.form-control {
 .card-body.admin img.adminCard {
   width: 100% !important;
   margin-bottom: 20px;
+}
+
+.buy-tickets a {
+  cursor: pointer;
+}
+
+.btn.cardCurso {
+  background: #f82249;
+width: 100%;
+border-radius: 0;
+color: #fff;
+transition: all 1s;
+}
+
+.btn.cardCurso:hover {
+  background: #000;
+}
+
+.iconoBoot {
+  font-size: 2rem;
+background: #f82249;
+padding: 5px;
+margin-right: 10px;
 }

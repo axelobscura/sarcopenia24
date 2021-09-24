@@ -22,20 +22,6 @@ export default function Registro() {
         } else {
             signIn(email, password);
         }
-        
-
-        /*
-        if (usuario != '' || password != '') {
-            signIn(usuario, password);
-        } else {
-            setMessage('Por favor ingrese un usuario y contraseñas válidos...');
-        }
-        
-        Router.push({
-            pathname: '/administrador',
-            query: { name: 'usuario' },
-        })
-        */
     };
 
     const handleRegistro = (e) => {

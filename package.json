@@ -10,11 +10,13 @@
     "deploy": "npm run build && npm run export"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.5.0",
     "clsx": "^1.1.1",
     "dotenv": "^10.0.0",
     "isomorphic-fetch": "^2.2.1",
     "next": "9.4.4",
     "react": "16.13.1",
+    "react-bootstrap-icons": "^1.5.0",
     "react-dom": "16.13.1",
     "serverless-mysql": "^1.5.4",
     "swr": "^1.0.1"

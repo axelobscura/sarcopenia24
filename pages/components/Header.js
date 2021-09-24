@@ -19,12 +19,19 @@ export default function Header() {
                             <a><img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} /></a>
                         </Link>
                     }
-                    
                 </div>
                 <nav id="nav-menu-container">
                     <ul className="nav-menu">
-                        <li className={router.pathname == "/" ? "menu-active" : ""}><Link href="/"><a>INICIO</a></Link></li>
-                        <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a>CÓMO FUNCIONA</a></Link></li>
+                        <li className={router.pathname == "/" ? "menu-active" : ""}><Link href="/"><a><i className="fa fa-angle-right"></i> INICIO</a></Link></li>
+                        {usuario ?
+                            <>
+                            <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> CURSOS</a></Link></li>
+                            <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> SU PERFIL DE USUARIO</a></Link></li>
+                            </>
+                            :
+                            <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> CÓMO FUNCIONA</a></Link></li>
+                        }
+                        
                         {/* 
                         <li><a href="#about">About</a></li>
                         <li><a href="#speakers">Speakers</a></li>
@@ -36,7 +43,10 @@ export default function Header() {
                         <li><a href="#contact">Contact</a></li>
                         */}
                         {usuario ?
-                            <li className="buy-tickets"><a onClick={signOut}>{usuario} | SALIR</a></li>
+                            <>
+                                <li className="buy-tickets"><Link href="/administrador"><a>PANEL</a></Link></li>
+                                <li className="buy-tickets"><a onClick={signOut}>{usuario} | SALIR</a></li>
+                            </>
                             :
                             <li className="buy-tickets"><Link href="/registro"><a>INGRESAR | REGISTRO</a></Link></li>
                         }
