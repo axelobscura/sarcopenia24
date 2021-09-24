@@ -5,11 +5,12 @@ export default function Footer() {
         <footer id="footer">
             <div className="footer-top">
                 <div className="container-fluid">
-                    <div className="row pl-4">
-
+                    <div className="row pl-1">
                         <div className="col-lg-3 col-md-6 footer-info">
                             <img src="images/logo-blanco.svg" alt="TheEvenet" />
-                            <p>Capulet es una plataforma de soluciones en administración de datos y comunicación que se adapta a tus necesidades, comunica y conecta de una manera eficaz, certera, intuitiva y oportuna.</p>
+                            <p className="text-justify" style={{
+                                'fontSize':'12px'
+                            }}>Capulet es una plataforma de soluciones en administración de datos y comunicación que se adapta a tus necesidades, comunica y conecta de una manera eficaz, certera, intuitiva y oportuna.<br/>Capulet está diseñada específicamente para garantizar el manejo de una base de datos en tiempo real, creando soluciones para el administrador y beneficiando a cada uno de los usuarios que requieren un servicio integral.</p>
                         </div>
                         <div className="col-lg-3 col-md-6 footer-links">
                             <h4>Enlaces y Noticias</h4>

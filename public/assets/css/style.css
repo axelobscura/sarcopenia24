@@ -1802,8 +1802,11 @@ transition: all 1s;
 
 #administrador .col-md-9 .card {
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+justify-content: center;
+align-items: center;
+border-radius: 0;
+border: 2px solid #f82249;
+box-shadow: 0 0 10px #000;
 }
 
 #administrador .col-md-9 .card img {
@@ -1820,4 +1823,12 @@ font-weight: bold;
   font-size: 0.9rem;
   color: #f82249;
   font-weight: bold;
+}
+
+input.form-control {
+  border-radius: 0 !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  border: 2px solid #f82249;
+  background: #f2f2f2;
 }

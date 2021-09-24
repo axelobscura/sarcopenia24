@@ -36,7 +36,8 @@ export default function Registro() {
 
             <div className="container">
 
-                <div className="section-header mt-5">
+                <div className="section-header mt-5 text-center">
+                    <h1>BIENVENIDOS!</h1>
                     <h2>Login | Registro</h2>
                     <p>Ingrese o register sus datos para poder hacer uso a la plataforma.</p>
                 </div>
@@ -45,8 +46,7 @@ export default function Registro() {
                     <div className="col-md-6">
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
-                            <h1>BIENVENIDOS!</h1>
-                            <h3>LOGIN DE USUARIOS | DOCTORES ASOCIADOS | ENEFERMEROS | LICENCIADOS | GERONTÓLOGOS</h3>
+                            <h3>INGRESO DE USUARIOS</h3>
                             {message != '' && <div className="message">{message}</div>}
                             <hr />
                             <form onSubmit={handleUsuario}>
