@@ -42,41 +42,49 @@ export default function Administrador() {
                     </div>
                     <div className="col-md-9">
                         <h2><i className="fa fa-user-circle-o mr-3" aria-hidden="true"></i>
- Bienvenido a su panel de control</h2>
+ Bienvenido a su panel de afiliado</h2>
                     <h3><i className="fa fa-angle-right"></i> EVENTOS CONTRATADOS</h3>
                     <div className="row">
+                        
+                        <div className="col-lg-4">
+                            <div className="card mb-5 mb-lg-0">
+                                <div className="card-body admin">
+                                    <div className="capsulaimg">
+                                        <img src="https://capuletbeta.com/neurogeriatria2021/images/2021_fondo.jpg" alt="CURSO NUTRICIÓN CLÍNICA BASADA EN EVIDENCIA EN GERIATRÍA" title="CURSO NUTRICIÓN CLÍNICA BASADA EN EVIDENCIA EN GERIATRÍA" className="adminCard" />
+                                    </div>
+                                    <h5 className="card-title text-muted text-uppercase text-center">3<sup>er</sup> Simposio de Actualidades en Neurogeriatría 2021</h5>
+                                    <h6 className="card-price text-center">29 y 30 de septiembre, 2021</h6>
+                                    <hr />
+                                    <div className="text-center">
+                                        <button type="button" className="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access"><i className="fa fa-check-square" aria-hidden="true"></i> VER PONENCIAS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="card mb-5 mb-lg-0">
+                                <div className="card-body admin">
+                                    <div className="capsulaimg">
+                                        <img src="https://capuletbeta.com/nutricion2021/images/2021_fondo.jpg" alt="CURSO NUTRICIÓN CLÍNICA BASADA EN EVIDENCIA EN GERIATRÍA" title="CURSO NUTRICIÓN CLÍNICA BASADA EN EVIDENCIA EN GERIATRÍA" className="adminCard" />
+                                    </div>
+                                    <h5 className="card-title text-muted text-uppercase text-center">CURSO
+NUTRICIÓN CLÍNICA BASADA EN EVIDENCIA EN GERIATRÍA</h5>
+                                    <h6 className="card-price text-center">15 y 16 de octubre, 2021</h6>
+                                    <hr />
+                                    <div className="text-center">
+                                        <button type="button" className="btn paquetes" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access"><i className="fa fa-plus-square" aria-hidden="true"></i> VER PAQUETES</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className="col-lg-4">
                             <div className="card mb-5 mb-lg-0">
                                 <div className="card-body">
-                                    <h5 className="card-title text-muted text-uppercase text-center">XXXIV CONGRESO INTERNACIONAL AMGG</h5>
+                                    <h5 className="card-title text-muted text-uppercase text-center">XXXV CONGRESO INTERNACIONAL AMGG</h5>
                                     <h6 className="card-price text-center">16 al 19 de noviembre 2020</h6>
                                     <hr />
                                     <div className="text-center">
                                         <button type="button" className="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access"><i className="fa fa-check-square" aria-hidden="true"></i> VER PONENCIAS</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="card mb-5 mb-lg-0">
-                                <div className="card-body">
-                                    <h5 className="card-title text-muted text-uppercase text-center">1<sup>er</sup> Simposio de Sarcopenia y Fragilidad</h5>
-                                    <h6 className="card-price text-center">22 y 23 de octubre, 2020</h6>
-                                    <hr />
-                                    <div className="text-center">
-                                        <button type="button" className="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access"><i className="fa fa-check-square" aria-hidden="true"></i> VER PONENCIAS</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="card mb-5 mb-lg-0">
-                                <div className="card-body">
-                                    <h5 className="card-title text-muted text-uppercase text-center">2<sup>o</sup> Simposio de Actualidades en Neurogeriatría</h5>
-                                    <h6 className="card-price text-center">24 y 25 de septiembre, 2020</h6>
-                                    <hr />
-                                    <div className="text-center">
-                                        <button type="button" className="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access"><i className="fa fa-plus-square" aria-hidden="true"></i> VER PAQUETES</button>
                                     </div>
                                 </div>
                             </div>

@@ -1809,9 +1809,6 @@ border: 2px solid #f82249;
 box-shadow: 0 0 10px #000;
 }
 
-#administrador .col-md-9 .card img {
-  max-width: 150px;
-}
 
 #administrador .col-md-9 .card h5.card-title {
   font-size: 1rem;
@@ -1831,4 +1828,15 @@ input.form-control {
   font-size: 1rem;
   border: 2px solid #f82249;
   background: #f2f2f2;
+}
+
+.capsulaimg {
+  max-height: 170px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card-body.admin img.adminCard {
+  width: 100% !important;
+  margin-bottom: 20px;
 }
