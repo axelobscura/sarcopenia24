@@ -1813,6 +1813,11 @@ box-shadow: 0 0 10px #000;
 #administrador .col-md-9 .card h5.card-title {
   font-size: 1rem;
 font-weight: bold;
+min-height: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 #administrador .col-md-9 .card h6 {
@@ -1831,9 +1836,13 @@ input.form-control {
 }
 
 .capsulaimg {
-  max-height: 170px;
+  max-height: 180px;
   overflow: hidden;
   margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 0;
 }
 
 .card-body.admin img.adminCard {

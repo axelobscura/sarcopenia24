@@ -18,12 +18,6 @@ export default function Administrador() {
                                 <Link href="/"><a><i className="fa fa-angle-right"></i> CALENDARIO</a></Link>
                             </li>
                             <li>
-                                <Link href="/"><a><i className="fa fa-angle-right"></i> CONFERENCIAS</a></Link>
-                            </li>
-                            <li>
-                                <Link href="/"><a><i className="fa fa-angle-right"></i> SIMPOSIOS</a></Link>
-                            </li>
-                            <li>
                                 <Link href="/"><a><i className="fa fa-angle-right"></i> CONSTANCIAS</a></Link>
                             </li>
                             <li>
@@ -52,7 +46,7 @@ export default function Administrador() {
                                     <div className="capsulaimg">
                                         <img src="https://capuletbeta.com/neurogeriatria2021/images/2021_fondo.jpg" alt="CURSO NUTRICIÓN CLÍNICA BASADA EN EVIDENCIA EN GERIATRÍA" title="CURSO NUTRICIÓN CLÍNICA BASADA EN EVIDENCIA EN GERIATRÍA" className="adminCard" />
                                     </div>
-                                    <h5 className="card-title text-muted text-uppercase text-center">3<sup>er</sup> Simposio de Actualidades en Neurogeriatría 2021</h5>
+                                    <h5 className="card-title text-muted text-uppercase text-center">3er Simposio de Actualidades en Neurogeriatría 2021</h5>
                                     <h6 className="card-price text-center">29 y 30 de septiembre, 2021</h6>
                                     <hr />
                                     <div className="text-center">
@@ -79,9 +73,12 @@ NUTRICIÓN CLÍNICA BASADA EN EVIDENCIA EN GERIATRÍA</h5>
                         </div>
                         <div className="col-lg-4">
                             <div className="card mb-5 mb-lg-0">
-                                <div className="card-body">
+                                <div className="card-body admin">
+                                    <div className="capsulaimg">
+                                        <img src="https://capuletbeta.com/nutricion/images/nutricion1.jpg" alt="CURSO NUTRICIÓN CLÍNICA BASADA EN EVIDENCIA EN GERIATRÍA" title="CURSO NUTRICIÓN CLÍNICA BASADA EN EVIDENCIA EN GERIATRÍA" className="adminCard" />
+                                    </div>
                                     <h5 className="card-title text-muted text-uppercase text-center">XXXV CONGRESO INTERNACIONAL AMGG</h5>
-                                    <h6 className="card-price text-center">16 al 19 de noviembre 2020</h6>
+                                    <h6 className="card-price text-center">16 al 19 de noviembre 2021</h6>
                                     <hr />
                                     <div className="text-center">
                                         <button type="button" className="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access"><i className="fa fa-check-square" aria-hidden="true"></i> VER PONENCIAS</button>
