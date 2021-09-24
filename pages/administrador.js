@@ -2,7 +2,7 @@ import Link from 'next/link';
 import MenuUsuario from './components/MenuUsuario';
 import Calendario from './components/Calendario';
 
-import { useEntries } from '../lib/swr-hooks';
+import { useEntries } from '@/lib/swr-hooks';
 
 export default function Administrador() {
 
