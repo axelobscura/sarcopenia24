@@ -16,8 +16,6 @@ export default function Administrador() {
         )
     };
 
-    console.log(entries);
-
     return (
         <section id="administrador" className="section-bg wow fadeInUp m-0 p-0">
             <div className="container-fluid">
@@ -29,13 +27,13 @@ export default function Administrador() {
                                 <Link href="/"><a><i className="fa fa-angle-right"></i> PERFIL DE USUARIO</a></Link>
                             </li>
                             <li>
-                                <Link href="/"><a><i className="fa fa-angle-right"></i> CALENDARIO</a></Link>
+                                <Link href="/"><a><i className="fa fa-angle-right"></i> PROGRAMA</a></Link>
                             </li>
                             <li>
                                 <Link href="/"><a><i className="fa fa-angle-right"></i> CONSTANCIAS</a></Link>
                             </li>
                             <li>
-                                <Link href="/"><a><i className="fa fa-angle-right"></i> AFILIACIONES</a></Link>
+                                <Link href="/"><a><i className="fa fa-angle-right"></i> OFERTA DE CURSOS</a></Link>
                             </li>
                             <li>
                                 <Link href="/"><a><i className="fa fa-angle-right"></i> BIBLIOTECA DE DOCUMENTOS</a></Link>

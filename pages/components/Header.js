@@ -10,9 +10,16 @@ export default function Header() {
         <header id="header" className="header-scrolled" style={{ background: '#04091A' }}>
             <div className="container-fluid">
                 <div id="logo" className="pull-left">
-                    <Link href="/">
-                        <a><img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} /></a>
-                    </Link>
+                    {usuario ?
+                        <Link href="/administrador">
+                            <a><img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} /></a>
+                        </Link>
+                        :
+                        <Link href="/">
+                            <a><img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} /></a>
+                        </Link>
+                    }
+                    
                 </div>
                 <nav id="nav-menu-container">
                     <ul className="nav-menu">
