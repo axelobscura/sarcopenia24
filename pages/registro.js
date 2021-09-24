@@ -4,8 +4,6 @@ import Router from 'next/router';
 
 export default function Registro() {
     const { signIn } = useContext(UserContext);
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
 
     const handleUsuario = (e) => {
@@ -13,12 +11,12 @@ export default function Registro() {
         let usuario = e.target.nameUsuario.value;
         let password = e.target.passwordUsuario.value;
         console.log(usuario);
+        /*
         if (usuario != '' || password != '') {
             signIn(usuario, password);
         } else {
             setMessage('Por favor ingrese un usuario y contraseñas válidos...');
         }
-        /*
         Router.push({
             pathname: '/administrador',
             query: { name: 'usuario' },
