@@ -2,7 +2,21 @@ import Link from 'next/link';
 import MenuUsuario from './components/MenuUsuario';
 import Calendario from './components/Calendario';
 
+import { useEntries } from '../lib/swr-hooks';
+
 export default function Administrador() {
+
+    const { entries, isLoading } = useEntries();
+
+    if (isLoading) {
+        return(
+            <div>
+                LOADING
+            </div>
+        )
+    };
+
+    console.log(entries);
 
     return (
         <section id="administrador" className="section-bg wow fadeInUp m-0 p-0">
