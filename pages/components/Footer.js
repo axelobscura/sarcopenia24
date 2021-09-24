@@ -3,6 +3,23 @@ import Link from 'next/link';
 export default function Footer() {
     return (
         <footer id="footer">
+            <div>
+                <div className="container-fluid patrocinadores">
+                    <div className="row pl-1">
+                        <div className="col-lg-3 col-md-6 footer-info" style={{
+                            'background':'#f82249',
+                            'padding':'10px'
+                        }}>
+                        </div>
+                        <div className="col-lg-9 col-md-6 footer-info" style={{
+                            'background':'#fff',
+                            'padding':'10px'
+                        }}>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="footer-top">
                 <div className="container-fluid">
                     <div className="row pl-1">
