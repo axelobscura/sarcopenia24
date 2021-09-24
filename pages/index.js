@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Paquetes from './components/Paquetes';
 
 export default function Home() {
+  
   return (
     <>
       <section id="intro">
