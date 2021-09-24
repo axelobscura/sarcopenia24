@@ -2,12 +2,12 @@ import { NextApiHandler } from 'next'
 import { query } from '../../lib/db'
 
 const handler: NextApiHandler = async (req, res) => {
-  const { id } = req.query
+  const { email } = req.query
   try {
-    if (!id) {
-      return res.status(400).json({ message: '`id` required' })
+    if (!email) {
+      return res.status(400).json({ message: '`email` required' })
     }
-    {/* 
+    {/*
     if (typeof parseInt(id.toString()) !== 'number') {
       return res.status(400).json({ message: '`id` must be a number' })
     }
@@ -15,10 +15,10 @@ const handler: NextApiHandler = async (req, res) => {
     const results = await query(
       `
       SELECT id, nombre, email
-      FROM entries
-      WHERE id = ?
-    `,
-      id
+      FROM registros
+      WHERE email = ?
+      `,
+      email
     )
 
     return res.json(results[0])

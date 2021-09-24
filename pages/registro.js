@@ -3,20 +3,34 @@ import UserContext from '../UserContext';
 import Router from 'next/router';
 
 export default function Registro() {
+    const [userMsg, setUserMsg] = useState('');
     const { signIn } = useContext(UserContext);
-    const [message, setMessage] = useState('');
 
-    const handleUsuario = (e) => {
+    const handleUsuario = async (e) => {
         e.preventDefault();
-        let usuario = e.target.nameUsuario.value;
+        let email = e.target.nameUsuario.value;
         let password = e.target.passwordUsuario.value;
-        console.log(usuario);
+
+        console.log(email);
+
+        let res = await fetch(`/api/get-usuario?email=${email}`);
+        let json = await res.json()
+        //if (!res.ok) throw Error(json.message)
+        if (!res.ok) {
+            setUserMsg("El nombre de usuario no es correcto!");
+            console.log('El usuario no existe!');
+        } else {
+            signIn(email, password);
+        }
+        
+
         /*
         if (usuario != '' || password != '') {
             signIn(usuario, password);
         } else {
             setMessage('Por favor ingrese un usuario y contraseñas válidos...');
         }
+        
         Router.push({
             pathname: '/administrador',
             query: { name: 'usuario' },
@@ -34,7 +48,7 @@ export default function Registro() {
 
             <div className="container">
 
-                <div className="section-header mt-5 text-center">
+                <div className="section-header mt-2 text-center">
                     <h1>BIENVENIDOS!</h1>
                     <h2>Login | Registro</h2>
                     <p>Ingrese o register sus datos para poder hacer uso a la plataforma.</p>
@@ -45,7 +59,7 @@ export default function Registro() {
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
                             <h3>INGRESO DE USUARIOS</h3>
-                            {message != '' && <div className="message">{message}</div>}
+                            <p>{userMsg}</p>
                             <hr />
                             <form onSubmit={handleUsuario}>
                                 <div className="form-group col-md-12">
