@@ -18,7 +18,6 @@ export default function Registro() {
         //if (!res.ok) throw Error(json.message)
         if (!res.ok) {
             setUserMsg("El nombre de usuario no es correcto!");
-            console.log('El usuario no existe!');
         } else {
             signIn(email, password);
         }
@@ -45,7 +44,7 @@ export default function Registro() {
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
                             <h3>INGRESO DE USUARIOS</h3>
-                            <p>{userMsg}</p>
+                            <p className={userMsg !== "" ? `errorLog` : ``}>{userMsg}</p>
                             <hr />
                             <form onSubmit={handleUsuario}>
                                 <div className="form-group col-md-12">
@@ -96,6 +95,15 @@ export default function Registro() {
                 color: #fff;
                 text-transform: uppercase;
                 font-weight: bold;
+            }
+            p.errorLog {
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #f00;
+                background: #f82249;
+                padding: 10px;
+                color: #fff !important;
+                border-radius: 20px;
             }
             `}</style>
         </section>

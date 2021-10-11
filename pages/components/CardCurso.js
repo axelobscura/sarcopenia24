@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'react-bootstrap-icons';
 
-export default function CardCurso({imagen,titulo,fecha,link}) {
+export default function CardCurso({id,imagen,titulo,fecha,link}) {
   return (
     <div className="col-lg-4">
       <div className="card mb-5 mb-lg-0">
@@ -15,7 +15,7 @@ export default function CardCurso({imagen,titulo,fecha,link}) {
           <div className="text-center">
             <Link href={{
               pathname: '/programa',
-              query: { id: link },
+              query: { id },
             }}>
               <button type="button" className="btn cardCurso" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">
                 VER PROGRAMA <ArrowRight/>

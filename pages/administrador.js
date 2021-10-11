@@ -14,6 +14,7 @@ export default function Administrador() {
     };
     const ofertaCursos = cursos.map(curso => (
         <CardCurso
+            id={curso.id}
             imagen={curso.imagen}
             titulo={curso.titulo}
             fecha={curso.fecha}

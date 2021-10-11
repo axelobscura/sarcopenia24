@@ -1834,7 +1834,7 @@ input.form-control {
   border-radius: 0 !important;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  border: 2px solid #333;
+  border: 1px solid #333;
   background: #f2f2f2;
 }
 
@@ -1881,4 +1881,15 @@ margin-right: 10px;
   text-align: center;
   padding: 90px 0;
   background: #101522;
+}
+
+.logospatro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logospatro .img-fluid {
+  width: 70px;
 }
