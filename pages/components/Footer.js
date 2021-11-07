@@ -1,32 +1,10 @@
 import Link from 'next/link';
+import Patrocinadores from './Patrocinadores';
 
 export default function Footer() {
     return (
         <footer id="footer">
-            <div>
-                <div className="container-fluid patrocinadores">
-                    <div className="row pl-1">
-                        <div className="col-lg-3 col-md-6 footer-info" style={{
-                            'background':'#f82249',
-                            'padding':'10px'
-                        }}>
-                        </div>
-                        <div className="col-lg-9 col-md-6 footer-info" style={{
-                            'background':'#fff',
-                            'padding':'10px'
-                        }}>
-                            <div className="logospatro">
-                                <img src="https://capuletbeta.com/nutricion/images/Avicola.jpeg" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" />
-                                <img src="https://capuletbeta.com/nutricion2021/images/logo-abbot.png" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" />
-                                <img src="https://capuletbeta.com/nutricion/images/logo-amsa.png" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" />
-                                <img src="https://capuletbeta.com/nutricion/images/logo-angeles.png" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" />
-                                <img src="https://capuletbeta.com/nutricion/images/Fresenius.jpeg" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" />
-                                <img src="https://capuletbeta.com/nutricion/images/Fresubin.png" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Patrocinadores />
             <div className="footer-top">
                 <div className="container-fluid">
                     <div className="row pl-1">
