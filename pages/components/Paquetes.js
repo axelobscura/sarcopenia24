@@ -1,3 +1,21 @@
+const paquetes = [
+    {
+        'precio': 1500,
+        'acceso': 'ACCESO STANDARD',
+        'tipos': ['acceso a conferencia','Coffe shop','Diploma','certificación']
+    },
+    {
+        'precio': 1900,
+        'acceso': 'ACCESO PRO',
+        'tipos': ['acceso a conferencia','Coffe shop','Diploma','certificación']
+    },
+    {
+        'precio': 2500,
+        'acceso': 'ACCESO PREMIUM',
+        'tipos': ['acceso a conferencia','Coffe shop','Diploma','certificación']
+    }
+]
+
 export default function Paquetes() {
     return (
         <section id="buy-tickets" className="section-with-bg wow fadeInUp">
