@@ -480,7 +480,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/gallery/4.jpg) top center;
+  background: url(../img/gallery/5.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -521,6 +521,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     top: 70px;
   }
 }
+
+
 
 #intro h1 {
   color: #fff;
@@ -1892,4 +1894,8 @@ margin-right: 10px;
 
 .logospatro .img-fluid {
   width: 70px;
+}
+
+.intro-container h1 {
+  font-size: 5rem;
 }

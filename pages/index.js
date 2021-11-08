@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Paquetes from './components/Paquetes';
+import Patrocinadores from './components/Patrocinadores';
 
 export default function Home() {
   
@@ -7,18 +8,27 @@ export default function Home() {
     <>
       <section id="intro">
         <div className="intro-container wow fadeIn">
-          <h1 className="mt-0 mb-4 pb-0">Soluciones en<br /><span>administración de datos y comunicación</span></h1>
-          <p className="mb-4 pb-0">Capulet es una plataforma de soluciones en administración de datos y comunicación que se adapta<br/>a sus necesidades, comunica y conecta de una manera<br/><span style={{'color':'#f82249','textTransform':'uppercase'}}>eficaz, certera, intuitiva y oportuna</span></p>
+          <h1 className="mt-0 mb-1 pb-0">Soluciones en<br /><span>comunicación digital</span></h1>
+          <p className="mb-1 pb-0">Capulet es una plataforma de soluciones en administración de datos y comunicación que se adapta<br/>a sus necesidades, comunica y conecta de una manera</p>
+          <p style={{'color':'#f82249','textTransform':'uppercase'}}>eficaz, certera, intuitiva y oportuna</p>
           {/* 
           <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           */}
-          <Link href="/registro"><a className="about-btn scrollto">LOGIN | REGISTRO</a></Link>
+          <div className="d-flex">
+            <Link href="/registro"><a className="about-btn scrollto">CURSOS Y SEMINARIOS</a></Link>
+            <Link href="/registro"><a className="about-btn scrollto">LOGIN | REGISTRO</a></Link>
+          </div>
         </div>
       </section>
+
+      <Patrocinadores />
 
       <Paquetes />
 
       <style jsx>{`
+        .intro-container h1 {
+          font-size: 3rem;
+        }
       `}</style>
     </>
   )
