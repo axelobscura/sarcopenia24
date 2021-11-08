@@ -4,10 +4,7 @@ import Patrocinadores from './Patrocinadores';
 export default function Footer() {
     return (
         <footer id="footer">
-<<<<<<< HEAD
-=======
-            <Patrocinadores />
->>>>>>> d13075840a09979910082ab7bd24ff1feb90fd2d
+            {/*<Patrocinadores />*/}
             <div className="footer-top">
                 <div className="container-fluid">
                     <div className="row pl-1">
