@@ -48,7 +48,7 @@ export default function Header() {
                                 <li className="buy-tickets"><a onClick={signOut}>{usuario} | SALIR</a></li>
                             </>
                             :
-                            <li className="buy-tickets"><Link href="/registro"><a>INGRESAR | REGISTRO</a></Link></li>
+                            <li className="buy-tickets"><Link href="/registro"><a>INGRESAR</a></Link></li>
                         }
                     </ul>
                 </nav>

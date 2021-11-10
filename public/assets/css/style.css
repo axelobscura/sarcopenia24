@@ -32,7 +32,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -527,11 +527,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #intro h1 {
-  color: #fff;
-  font-family: "Raleway", sans-serif;
+  color: #333;
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 20px;
 }
 
 #intro h1 span {
@@ -1850,7 +1851,7 @@ input.form-control {
 }
 
 .card-body {
-  padding: 0;
+  padding: 20px;
 }
 
 .card-body.admin img.adminCard {
