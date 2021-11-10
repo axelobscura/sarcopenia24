@@ -21,8 +21,8 @@ export default function Paquetes() {
 
                 <div className="section-header">
                     <h2>PAQUETES</h2>
-                    <h4 className="text-center"><b>35 CONGRESO INTERNACIONAL AMGG 2021</b></h4>
-                    <p>Selecciona alguno de nuestros paquete y obtenga grandes beneficios.</p>
+                    <h4 className="text-center mb-0"><b>35 CONGRESO INTERNACIONAL AMGG 2021</b></h4>
+                    <p>Selecciona alguno de nuestros paquetes y obtenga grandes beneficios.</p>
                 </div>
 
                 <div className="row">
