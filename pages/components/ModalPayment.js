@@ -1,3 +1,8 @@
+var formater = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+});
+
 export default function ModalPayment({paquete}) {
   return (
     <div id="buy-ticket-modal" className="modal fade">
@@ -12,7 +17,9 @@ export default function ModalPayment({paquete}) {
           <div className="modal-body">
             <div align="center">
               <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'350px'}} />
-              <p className="mt-3">Su constancia se generará automáticamente con el título elegido de acuerdo al paquete de inscripción contratado.</p>
+              <p className="mt-3 mb-2">Su constancia se generará automáticamente con el título elegido de acuerdo al paquete de inscripción contratado.</p>
+              <h5 className="m-0 p-0">PRECIO</h5>
+              <h3><b>{formater.format(paquete[1])}</b></h3>
             </div>
             <hr/>
             <form method="POST" action="#">
