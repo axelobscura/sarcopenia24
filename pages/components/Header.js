@@ -7,7 +7,7 @@ export default function Header() {
     const { usuario, signOut } = useContext(UserContext);
     const router = useRouter();
     return (
-        <header id="header" className="header-scrolled" style={{ background: '#04091A' }}>
+        <header id="header" className="header-scrolled">
             <div className="container-fluid">
                 <div id="logo" className="pull-left">
                     {usuario ?

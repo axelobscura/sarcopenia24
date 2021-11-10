@@ -8,7 +8,8 @@ export default function Home() {
     <>
       <section id="intro">
         <div className="intro-container wow fadeIn">
-          <h1 className="mt-0 mb-1 pb-0">Soluciones en<br /><span>comunicación digital</span></h1>
+          <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'350px'}} />
+          <h1 className="mt-0 mb-1 pb-0">2, 3, 4 y 5 de DICIEMBRE</h1>
           <p className="mb-1 pb-0">Capulet es una plataforma de soluciones en administración de datos y comunicación que se adapta<br/>a sus necesidades, comunica y conecta de una manera</p>
           <p style={{'color':'#f82249','textTransform':'uppercase'}}>eficaz, certera, intuitiva y oportuna</p>
           {/* 
