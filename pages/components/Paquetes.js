@@ -1,22 +1,20 @@
-const paquetes = [
-    {
-        'precio': 1500,
-        'acceso': 'ACCESO STANDARD',
-        'tipos': ['acceso a conferencia','Coffe shop','Diploma','certificación']
-    },
-    {
-        'precio': 1900,
-        'acceso': 'ACCESO PRO',
-        'tipos': ['acceso a conferencia','Coffe shop','Diploma','certificación']
-    },
-    {
-        'precio': 2500,
-        'acceso': 'ACCESO PREMIUM',
-        'tipos': ['acceso a conferencia','Coffe shop','Diploma','certificación']
-    }
-]
+import { useState } from "react"
+import ModalPayment from "./ModalPayment"
 
 export default function Paquetes() {
+
+    const [paquete, setPaquete] = useState([]);
+
+    const crearPaquete = (tipo) => {
+        if(tipo === 'uno'){
+            setPaquete(['público general', 1500])
+        } else if(tipo === 'dos'){
+            setPaquete(['estudiantes y enfermeras', 1000])
+        } else {
+            setPaquete(['becarios', 0])
+        }
+    };
+
     return (
         <section id="buy-tickets" className="section-with-bg wow fadeInUp">
             <div className="container">
@@ -43,7 +41,13 @@ export default function Paquetes() {
                                 </ul>
                                 <hr />
                                 <div className="text-center">
-                                    <button type="button" className="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">REGISTRARSE AQUÍ</button>
+                                    <button 
+                                    type="button" 
+                                    className="btn" 
+                                    data-toggle="modal" 
+                                    data-target="#buy-ticket-modal" 
+                                    data-ticket-type="standard-access"
+                                    onClick={() => crearPaquete('uno')}>REGISTRARSE AQUÍ</button>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +68,13 @@ export default function Paquetes() {
                                 </ul>
                                 <hr />
                                 <div className="text-center">
-                                    <button type="button" className="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">REGISTRARSE AQUÍ</button>
+                                    <button 
+                                    type="button" 
+                                    className="btn" 
+                                    data-toggle="modal" 
+                                    data-target="#buy-ticket-modal" 
+                                    data-ticket-type="standard-access"
+                                    onClick={() => crearPaquete('dos')}>REGISTRARSE AQUÍ</button>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +95,13 @@ export default function Paquetes() {
                                 </ul>
                                 <hr />
                                 <div className="text-center">
-                                    <button type="button" className="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">REGISTRARSE AQUÍ</button>
+                                <button 
+                                    type="button" 
+                                    className="btn" 
+                                    data-toggle="modal" 
+                                    data-target="#buy-ticket-modal" 
+                                    data-ticket-type="standard-access"
+                                    onClick={() => crearPaquete('tres')}>REGISTRARSE AQUÍ</button>
                                 </div>
 
                             </div>
@@ -94,39 +110,10 @@ export default function Paquetes() {
                 </div>
             </div>
 
-            <div id="buy-ticket-modal" className="modal fade">
-                <div className="modal-dialog" role="document">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h4 className="modal-title">Buy Tickets</h4>
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div className="modal-body">
-                            <form method="POST" action="#">
-                                <div className="form-group">
-                                    <input type="text" className="form-control" name="your-name" placeholder="Your Name" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="text" className="form-control" name="your-email" placeholder="Your Email" />
-                                </div>
-                                <div className="form-group">
-                                    <select id="ticket-type" name="ticket-type" className="form-control">
-                                        <option value="">-- Select Your Ticket Type --</option>
-                                        <option value="standard-access">Standard Access</option>
-                                        <option value="pro-access">Pro Access</option>
-                                        <option value="premium-access">Premium Access</option>
-                                    </select>
-                                </div>
-                                <div className="text-center">
-                                    <button type="submit" className="btn">Buy Now</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ModalPayment
+                paquete={paquete}
+            />
+            
         </section>
     )
 }

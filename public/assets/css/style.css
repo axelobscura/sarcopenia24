@@ -549,6 +549,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ebebeb;
   font-weight: 700;
   font-size: 20px;
+  color: #f82249;
 }
 
 @media (max-width: 991px) {
@@ -1901,4 +1902,10 @@ margin-right: 10px;
 
 .intro-container h1 {
   font-size: 5rem;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: 0;
+  box-shadow: 5px 5px 5px #000;
 }
