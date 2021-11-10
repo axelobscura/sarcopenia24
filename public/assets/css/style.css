@@ -1908,3 +1908,10 @@ margin-right: 10px;
   border-radius: 0;
   border: 0;
 }
+
+label {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+}

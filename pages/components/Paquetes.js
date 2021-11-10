@@ -7,7 +7,7 @@ export default function Paquetes() {
 
     const crearPaquete = (tipo) => {
         if(tipo === 'uno'){
-            setPaquete(['público general', 1500])
+            setPaquete(['médicos', 1500])
         } else if(tipo === 'dos'){
             setPaquete(['estudiantes y enfermeras', 1000])
         } else {
@@ -22,13 +22,14 @@ export default function Paquetes() {
                 <div className="section-header">
                     <h2>PAQUETES</h2>
                     <h4 className="text-center"><b>35 CONGRESO INTERNACIONAL AMGG 2021</b></h4>
+                    <p>Selecciona alguno de nuestros paquete y obtenga grandes beneficios.</p>
                 </div>
 
                 <div className="row">
                     <div className="col-lg-4">
                         <div className="card mb-5 mb-lg-0">
                             <div className="card-body">
-                                <h5 className="card-title text-muted text-uppercase text-center">Público General</h5>
+                                <h5 className="card-title text-muted text-uppercase text-center">Médicos</h5>
                                 <h6 className="card-price text-center">$ 1,500.00</h6>
                                 <hr />
                                 <ul className="fa-ul">
@@ -59,10 +60,10 @@ export default function Paquetes() {
                                 <h6 className="card-price text-center">$ 1,000.00</h6>
                                 <hr />
                                 <ul className="fa-ul">
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Regular Seating</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Coffee Break</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Custom Badge</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Community Access</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Acceso a todas las conferencias</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Constancia de participación</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Promociones</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Chat en vivo</li>
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>Workshop Access</li>
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>After Party</li>
                                 </ul>
@@ -86,12 +87,12 @@ export default function Paquetes() {
                                 <h6 className="card-price text-center">$0</h6>
                                 <hr />
                                 <ul className="fa-ul">
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Regular Seating</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Coffee Break</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Custom Badge</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Community Access</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Workshop Access</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>After Party</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Acceso a todas las conferencias</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Constancia de participación</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Promociones</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Chat en vivo</li>
+                                    <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>Workshop Access</li>
+                                    <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>After Party</li>
                                 </ul>
                                 <hr />
                                 <div className="text-center">
