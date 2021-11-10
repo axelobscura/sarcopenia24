@@ -9,7 +9,7 @@ export default function ModalPayment({paquete}) {
       <div className="modal-dialog" role="document">
         <div className="modal-content">
           <div className="modal-header">
-            <h4 className="modal-title text-bold text-uppercase"><b>{paquete[0] ? paquete[0] : 0}</b></h4>
+            <h4 className="modal-title text-bold text-uppercase"><b>{paquete[0]}</b></h4>
             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -20,7 +20,7 @@ export default function ModalPayment({paquete}) {
               <h3 className="mt-3 mb-0"><b>2, 3, 4 y 5 de DICIEMBRE, 2021</b></h3>
               <p className="mt-1 mb-2">Su constancia se generará automáticamente con el título elegido de acuerdo al paquete de inscripción contratado.</p>
               <h5 className="m-0 p-0">PRECIO</h5>
-              <h3><b>{paquete[1] ? formater.format(paquete[1]) : 0}</b></h3>
+              <h3><b>{formater.format(paquete[1])}</b></h3>
             </div>
             <hr/>
             <form method="POST" action="#">

@@ -3,7 +3,7 @@ import ModalPayment from "./ModalPayment"
 
 export default function Paquetes() {
 
-    const [paquete, setPaquete] = useState([]);
+    const [paquete, setPaquete] = useState(['médicos', 1500]);
 
     const crearPaquete = (tipo) => {
         if(tipo === 'uno'){
