@@ -549,7 +549,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ebebeb;
   font-weight: 700;
   font-size: 20px;
-  color: #f82249;
+  color: #111;
 }
 
 @media (max-width: 991px) {
@@ -644,6 +644,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid #f82249;
+  background: #111;
 }
 
 #intro .about-btn:hover {

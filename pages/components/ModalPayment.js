@@ -4,6 +4,11 @@ var formater = new Intl.NumberFormat('en-US', {
 });
 
 export default function ModalPayment({paquete}) {
+
+  if(!paquete){
+    return 'Loading...';
+  }
+
   return (
     <div id="buy-ticket-modal" className="modal fade">
       <div className="modal-dialog" role="document">
