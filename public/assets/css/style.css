@@ -527,7 +527,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #intro h1 {
-  color: #333;
+  color: #3a7fb1;
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1841,7 +1841,6 @@ input.form-control {
   border-radius: 0 !important;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  border: 1px solid #333;
   background: #f2f2f2;
 }
 
