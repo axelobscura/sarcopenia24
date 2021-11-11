@@ -632,7 +632,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro .about-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -644,7 +644,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid #f82249;
-  background: #111;
+  background: #be1000;
 }
 
 #intro .about-btn:hover {
