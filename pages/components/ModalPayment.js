@@ -45,8 +45,10 @@ export default function ModalPayment({paquete}) {
           if(response.data === "exito"){
             setEnviado(true);
             setNombre(nombre)
-          }else{
+          }else if(response.data === "fallo"){
             setEnviado(false);
+          }else{
+            setEnviado(true);
           }
       })
       .catch(function (error){
@@ -122,7 +124,7 @@ export default function ModalPayment({paquete}) {
               </form>
             : 
               <>
-                <h2 className="text-center"><b>Gracias {nombre}!</b></h2>
+                <h2 className="text-center"><b>¡Gracias {nombre}!</b></h2>
                 <h3 className="text-center">Sus datos fueron enviados<br/>con éxito.</h3>
                 <p className="text-center">EN BREVE RECIBIRÁ SUS DATOS DE ACCESO A LA PLATAFORMA</p>
               </>
