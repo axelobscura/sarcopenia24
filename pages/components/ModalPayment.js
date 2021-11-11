@@ -1,5 +1,6 @@
+import { useState } from "react";
 import axios from "axios";
-
+import Loader from "./Loader";
 
 var formater = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -8,8 +9,11 @@ var formater = new Intl.NumberFormat('en-US', {
 
 export default function ModalPayment({paquete}) {
 
+  const [enviado, setEnviado] = useState(false);
+  const [nombre, setNombre] = useState('');
+
   if(!paquete){
-    return 'Loading...';
+    return <Loader />;
   }
 
   const enviarDatos = async (e) => {
@@ -38,7 +42,12 @@ export default function ModalPayment({paquete}) {
         precio: paquete[1]
       }))
       .then(function (response){
-          console.log(response);
+          if(response.data === "exito"){
+            setEnviado(true);
+            setNombre(nombre)
+          }else{
+            setEnviado(false);
+          }
       })
       .catch(function (error){
           console.log(error)
@@ -64,52 +73,60 @@ export default function ModalPayment({paquete}) {
               <h3><b>{formater.format(paquete[1])}</b></h3>
             </div>
             <hr/>
-            <form onSubmit={enviarDatos}>
-              <div className="form-group">
-                <label>*Nombre:</label>
-                <input type="text" className="form-control" name="nombre" placeholder="Ingrese su nombre" required />
-              </div>
-              <div className="form-group">
-                <label>*Apellido paterno:</label>
-                <input type="text" className="form-control" name="apaterno" placeholder="Ingrese su apellido paterno" required />
-              </div>
-              <div className="form-group">
-                <label>*Apellido materno:</label>
-                <input type="text" className="form-control" name="amaterno" placeholder="Ingrese su apellido materno" required />
-              </div>
-              <div className="form-group">
-                <label>*Correo electrónico:</label>
-                <input type="email" className="form-control" name="email" placeholder="Ingrese su correo electrónico" required />
-              </div>
-              <div className="form-group">
-                <label>*Título:</label>
-                <select id="ticket-type" name="titulo" className="form-control" required>
-                  <option value="">-- Seleccione su titulo --</option>
-                  <option value="Dra">Dra.</option>
-                  <option value="Dr">Dr.</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label>Teléfono:</label>
-                <input type="text" className="form-control" name="telefono" placeholder="Ingrese su teléfono" />
-              </div>
-              <div className="form-group">
-                <label>Fecha de nacimiento:</label>
-                <input type="date" className="form-control" name="nacimiento" />
-              </div>
-              <div className="form-group">
-                <label>Sexo:</label>
-                <select name="sexo" className="form-control">
-                  <option value="">-- Seleccione su sexo --</option>
-                  <option value="Femenino">F</option>
-                  <option value="Masculino">M</option>
-                </select>
-              </div>
-              <hr/>
-              <div className="text-center">
-                <button type="submit" className="btn">REGISTRARSE</button>
-              </div>
-            </form>
+            {!enviado ? 
+              <form onSubmit={enviarDatos}>
+                <div className="form-group">
+                  <label>*Nombre:</label>
+                  <input type="text" className="form-control" name="nombre" placeholder="Ingrese su nombre" required />
+                </div>
+                <div className="form-group">
+                  <label>*Apellido paterno:</label>
+                  <input type="text" className="form-control" name="apaterno" placeholder="Ingrese su apellido paterno" required />
+                </div>
+                <div className="form-group">
+                  <label>*Apellido materno:</label>
+                  <input type="text" className="form-control" name="amaterno" placeholder="Ingrese su apellido materno" required />
+                </div>
+                <div className="form-group">
+                  <label>*Correo electrónico:</label>
+                  <input type="email" className="form-control" name="email" placeholder="Ingrese su correo electrónico" required />
+                </div>
+                <div className="form-group">
+                  <label>*Título:</label>
+                  <select id="ticket-type" name="titulo" className="form-control" required>
+                    <option value="">-- Seleccione su titulo --</option>
+                    <option value="Dra">Dra.</option>
+                    <option value="Dr">Dr.</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label>Teléfono:</label>
+                  <input type="text" className="form-control" name="telefono" placeholder="Ingrese su teléfono" />
+                </div>
+                <div className="form-group">
+                  <label>Fecha de nacimiento:</label>
+                  <input type="date" className="form-control" name="nacimiento" />
+                </div>
+                <div className="form-group">
+                  <label>Sexo:</label>
+                  <select name="sexo" className="form-control">
+                    <option value="">-- Seleccione su sexo --</option>
+                    <option value="Femenino">F</option>
+                    <option value="Masculino">M</option>
+                  </select>
+                </div>
+                <hr/>
+                <div className="text-center">
+                  <button type="submit" className="btn">REGISTRARSE</button>
+                </div>
+              </form>
+            : 
+              <>
+                <h2 className="text-center"><b>Gracias {nombre}!</b></h2>
+                <h3 className="text-center">Sus datos fueron enviados<br/>con éxito.</h3>
+                <p className="text-center">EN BREVE RECIBIRÁ SUS DATOS DE ACCESO A LA PLATAFORMA</p>
+              </>
+            }
           </div>
         </div>
       </div>
