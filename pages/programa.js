@@ -23,6 +23,7 @@ export default function programa(){
         ponente={evento.ponente}
         tema={evento.tema}
         institucion={evento.institucion}
+        especialidad={evento.especialidad}
     />
   ));
   return(

@@ -1,4 +1,4 @@
-export default function CardPonente({horario, dia, salon, modulo, ponente, tema, institucion}) {
+export default function CardPonente({horario, dia, salon, modulo, ponente, tema, institucion, especialidad}) {
   return (
     <div className="row schedule-item">
       <div className="col-md-2"><time>{horario}</time></div>
@@ -6,8 +6,18 @@ export default function CardPonente({horario, dia, salon, modulo, ponente, tema,
         <div className="speaker">
           <img src="assets/img/speakers/1.jpg" alt="Brenden Legros" />
         </div>
-        <h4>{tema}<br/><span>{ponente} | {institucion}</span></h4>
-        <p>Día: {dia} de Diciembre, 2021 - Salón: {salon} - Especialidad: {modulo}</p>
+        <h4>{tema}<br/>
+        {tema === "RECESO" ? 
+          ""
+          :
+          <span>{ponente} | {institucion}</span>
+        }
+        </h4>
+        {tema === "RECESO" ? 
+          ""
+          :
+          <p>Día: {dia} de Diciembre, 2021 - Salón: {salon} - Especialidad: {especialidad}</p>
+        }
       </div>
     </div>
   )
