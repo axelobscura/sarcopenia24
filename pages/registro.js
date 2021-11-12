@@ -30,18 +30,13 @@ export default function Registro() {
 
     return (
         <section id="contact" className="section-bg wow fadeInUp mt-5">
-
             <div className="container-fluid p-5">
-
-                
-
                 <div className="row contact-info">
-                    
-                    <div className="col-md-6">
+                    <div className="col-md-6 p-3">
                         <div className="section-header mt-2 text-center">
-                            <h1>BIENVENIDOS!</h1>
+                            <h1>BIENVENIDO!</h1>
                             <h2>Login de usuarios</h2>
-                            <p>Ingrese o register sus datos para poder hacer uso a la plataforma.</p>
+                            <p>Ingrese a su plataforma personalizada del evento.</p>
                         </div>
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
@@ -61,13 +56,12 @@ export default function Registro() {
                             </form>
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 p-3">
                         <div align="center">
                             <img src="/images/logo-congreso21.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" />
                         </div>
                     </div>
                 </div>
-
             </div>
             <style jsx>{`
             .btn {
