@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { loadStripe } from '@stripe/stripe-js';
 import axios from "axios";
 import Loader from "./Loader";
 
@@ -8,13 +9,29 @@ var formater = new Intl.NumberFormat('en-US', {
 });
 
 export default function ModalPayment({paquete}) {
-
   const [enviado, setEnviado] = useState(false);
   const [nombre, setNombre] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [item, setItem] = useState({
+    name: '35 Congreso Internacional AMGG',
+    description: 'Dirigido a Médicos Generales, Médicos internistas, Médicos Familiares, Geriatras,Nutriólogos, Estudiantes, Enfremer@s y especialidades afines',
+    image: 'https://capuletbeta.com/congreso2021/images/2021_logo.png',
+    quantity: 1,
+    price: paquete[1],
+  });
 
   if(!paquete){
     return <Loader />;
   }
+
+  useEffect(() => {
+    setItem({ ...item, price: paquete[1] });
+  }, [paquete]);
+
+  const publishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+  const stripePromise = loadStripe(publishableKey);
+
+  console.log(item);
 
   const enviarDatos = async (e) => {
     e.preventDefault();
@@ -28,6 +45,22 @@ export default function ModalPayment({paquete}) {
     let nacimiento = e.target.nacimiento.value;
     let sexo = e.target.sexo.value;
 
+    
+
+    setLoading(true);
+    const stripe = await stripePromise;
+    const checkoutSession = await axios.post('/api/create-stripe-session', {
+      item: item,
+    });
+    const result = await stripe.redirectToCheckout({
+      sessionId: checkoutSession.data.id,
+    });
+    if (result.error) {
+      alert(result.error.message);
+    }
+    setLoading(false);
+
+    {/*
     let url = `https://capuletbeta.com/apis/congreso/registro.php`;
 
     await axios.post(url, JSON.stringify({
@@ -54,7 +87,9 @@ export default function ModalPayment({paquete}) {
       .catch(function (error){
           console.log(error)
       })
+      */}
     };
+  
 
   return (
     <div id="buy-ticket-modal" className="modal fade">

@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Paquetes from './components/Paquetes';
 import Patrocinadores from './components/Patrocinadores';
 
 export default function Home() {
-  
+  const router = useRouter();
+  const {status} = router.query;
   return (
     <>
       <section id="intro">
@@ -16,6 +18,7 @@ export default function Home() {
           <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           */}
           <div className="d-flex">
+            {status}
             <Link href="#buy-tickets"><a className="about-btn scrollto">REGISTRO AL EVENTO</a></Link>
           </div>
         </div>
