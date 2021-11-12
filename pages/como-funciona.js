@@ -12,9 +12,9 @@ export default function comoFunciona() {
           <div className="pasos">
           <p><span className="num">1</span> SE SOLICITA AL USUARIO NOMBRE, CORREO ELECTRÓNICO Y PAGO OPORTUNO.</p>
           <p><span className="num">2</span> CON ESTOS DATOS SE GENERA SU PERFIL DE USUARIO.</p>
-          <p><span className="num">3</span> LE LLEGA CORREO ELECTRÓNICO AL USUARIO CON QR Y LINK PARA INGRESAR A SU SESIÓN</p>
-          <p><span className="num">4</span> EL USUARIO INGRESA A SU SESIÓN Y TERMINA DE COMPLETAR LOS DATOS DEL FORMULARIO.</p>
-          <p><span className="num">5</span> TENDRÁ ACCESO A TODOS LOS EVENTOS A LOS QUE SE ENCUENTRE INSCRITO.</p>
+          <p><span className="num">3</span> LE LLEGA CORREO ELECTRÓNICO AL USUARIO CON SUS DATOS DE ACCESO A LA PLATAFORMA</p>
+          <p><span className="num">4</span> EL USUARIO INGRESA A SU PANEL DE ADMINISTRACIÓN</p>
+          <p><span className="num">5</span> TENDRÁ ACCESO A TODOS LOS EVENTOS</p>
           <p><span className="num">6</span> AL TERMINAR EL EVENTO EL USUARIO PODRÁ DESCARGAR SU CONSTANCIA.</p>
         </div>
         </div>

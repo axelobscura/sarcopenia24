@@ -9,18 +9,21 @@ export default function programa(){
           
           <h2 className="pt-3">Programa de Actividades</h2>
           <hr/>
-          <p>Here is our event schedule</p>
+          <p>Actividades del 35<sup>vo</sup> Congreso Internacional AMGG 2021<br/><b>Asociación Mexicana de Gerontología y Geriatría</b></p>
         </div>
 
         <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
           <li className="nav-item">
-            <a className="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
+            <a className="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">2 DE DICIEMBRE</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Day 2</a>
+            <a className="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">3 DE DICIEMBRE</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Day 3</a>
+            <a className="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">4 DE DICIEMBRE</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">5 DE DICIEMBRE</a>
           </li>
         </ul>
 
