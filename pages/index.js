@@ -21,7 +21,7 @@ export default function Home() {
           {status === 'success' ? 
             <Link href="/registro"><a className="about-btn" style={{'background':'#3b6b00'}}>INGRESAR A SU PANEL DE USUARIO</a></Link>
             :
-            <Link href="#buy-tickets"><a className="about-btn scrollto">REGISTRO AL EVENTO</a></Link>
+            <Link href="#buy-tickets"><a className="about-btn scrollto">REGISTRO AL CONGRESO INTERNACIONAL</a></Link>
           }
           </div>
         </div>

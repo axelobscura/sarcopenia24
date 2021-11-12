@@ -1,4 +1,5 @@
 import { useState, useContext } from 'react';
+import Link from 'next/dist/client/link';
 import UserContext from '../UserContext';
 import Router from 'next/router';
 
@@ -40,7 +41,7 @@ export default function Registro() {
                         </div>
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
-                            <h3>INGRESO DE USUARIOS</h3>
+                            <h3>POR FAVOR INGRESE SUS DATOS DE ACCESO</h3>
                             <p className={userMsg !== "" ? `errorLog` : ``}>{userMsg}</p>
                             <hr />
                             <form onSubmit={handleUsuario}>
@@ -52,7 +53,9 @@ export default function Registro() {
                                     <input type="password" className="form-control" name="passwordUsuario" id="passwordUsuario" placeholder="Contraseña" />
                                     <div className="validate"></div>
                                 </div>
+                                
                                 <div className="text-center"><button type="submit" className="btn">Ingresar a su cuenta</button></div>
+                                <div className="text-center mt-3"><Link href=""><p><small>¿Olvidó sus datos de ingreso?, De click aquí.</small></p></Link></div>
                             </form>
                         </div>
                     </div>

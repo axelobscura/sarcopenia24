@@ -1,5 +1,8 @@
+import Patrocinadores from './components/Patrocinadores';
+
 export default function programa(){
   return(
+    <>
     <section id="schedule" className="section-with-bg mt-5">
       <div className="container" data-aos="fade-up">
         <div className="section-header">
@@ -9,7 +12,7 @@ export default function programa(){
           
           <h2 className="pt-3">Programa de Actividades</h2>
           <hr/>
-          <p>Actividades del 35<sup>vo</sup> Congreso Internacional AMGG 2021<br/><b>Asociación Mexicana de Gerontología y Geriatría</b></p>
+          <p>35<sup>vo</sup> Congreso Internacional AMGG 2021<br/><b>Asociación Mexicana de Gerontología y Geriatría</b></p>
         </div>
 
         <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
@@ -104,5 +107,7 @@ export default function programa(){
         </div>
       </div>
     </section>
+    <Patrocinadores />
+    </>
   )
 }
