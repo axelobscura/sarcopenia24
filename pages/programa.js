@@ -45,7 +45,7 @@ export default function programa(){
             <a className="nav-link active" href="#day-1" role="tab" data-toggle="tab">2 DE DICIEMBRE</a>
           </li>
           <li className="nav-item">
-            <Link href="#day-2"><a className="nav-link" role="tab" data-toggle="tab">3 DE DICIEMBRE</a></Link>
+            <a className="nav-link" href="#day-2" role="tab" data-toggle="tab">3 DE DICIEMBRE</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#day-3" role="tab" data-toggle="tab">4 DE DICIEMBRE</a>
@@ -61,7 +61,28 @@ export default function programa(){
         <div className="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
           <div role="tabpanel" className="col-lg-9 tab-pane fade show active" id="day-1">
-            {ofertaPonentes}
+
+            <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+              <li className="nav-item">
+                <a className="nav-link active" href="#geriatrico-day-1" role="tab" data-toggle="tab" style={{
+                  'background':'#6a9e00'
+                }}>MÓDULO GERIÁTRICO</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#geriatrico-day-2" role="tab" data-toggle="tab" style={{
+                  'background':'#2c5a00'
+                }}>MÓDULO GERONTOLÓGICO</a>
+              </li>
+            </ul>
+
+
+            <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-1">
+              {ofertaPonentes}
+            </div>
+            <div role="tabpanel" className="col-lg-12 tab-pane fade" id="geriatrico-day-2">
+
+            </div>
+
           </div>
 
           <div role="tabpanel" className="col-lg-9  tab-pane fade" id="day-2">

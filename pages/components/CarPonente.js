@@ -16,8 +16,9 @@ export default function CardPonente({horario, dia, salon, modulo, ponente, tema,
         {tema === "RECESO" ? 
           ""
           :
-          <p>Día: {dia} de Diciembre, 2021 - Salón: {salon} - Especialidad: {especialidad}</p>
+          <p>Especialidad: {especialidad}</p>
         }
+        
       </div>
     </div>
   )
