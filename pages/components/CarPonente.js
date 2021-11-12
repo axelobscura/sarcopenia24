@@ -6,7 +6,7 @@ export default function CardPonente({horario, dia, salon, modulo, ponente, tema,
         <div className="speaker">
           <img src="assets/img/speakers/1.jpg" alt="Brenden Legros" />
         </div>
-        <h4>{tema}<br/>
+        <h4 style={{'textTransform':'uppercase'}}>{tema}<br/>
         {tema === "RECESO" ? 
           ""
           :
