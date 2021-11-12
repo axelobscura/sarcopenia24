@@ -906,10 +906,11 @@ align-items: center;
   padding-bottom: 5px;
   display: inline-block;
   font-weight: bold;
-  background: #333;
+  background: #f2f2f2;
   border-radius: 20px;
-  color: #fff;
+  color: #333;
   padding: 7px 20px;
+  border: 1px solid #6a9e00;
 }
 
 #schedule .schedule-item .speaker {
