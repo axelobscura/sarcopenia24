@@ -35,9 +35,9 @@ export default function Registro() {
                 <div className="row contact-info">
                     <div className="col-md-6 p-3">
                         <div className="section-header mt-2 text-center">
-                            <h1>BIENVENIDO!</h1>
-                            <h2>Login de usuarios</h2>
-                            <p>Ingrese a su plataforma personalizada del evento.</p>
+                            <h1>¡BIENVENIDO!</h1>
+                            <h2>Ingreso de usuarios</h2>
+                            <p>Ingrese a su plataforma personalizada del congreso.</p>
                         </div>
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
