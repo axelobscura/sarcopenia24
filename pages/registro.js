@@ -28,7 +28,6 @@ export default function Registro() {
         e.preventDefault();
         console.log('Registro');
     };
-
     return (
         <section id="contact" className="section-bg wow fadeInUp mt-5">
             <div className="container-fluid p-5">
