@@ -8,6 +8,10 @@ var formater = new Intl.NumberFormat('en-US', {
   currency: 'USD',
 });
 
+if(!paquete){
+  return <Loader />;
+}
+
 export default function ModalPayment({paquete}) {
   const [enviado, setEnviado] = useState(false);
   const [nombre, setNombre] = useState('');
@@ -17,12 +21,8 @@ export default function ModalPayment({paquete}) {
     description: 'Dirigido a Médicos Generales, Médicos internistas, Médicos Familiares, Geriatras,Nutriólogos, Estudiantes, Enfremer@s y especialidades afines',
     image: 'https://capuletbeta.com/congreso2021/images/2021_logo.png',
     quantity: 1,
-    price: paquete[1],
+    price: 1500,
   });
-
-  if(!paquete){
-    return <Loader />;
-  }
 
   useEffect(() => {
     setItem({ ...item, price: paquete[1] });
