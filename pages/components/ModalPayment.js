@@ -8,10 +8,6 @@ var formater = new Intl.NumberFormat('en-US', {
   currency: 'USD',
 });
 
-if(!paquete){
-  return <Loader />;
-}
-
 export default function ModalPayment({paquete}) {
   const [enviado, setEnviado] = useState(false);
   const [nombre, setNombre] = useState('');
@@ -31,7 +27,9 @@ export default function ModalPayment({paquete}) {
   const publishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
   const stripePromise = loadStripe(publishableKey);
 
-  console.log(item);
+  if(!paquete){
+    return <Loader />;
+  }
 
   const enviarDatos = async (e) => {
     e.preventDefault();
