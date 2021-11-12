@@ -24,6 +24,16 @@ export function useCursos() {
   }
 }
 
+export function usePrograma() {
+  const { data, error } = useSWR(`/api/get-programa`, fetcher)
+
+  return {
+    programa: data,
+    isLoadingPrograma: !error && !data,
+    isError: error,
+  }
+}
+
 export function useEntry(id: string) {
   return useSWR(`/api/get-entry?id=${id}`, fetcher)
 }

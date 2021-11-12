@@ -35,7 +35,6 @@ export default function Administrador() {
                     </div>
                 </div>
             </div>
-            
             <style global jsx>{`
                 body {
                 background: #04091B;
