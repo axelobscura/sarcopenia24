@@ -12,9 +12,7 @@ export default function Registro() {
         let email = e.target.nameUsuario.value;
         let password = e.target.passwordUsuario.value;
 
-        console.log(email);
-
-        let res = await fetch(`/api/get-usuario?email=${email}`);
+        let res = await fetch(`/api/get-usuario?email=${email}&password=${password}`);
         let json = await res.json()
         //if (!res.ok) throw Error(json.message)
         if (!res.ok) {

@@ -25,7 +25,8 @@ export default class MyApp extends App {
         localStorage.setItem('usuario', usuario);
         this.setState(
             {
-                usuario: usuario
+                usuario: usuario,
+                password: password
             },
             () => {
                 Router.push('/administrador');
