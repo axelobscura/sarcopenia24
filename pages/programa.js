@@ -61,7 +61,7 @@ export default function programa(){
         <h3 className="sub-heading d-none">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
           necessitatibus voluptatem quis labore perspiciatis quia.</h3>
 
-        <h5 className="text-center font-weight-bold">ACTIVIDADES DEL DÍA {eldia}</h5>
+        <h5 className="text-center font-weight-bold">CONFERENCIAS DEL DÍA {eldia}</h5>
 
         <div className="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
