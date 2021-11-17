@@ -14,7 +14,7 @@ export default function ModalPayment({paquete}) {
   const [loading, setLoading] = useState(false);
   const [item, setItem] = useState({
     name: '35 Congreso Internacional AMGG',
-    description: 'Dirigido a Médicos Generales, Médicos internistas, Médicos Familiares, Geriatras,Nutriólogos, Estudiantes, Enfremer@s y especialidades afines',
+    description: 'Dirigido a Médicos Generales, Médicos internistas, Médicos Familiares, Geriatras, Gerontólogos<br/>Nutriólogos, Estudiantes, Personal de Enfermería, Cuidadores y especialidades afines',
     image: 'https://capuletbeta.com/congreso2021/images/2021_logo.png',
     quantity: 1,
     price: 1500,
@@ -102,8 +102,8 @@ export default function ModalPayment({paquete}) {
           <div className="modal-body">
             <div align="center">
               <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'350px'}} />
-              <h3 className="mt-3 mb-0" style={{'color':'#f82249'}}><b>2, 3, 4 y 5 de DICIEMBRE, 2021</b></h3>
-              <p className="mt-1 mb-2">Su constancia se generará automáticamente con el título elegido de acuerdo al paquete de inscripción contratado.</p>
+              <h3 className="mt-3 mb-0 font-weight-regular" style={{'color':'#f82249'}}>2, 3, 4 y 5 de DICIEMBRE, 2021</h3>
+              <p className="mt-1 mb-2"><small>Su constancia se generará automáticamente con el título elegido de acuerdo al paquete de inscripción contratado.</small></p>
               <h5 className="m-0 p-0">PRECIO</h5>
               <h3><b>{formater.format(paquete[1])}</b></h3>
             </div>
@@ -129,9 +129,30 @@ export default function ModalPayment({paquete}) {
                 <div className="form-group">
                   <label>*Título:</label>
                   <select id="ticket-type" name="titulo" className="form-control" required>
-                    <option value="">-- Seleccione su titulo --</option>
-                    <option value="Dra">Dra.</option>
-                    <option value="Dr">Dr.</option>
+                    <option value="">-- Seleccione su título --</option>
+                    {paquete[1] === 1500 ?
+                      <>
+                        <option value="Dr">Dr.</option>
+                        <option value="Dra">Dra.</option>
+                        <option value="Lic">Lic.</option>
+                        <option value="Mtro">Mtro.</option>
+                        <option value="Mtra">Mtra.</option>
+                        <option value="Ing">Ing.</option>
+                        <option value="Psic">Psic.</option>
+                        <option value="Psiq">Psiq.</option>
+                        <option value="Otro">Otro.</option>
+                      </>
+                    : paquete[1] === 1000 ?
+                      <>
+                      <option value="Dra">Dra.</option>
+                      <option value="Dr">Dr.</option>
+                      </>
+                    :
+                      <>
+                      <option value="Dra">Dra.</option>
+                      <option value="Dr">Dr.</option>
+                      </>
+                    }
                   </select>
                 </div>
                 <div className="form-group">

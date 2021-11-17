@@ -3,15 +3,15 @@ import ModalPayment from "./ModalPayment"
 
 export default function Paquetes() {
 
-    const [paquete, setPaquete] = useState(['médicos', 1500]);
+    const [paquete, setPaquete] = useState(['Médicos, Gerontólogos y Especialidades Afines', 1500]);
 
     const crearPaquete = (tipo) => {
         if(tipo === 'uno'){
-            setPaquete(['médicos', 1500])
+            setPaquete(['Médicos, Gerontólogos y Especialidades Afines', 1500])
         } else if(tipo === 'dos'){
-            setPaquete(['estudiantes y enfermeras', 1000])
+            setPaquete(['Estudiantes, Personal de Enfermería y Cuidadores', 1000])
         } else {
-            setPaquete(['becarios', 0])
+            setPaquete(['Becarios', 0])
         }
     };
 
