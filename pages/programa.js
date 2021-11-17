@@ -70,7 +70,7 @@ export default function programa(){
               <li className="nav-item">
                 <a className="nav-link active" href="#geriatrico-day-1" role="tab" data-toggle="tab" style={{
                   'background':'#6a9e00'
-                }}>MÓDULO GERIÁTRICO</a>
+                }}>PRE-CONGRESO</a>
               </li>
             </ul>
 
