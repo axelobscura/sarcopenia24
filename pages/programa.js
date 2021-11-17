@@ -40,6 +40,7 @@ export default function programa(){
           <h2 className="pt-3">Programa de Actividades</h2>
           <hr/>
           <p>35<sup>vo</sup> Congreso Internacional AMGG 2021<br/><b>Asociación Mexicana de Gerontología y Geriatría</b></p>
+          
         </div>
 
         <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
@@ -59,6 +60,8 @@ export default function programa(){
 
         <h3 className="sub-heading d-none">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
           necessitatibus voluptatem quis labore perspiciatis quia.</h3>
+
+        <h5 className="text-center font-weight-bold">ACTIVIDADES DEL DÍA {eldia}</h5>
 
         <div className="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
