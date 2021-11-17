@@ -29,16 +29,18 @@ export default function Paquetes() {
                     <div className="col-lg-4">
                         <div className="card mb-5 mb-lg-0">
                             <div className="card-body">
-                                <h5 className="card-title text-muted text-uppercase text-center">Médicos</h5>
+                                <h5 className="card-title text-muted text-uppercase text-center">Médicos, Gerontólogos y Especialidades Afines</h5>
                                 <h6 className="card-price text-center">$ 1,500.00</h6>
                                 <hr />
                                 <ul className="fa-ul">
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Acceso a todas las conferencias</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Constancia de participación</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Promociones</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Acceso a todas las conferencias en vivo y ondemand</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Constancia con valor curricular de 40 horas</li>
                                     <li><span className="fa-li"><i className="fa fa-check"></i></span>Chat en vivo</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Opción a 3 y 6 Meses sin intereses</li>
+                                    {/*
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>Workshop Access</li>
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>After Party</li>
+                                    */}
                                 </ul>
                                 <hr />
                                 <div className="text-center">
@@ -56,16 +58,18 @@ export default function Paquetes() {
                     <div className="col-lg-4">
                         <div className="card mb-5 mb-lg-0">
                             <div className="card-body">
-                                <h5 className="card-title text-muted text-uppercase text-center">Estudiantes y Enfermeras</h5>
+                                <h5 className="card-title text-muted text-uppercase text-center">Estudiantes, Personal de Enfermería y Cuidadores</h5>
                                 <h6 className="card-price text-center">$ 1,000.00</h6>
                                 <hr />
                                 <ul className="fa-ul">
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Acceso a todas las conferencias</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Constancia de participación</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Promociones</li>
+                                <li><span className="fa-li"><i className="fa fa-check"></i></span>Acceso a todas las conferencias en vivo y ondemand</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Constancia con valor curricular de 40 horas</li>
                                     <li><span className="fa-li"><i className="fa fa-check"></i></span>Chat en vivo</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Opción a 3 y 6 Meses sin intereses</li>
+                                    {/*
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>Workshop Access</li>
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>After Party</li>
+                                    */}
                                 </ul>
                                 <hr />
                                 <div className="text-center">
@@ -84,15 +88,15 @@ export default function Paquetes() {
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title text-muted text-uppercase text-center">Becarios</h5>
-                                <h6 className="card-price text-center">$0</h6>
                                 <hr />
                                 <ul className="fa-ul">
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Acceso a todas las conferencias</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Constancia de participación</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Promociones</li>
+                                <li><span className="fa-li"><i className="fa fa-check"></i></span>Acceso a todas las conferencias en vivo y ondemand</li>
+                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Constancia con valor curricular de 40 horas</li>
                                     <li><span className="fa-li"><i className="fa fa-check"></i></span>Chat en vivo</li>
+                                    {/*
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>Workshop Access</li>
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>After Party</li>
+                                    */}
                                 </ul>
                                 <hr />
                                 <div className="text-center">
