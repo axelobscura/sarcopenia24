@@ -144,13 +144,26 @@ export default function ModalPayment({paquete}) {
                       </>
                     : paquete[1] === 1000 ?
                       <>
-                      <option value="Dra">Dra.</option>
-                      <option value="Dr">Dr.</option>
+                        <option value="Enf">Enf.</option>
+                        <option value="Est">Est.</option>
+                        <option value="Sr">Sr.</option>
+                        <option value="Sra">Sra.</option>
                       </>
                     :
                       <>
-                      <option value="Dra">Dra.</option>
-                      <option value="Dr">Dr.</option>
+                        <option value="Dr">Dr.</option>
+                        <option value="Dra">Dra.</option>
+                        <option value="Lic">Lic.</option>
+                        <option value="Mtro">Mtro.</option>
+                        <option value="Mtra">Mtra.</option>
+                        <option value="Ing">Ing.</option>
+                        <option value="Psic">Psic.</option>
+                        <option value="Psiq">Psiq.</option>
+                        <option value="Otro">Otro.</option>
+                        <option value="Enf">Enf.</option>
+                        <option value="Est">Est.</option>
+                        <option value="Sr">Sr.</option>
+                        <option value="Sra">Sra.</option>
                       </>
                     }
                   </select>
