@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Link from 'next/dist/client/link';
 import Patrocinadores from './components/Patrocinadores';
 import CardPonente from './components/CarPonente';
@@ -6,6 +7,7 @@ import Loader from './components/Loader';
 import { usePrograma } from '../lib/swr-hooks';
 
 export default function programa(){
+  const [ eldia, setEldia ] = useState("2 DE DICIEMBRE");
   const { programa, isLoadingPrograma } = usePrograma();
   if (isLoadingPrograma && !programa) {
     return(
@@ -42,16 +44,16 @@ export default function programa(){
 
         <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
           <li className="nav-item">
-            <a className="nav-link active" href="#day-1" role="tab" data-toggle="tab">2 DE DICIEMBRE</a>
+            <a className="nav-link active" href="#day-1" role="tab" data-toggle="tab" onClick={() => setEldia('2 DE DICIEMBRE')}>2 DE DICIEMBRE</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#day-2" role="tab" data-toggle="tab">3 DE DICIEMBRE</a>
+            <a className="nav-link" href="#day-2" role="tab" data-toggle="tab" onClick={() => setEldia('3 DE DICIEMBRE')}>3 DE DICIEMBRE</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#day-3" role="tab" data-toggle="tab">4 DE DICIEMBRE</a>
+            <a className="nav-link" href="#day-3" role="tab" data-toggle="tab" onClick={() => setEldia('4 DE DICIEMBRE')}>4 DE DICIEMBRE</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#day-3" role="tab" data-toggle="tab">5 DE DICIEMBRE</a>
+            <a className="nav-link" href="#day-3" role="tab" data-toggle="tab" onClick={() => setEldia('5 DE DICIEMBRE')}>5 DE DICIEMBRE</a>
           </li>
         </ul>
 
@@ -61,6 +63,24 @@ export default function programa(){
         <div className="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
           <div role="tabpanel" className="col-lg-9 tab-pane fade show active" id="day-1">
+            <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+              <li className="nav-item">
+                <a className="nav-link active" href="#geriatrico-day-1" role="tab" data-toggle="tab" style={{
+                  'background':'#6a9e00'
+                }}>MÓDULO GERIÁTRICO</a>
+              </li>
+            </ul>
+
+            <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-1">
+              {ofertaPonentes}
+            </div>
+            <div role="tabpanel" className="col-lg-12 tab-pane fade" id="geriatrico-day-2">
+
+            </div>
+
+          </div>
+
+          <div role="tabpanel" className="col-lg-9  tab-pane fade" id="day-2">
 
             <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
               <li className="nav-item">
@@ -75,61 +95,39 @@ export default function programa(){
               </li>
             </ul>
 
-
-            <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-1">
-              {ofertaPonentes}
-            </div>
-            <div role="tabpanel" className="col-lg-12 tab-pane fade" id="geriatrico-day-2">
-
-            </div>
-
-          </div>
-
-          <div role="tabpanel" className="col-lg-9  tab-pane fade" id="day-2">
             <div className="row schedule-item">
-              <div className="col-md-2"><time>10:00 AM</time></div>
-              <div className="col-md-10">
-                <div className="speaker">
-                  <img src="assets/img/speakers/1.jpg" alt="Brenden Legros"/>
-                </div>
+              <div className="col-md-3"><time>10:00 AM</time></div>
+              <div className="col-md-9">
                 <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
                 <p>Facere provident incidunt quos voluptas.</p>
               </div>
             </div>
 
-            <div className="row schedule-item">
-              <div className="col-md-2"><time>11:00 AM</time></div>
-              <div className="col-md-10">
-                <div className="speaker">
-                  <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe"/>
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
           </div>
 
           <div role="tabpanel" className="col-lg-9  tab-pane fade" id="day-3">
+
+            <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+              <li className="nav-item">
+                <a className="nav-link active" href="#geriatrico-day-1" role="tab" data-toggle="tab" style={{
+                  'background':'#6a9e00'
+                }}>MÓDULO GERIÁTRICO</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#geriatrico-day-2" role="tab" data-toggle="tab" style={{
+                  'background':'#2c5a00'
+                }}>MÓDULO GERONTOLÓGICO</a>
+              </li>
+            </ul>
+
             <div className="row schedule-item">
-              <div className="col-md-2"><time>10:00 AM</time></div>
-              <div className="col-md-10">
-                <div className="speaker">
-                  <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe"/>
-                </div>
+              <div className="col-md-3"><time>10:00 AM</time></div>
+              <div className="col-md-9">
                 <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
                 <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
               </div>
             </div>
-            <div className="row schedule-item">
-              <div className="col-md-2"><time>11:00 AM</time></div>
-              <div className="col-md-10">
-                <div className="speaker">
-                  <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich"/>
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
