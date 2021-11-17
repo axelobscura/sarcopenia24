@@ -938,7 +938,7 @@ align-items: center;
 #schedule .schedule-item h4 span {
   font-style: italic;
   color: #19328e;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 16px;
 }
 
