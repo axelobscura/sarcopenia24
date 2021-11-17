@@ -11,10 +11,9 @@ const handler: NextApiHandler = async (req, res) => {
       `
       SELECT *
       FROM registros
-      WHERE email = ? AND password = ?
+      WHERE email = ?
       `,
       email,
-      password
     )
     return res.json(results[0])
   } catch (e) {
