@@ -27,7 +27,7 @@ export default function Header() {
                         {usuario ?
                             <>
                             <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> CURSOS</a></Link></li>
-                            <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> SU PERFIL DE USUARIO</a></Link></li>
+                            <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> SU PERFIL DE USUARIO-</a></Link></li>
                             </>
                             :
                             ''
