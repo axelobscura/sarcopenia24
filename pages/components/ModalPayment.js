@@ -103,9 +103,11 @@ export default function ModalPayment({paquete}) {
             <div align="center">
               <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'350px'}} />
               <h3 className="mt-3 mb-0 font-weight-regular" style={{'color':'#f82249'}}>2, 3, 4 y 5 de DICIEMBRE, 2021</h3>
-              <p className="mt-1 mb-2"><small>Su constancia se generará automáticamente con el título elegido de acuerdo al paquete de inscripción contratado.</small></p>
+              <h5 className="m-0 p-0">Constancia con valor curricular de 40 horas</h5>
+              <p className="mt-1 mb-2"><small>Su constancia se generará automáticamente con el título elegido<br/>de acuerdo al paquete de inscripción contratado.</small></p>
               <h5 className="m-0 p-0">PRECIO</h5>
               <h3><b>{formater.format(paquete[1])}</b></h3>
+              
             </div>
             <hr/>
             {!enviado ? 
@@ -144,13 +146,26 @@ export default function ModalPayment({paquete}) {
                       </>
                     : paquete[1] === 1000 ?
                       <>
-                      <option value="Dra">Dra.</option>
-                      <option value="Dr">Dr.</option>
+                        <option value="Enf">Enf.</option>
+                        <option value="Est">Est.</option>
+                        <option value="Sr">Sr.</option>
+                        <option value="Sra">Sra.</option>
                       </>
                     :
                       <>
-                      <option value="Dra">Dra.</option>
-                      <option value="Dr">Dr.</option>
+                        <option value="Dr">Dr.</option>
+                        <option value="Dra">Dra.</option>
+                        <option value="Lic">Lic.</option>
+                        <option value="Mtro">Mtro.</option>
+                        <option value="Mtra">Mtra.</option>
+                        <option value="Ing">Ing.</option>
+                        <option value="Psic">Psic.</option>
+                        <option value="Psiq">Psiq.</option>
+                        <option value="Otro">Otro.</option>
+                        <option value="Enf">Enf.</option>
+                        <option value="Est">Est.</option>
+                        <option value="Sr">Sr.</option>
+                        <option value="Sra">Sra.</option>
                       </>
                     }
                   </select>
