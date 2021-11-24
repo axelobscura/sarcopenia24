@@ -43,8 +43,6 @@ export default function ModalPayment({paquete}) {
     let nacimiento = e.target.nacimiento.value;
     let sexo = e.target.sexo.value;
 
-    
-
     setLoading(true);
     const stripe = await stripePromise;
     const checkoutSession = await axios.post('/api/create-stripe-session', {
@@ -102,8 +100,8 @@ export default function ModalPayment({paquete}) {
           <div className="modal-body">
             <div align="center">
               <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'350px'}} />
-              <h3 className="mt-3 mb-0 font-weight-regular" style={{'color':'#f82249'}}>2, 3, 4 y 5 de DICIEMBRE, 2021</h3>
-              <h5 className="m-0 p-0">Constancia con valor curricular de 40 horas</h5>
+              <h3 className="mt-3 mb-0 font-weight-bold" style={{'color':'#f82249'}}>2, 3, 4 y 5 de DICIEMBRE, 2021</h3>
+              <h5 className="m-0 p-0 pt-2 font-weight-bold">Constancia con valor curricular de 40 horas</h5>
               <p className="mt-1 mb-2"><small>Su constancia se generará automáticamente con el título elegido<br/>de acuerdo al paquete de inscripción contratado.</small></p>
               <h5 className="m-0 p-0">PRECIO</h5>
               <h3><b>{formater.format(paquete[1])}</b></h3>
