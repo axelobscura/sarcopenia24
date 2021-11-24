@@ -26,7 +26,7 @@ export default function Header() {
                         <li className={router.pathname == "/programa" ? "menu-active" : ""}><Link href="/programa"><a><i className="fa fa-angle-right"></i> PROGRAMA DE ACTIVIDADES</a></Link></li>
                         {usuario ?
                             <>
-                            <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> CURSOS</a></Link></li>
+                            <li className={router.pathname == "/administrador" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> CURSOS</a></Link></li>
                             <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> SU PERFIL DE USUARIO-</a></Link></li>
                             </>
                             :
@@ -46,7 +46,7 @@ export default function Header() {
                         {usuario ?
                             <>
                                 <li className="buy-tickets"><Link href="/administrador"><a>PANEL</a></Link></li>
-                                <li className="buy-tickets"><a onClick={signOut}>{usuario} | SALIR</a></li>
+                                <li className="buy-tickets"><a onClick={signOut}>SALIR</a></li>
                             </>
                             :
                             <li className="buy-tickets"><Link href="/registro"><a>INGRESAR</a></Link></li>

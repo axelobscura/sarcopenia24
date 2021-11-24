@@ -9,18 +9,19 @@ export default class MyApp extends App {
         usuario: null,
         nombre: null
     };
-    /*
+    
     componentDidMount = () => {
         const usuario = localStorage.getItem('usuario');
         if (usuario) {
             this.setState({
                 usuario
             });
+            Router.push('/administrador');
         } else {
             Router.push('/');
         }
     };
-    */
+    
     signIn = (usuario, password) => {
         localStorage.setItem('usuario', usuario);
         this.setState(

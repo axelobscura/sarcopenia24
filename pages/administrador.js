@@ -32,9 +32,9 @@ export default function Administrador() {
                     <div className="col-md-9">
                         <h2><i className="fa fa-user-circle-o mr-3" aria-hidden="true"></i>
  Bienvenido a su panel de afiliado {usuario}</h2>
-                    <div className="row">
-                        {ofertaCursos}
-                    </div>
+                        <div className="row">
+                            {ofertaCursos}
+                        </div>
                     </div>
                 </div>
             </div>

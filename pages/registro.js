@@ -21,18 +21,20 @@ export default function Registro() {
             signIn(email, password);
         }
     };
-
     const handleRegistro = (e) => {
         e.preventDefault();
         console.log('Registro');
     };
     return (
         <section id="contact" className="section-bg wow fadeInUp mt-5">
-            <div className="container-fluid p-5">
+            <div className="container-fluid">
                 <div className="row contact-info">
-                    <div className="col-md-6 p-3">
+                    <div className="col-md-6 offset-3">
                         <div className="section-header mt-2 text-center">
-                            <h1>¡BIENVENIDO!</h1>
+                            <div align="center">
+                                <img src="/images/logo-congreso21.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'250px'}} />
+                            </div>
+                            <hr/>
                             <h2>Ingreso de usuarios</h2>
                             <p>Ingrese a su plataforma personalizada del congreso.</p>
                         </div>
@@ -54,11 +56,6 @@ export default function Registro() {
                                 <div className="text-center"><button type="submit" className="btn">Ingresar a su cuenta</button></div>
                                 <div className="text-center mt-3"><Link href=""><p><small>¿Olvidó sus datos de ingreso?, De click aquí.</small></p></Link></div>
                             </form>
-                        </div>
-                    </div>
-                    <div className="col-md-6 p-3">
-                        <div align="center">
-                            <img src="/images/logo-congreso21.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" />
                         </div>
                     </div>
                 </div>

@@ -1929,3 +1929,10 @@ label {
   height: 70px !important;
   padding: 15px 0 !important;
 }
+
+p.dirigido {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
