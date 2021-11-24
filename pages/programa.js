@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Link from 'next/dist/client/link';
-import Patrocinadores from './components/Patrocinadores';
 import CardPonente from './components/CarPonente';
 import Loader from './components/Loader';
 
@@ -135,7 +134,6 @@ export default function programa(){
         </div>
       </div>
     </section>
-    <Patrocinadores />
     </>
   )
 }
