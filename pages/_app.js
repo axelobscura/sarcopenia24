@@ -14,10 +14,7 @@ export default class MyApp extends App {
         if (usuario) {
             this.setState({
                 usuario
-            });
-            Router.push('/administrador');
-        } else {
-            Router.push('/');
+            })
         }
     };
     signIn = (usuario, password) => {

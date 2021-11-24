@@ -44,19 +44,9 @@ export default function ModalPayment({paquete}) {
     let sexo = e.target.sexo.value;
 
     setLoading(true);
-    const stripe = await stripePromise;
-    const checkoutSession = await axios.post('/api/create-stripe-session', {
-      item: item,
-    });
-    const result = await stripe.redirectToCheckout({
-      sessionId: checkoutSession.data.id,
-    });
-    if (result.error) {
-      alert(result.error.message);
-    }
-    setLoading(false);
 
-    {/*
+    localStorage.setItem('usuario', email);
+    
     let url = `https://capuletbeta.com/apis/congreso/registro.php`;
 
     await axios.post(url, JSON.stringify({
@@ -70,10 +60,20 @@ export default function ModalPayment({paquete}) {
         sexo: sexo,
         precio: paquete[1]
       }))
-      .then(function (response){
+      .then(async (response) => {
           if(response.data === "exito"){
+            const stripe = await stripePromise;
+            const checkoutSession = await axios.post('/api/create-stripe-session', {
+              item: item,
+            });
+            const result = await stripe.redirectToCheckout({
+              sessionId: checkoutSession.data.id,
+            });
+            if (result.error) {
+              alert(result.error.message);
+            }
             setEnviado(true);
-            setNombre(nombre)
+            setNombre(nombre);
           }else if(response.data === "fallo"){
             setEnviado(false);
           }else{
@@ -83,8 +83,11 @@ export default function ModalPayment({paquete}) {
       .catch(function (error){
           console.log(error)
       })
-      */}
+
+      setLoading(false);
+      
     };
+    
   
 
   return (

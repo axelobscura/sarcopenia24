@@ -20,6 +20,7 @@
     "react": "16.13.1",
     "react-bootstrap-icons": "^1.5.0",
     "react-dom": "16.13.1",
+    "react-player": "^2.9.0",
     "serverless-mysql": "^1.5.4",
     "stripe": "^8.186.1",
     "swr": "^1.0.1"

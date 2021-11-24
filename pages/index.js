@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Paquetes from './components/Paquetes';
@@ -6,6 +7,16 @@ import Patrocinadores from './components/Patrocinadores';
 export default function Home() {
   const router = useRouter();
   const {status} = router.query;
+
+  useEffect(() => {
+    const usuario = localStorage.getItem('usuario');
+    if (usuario) {
+      router.push('/administrador');
+    } else {
+      router.push('/');
+    }
+  }, []);
+
   return (
     <>
       <section id="intro">

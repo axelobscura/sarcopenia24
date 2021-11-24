@@ -9,8 +9,7 @@ export default function Footer() {
                 <div className="container-fluid">
                     <div className="row pl-1">
                         <div className="col-lg-3 col-md-6 footer-info">
-                            <img src="images/logo-blanco.svg" alt="TheEvenet" />
-                            <hr/>
+                            <img src="/images/logo-blanco.svg" alt="capulet méxico" title="capulet méxico" />
                             <p style={{
                                 'fontSize':'12px',
                                 'textAlign':'justify'

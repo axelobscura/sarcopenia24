@@ -12,11 +12,11 @@ export default function Header() {
                 <div id="logo" className="pull-left">
                     {usuario ?
                         <Link href="/administrador">
-                            <a><img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} /></a>
+                            <a><img src="/images/logo-blanco.svg" alt="capulet méxico" title="capulet méxico" style={{ minWidth: '200px' }} /></a>
                         </Link>
                         :
                         <Link href="/">
-                            <a><img src="images/logo-blanco.svg" alt="" title="" style={{ minWidth: '200px' }} /></a>
+                            <a><img src="/images/logo-blanco.svg" alt="capulet méxico" title="capulet méxico" style={{ minWidth: '200px' }} /></a>
                         </Link>
                     }
                 </div>
