@@ -7,7 +7,7 @@ export default function Header() {
     const { usuario, signOut } = useContext(UserContext);
     const router = useRouter();
     return (
-        <header id="header" className={router.pathname == "/programa" || router.pathname == "/registro" ? "header-scrolled programa" : "header-scrolled"}>
+        <header id="header" className={router.pathname == "/programa" || router.pathname == "/registro" || router.pathname == "/recuperar" ? "header-scrolled programa" : "header-scrolled"}>
             <div className="container-fluid">
                 <div id="logo" className="pull-left">
                     {usuario ?
@@ -26,8 +26,7 @@ export default function Header() {
                         <li className={router.pathname == "/programa" ? "menu-active" : ""}><Link href="/programa"><a><i className="fa fa-angle-right"></i> PROGRAMA DE ACTIVIDADES</a></Link></li>
                         {usuario ?
                             <>
-                            <li className={router.pathname == "/administrador" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> CURSOS</a></Link></li>
-                            <li className={router.pathname == "/como-funciona" ? "menu-active" : ""}><Link href="/como-funciona"><a><i className="fa fa-angle-right"></i> SU PERFIL DE USUARIO-</a></Link></li>
+                            <li className={router.pathname == "/perfil" ? "menu-active" : ""}><Link href="/perfil"><a><i className="fa fa-angle-right"></i> SUS DATOS DE USUARIO</a></Link></li>
                             </>
                             :
                             ''

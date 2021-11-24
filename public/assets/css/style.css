@@ -488,6 +488,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
+#contact {
+  width: 100%;
+  background: url(/images/back_congreso.png) top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
 @media (min-width: 1024px) {
   #intro {
     background-attachment: fixed;
@@ -1939,7 +1947,8 @@ p.dirigido {
 
 .player-wrapper {
   position: relative;
-  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+  padding-bottom: 56.25%; /* Player ratio: 100 / (1280 / 720) */
 }
 
 .react-player {
@@ -1950,4 +1959,13 @@ p.dirigido {
 .organizador.evento {
   background: #fff;
   padding: 20px;
+}
+
+.recuperar p small {
+  font-weight: bold !important;
+  cursor: pointer;
+}
+
+.recuperar p small:hover {
+  color: #f82249;
 }

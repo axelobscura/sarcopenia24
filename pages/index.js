@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Paquetes from './components/Paquetes';
-import Patrocinadores from './components/Patrocinadores';
 
 export default function Home() {
   const router = useRouter();
@@ -38,7 +37,6 @@ export default function Home() {
         </div>
       </section>
       <Paquetes />
-      <Patrocinadores />
       <style jsx>{`
         .intro-container h1 {
           font-size: 3rem;

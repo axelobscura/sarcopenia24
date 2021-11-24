@@ -1,7 +1,7 @@
 export default function Patrocinadores() {
     return (
-        <div className="container">
-            <div className="container-fluid patrocinadores">
+        <div className="container-fluid" style={{'background':'#fff'}}>
+            <div className="container patrocinadores">
                 <div className="row pl-1">
                     <div className="col-lg-12 col-md-6 footer-info" style={{
                         'background': '#fff',

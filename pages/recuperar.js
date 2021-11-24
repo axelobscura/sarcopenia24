@@ -3,28 +3,7 @@ import Link from 'next/dist/client/link';
 import UserContext from '../UserContext';
 import Router from 'next/router';
 
-export default function Registro() {
-    const [userMsg, setUserMsg] = useState('');
-    const { signIn } = useContext(UserContext);
-
-    const handleUsuario = async (e) => {
-        e.preventDefault();
-        let email = e.target.nameUsuario.value;
-        let password = e.target.passwordUsuario.value;
-
-        let res = await fetch(`/api/get-usuario?email=${email}&password=${password}`);
-        let json = await res.json()
-        //if (!res.ok) throw Error(json.message)
-        if (!res.ok) {
-            setUserMsg("El nombre de usuario no es correcto!");
-        } else {
-            signIn(email, password);
-        }
-    };
-    const handleRegistro = (e) => {
-        e.preventDefault();
-        console.log('Registro');
-    };
+export default function Recuperar() {
     return (
         <section id="contact" className="section-bg wow fadeInUp mt-5">
             <div className="container-fluid">
@@ -35,26 +14,19 @@ export default function Registro() {
                                 <img src="/images/logo-congreso21.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'250px'}} />
                             </div>
                             <hr/>
-                            <h2>Ingreso de usuarios</h2>
-                            <p>Ingrese a su plataforma personalizada del congreso.</p>
+                            <h2>Recuperar sus datos de ingreso</h2>
                         </div>
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
-                            <h3>POR FAVOR INGRESE SUS DATOS DE ACCESO</h3>
-                            <p className={userMsg !== "" ? `errorLog` : ``}>{userMsg}</p>
+                            <h3>POR FAVOR INGRESE SU CORREO ELECTRÓNICO</h3>
                             <hr />
-                            <form onSubmit={handleUsuario}>
+                            <form>
                                 <div className="form-group col-md-12">
                                     <input type="email" name="nameUsuario" className="form-control" id="nameUsuario" placeholder="Correo Electrónico" data-rule="email" data-msg="Ingrese su correo electrónico" />
                                     <div className="validate"></div>
                                 </div>
-                                <div className="form-group col-md-12">
-                                    <input type="password" className="form-control" name="passwordUsuario" id="passwordUsuario" placeholder="Contraseña" />
-                                    <div className="validate"></div>
-                                </div>
-                                
-                                <div className="text-center"><button type="submit" className="btn">Ingresar a su cuenta</button></div>
-                                <div className="text-center mt-3 recuperar"><Link href="/recuperar"><p><small>¿Olvidó sus datos de ingreso?, De click aquí.</small></p></Link></div>
+                                <div className="text-center"><button type="submit" className="btn">Recuperar su contraseña</button></div>
+                                <div className="text-center mt-3 recuperar"><Link href="/registro"><p><small>De click aquí para ingresar a su cuenta.</small></p></Link></div>
                             </form>
                         </div>
                     </div>

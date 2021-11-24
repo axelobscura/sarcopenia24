@@ -33,7 +33,7 @@ export default function Administrador() {
                 <div className="row">
                     <MenuAdmin/>
                     <div className="col-md-9">
-                        <h2><i className="fa fa-user-circle-o mr-3" aria-hidden="true"></i>Bienvenido {usuario}</h2>
+                        {/*<h2><i className="fa fa-user-circle-o mr-3" aria-hidden="true"></i>Bienvenido {usuario}</h2>*/}
                         <div className="row">
                             <div className="col-md-12 mb-3">
                                 <Link href={`/evento/congreso2021`}>
