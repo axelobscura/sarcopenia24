@@ -9,7 +9,6 @@ export default class MyApp extends App {
         usuario: null,
         nombre: null
     };
-    
     componentDidMount = () => {
         const usuario = localStorage.getItem('usuario');
         if (usuario) {
@@ -21,9 +20,9 @@ export default class MyApp extends App {
             Router.push('/');
         }
     };
-    
     signIn = (usuario, password) => {
         localStorage.setItem('usuario', usuario);
+        localStorage.setItem('password', password);
         this.setState(
             {
                 usuario: usuario,
