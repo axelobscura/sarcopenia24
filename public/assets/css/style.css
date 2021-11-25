@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
+  background: url("../img/preloader.svg") no-repeat center center;
 }
 
 /* Back to top button */
@@ -1857,7 +1857,7 @@ input.form-control {
   border-radius: 0 !important;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  background: #f2f2f2;
+  background: #fff;
 }
 
 .capsulaimg {
@@ -1901,8 +1901,8 @@ margin-right: 10px;
 
 .loader {
   text-align: center;
-  padding: 90px 0;
-  background: #101522;
+  padding: 400px 0;
+  background: #fff;
 }
 
 .logospatro {
@@ -1940,7 +1940,7 @@ label {
 
 p.dirigido {
   font-size: 1.2rem;
-  line-height: 1.4rem;
+  line-height: 1.9rem;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -1968,4 +1968,17 @@ p.dirigido {
 
 .recuperar p small:hover {
   color: #f82249;
+}
+
+a.nav-descarga {
+  display: block;
+border: none;
+border-radius: 50px;
+font-weight: 600;
+background-color: #f82249;
+color: #f6f7fd;
+padding: 10px 50px;
+margin: 2px;
+    margin-top: 2px;
+margin-top: 20px;
 }

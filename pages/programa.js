@@ -122,9 +122,11 @@ export default function programa(){
             <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'250px'}} />
           </div>
           <h2 className="pt-3">Programa de Actividades</h2>
-          <hr/>
           <p>35<sup>vo</sup> Congreso Internacional AMGG 2021<br/><b>Asociación Mexicana de Gerontología y Geriatría</b></p>
-          
+          <hr/>
+          <div align="center">
+            <a href="https://capuletbeta.com/congreso2021/programa.pdf" className="nav-descarga" target="_blank">DESCARGAR PROGRAMA DE ACTIVIDADES EN PDF</a>
+          </div>
         </div>
 
         <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
