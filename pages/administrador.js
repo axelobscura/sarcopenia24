@@ -28,7 +28,7 @@ export default function Administrador() {
     ));
     console.log(usuario);
     return (
-        <section id="administrador" className="section-bg wow fadeInUp m-0 p-0 mt-4 pt-5">
+        <section id="administrador" className="section-bg wow fadeInDown m-0 p-0 mt-4 pt-5">
             <div className="container-fluid">
                 <div className="row">
                     <MenuAdmin/>

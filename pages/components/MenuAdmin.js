@@ -9,13 +9,7 @@ export default function MenuAdmin() {
       </div>
       <ul>
         <li>
-          <Link href="/oferta-de-cursos"><a><ListCheck className="iconoBoot" /> CURSOS DISPONIBLES</a></Link>
-        </li>
-        <li>
-          <Link href="/constacias"><a><FileEarmark className="iconoBoot" /> CONSTANCIAS</a></Link>
-        </li>
-        <li>
-          <Link href="/documentos"><a><FileBinaryFill className="iconoBoot" /> DOCUMENTOS</a></Link>
+          <Link href="/evento/congreso2021"><a><ListCheck className="iconoBoot" /> CONFERENCIAS</a></Link>
         </li>
         <li>
           <Link href="/patrocinadores"><a><BrightnessAltHighFill className="iconoBoot" /> PATROCINADORES</a></Link>
