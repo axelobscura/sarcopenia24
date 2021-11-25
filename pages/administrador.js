@@ -40,7 +40,7 @@ export default function Administrador() {
                                     <img src="https://capuletbeta.com/congreso2021/images/congreso2021_a.jpg" className="img-fluid" alt="35 congreso internacional AMGG" title="35 congreso internacional AMGG" />
                                 </Link>
                             </div>
-                            {ofertaCursos}
+                            {/*ofertaCursos*/}
                         </div>
                     </div>
                 </div>
