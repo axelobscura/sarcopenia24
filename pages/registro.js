@@ -26,7 +26,7 @@ export default function Registro() {
         console.log('Registro');
     };
     return (
-        <section id="contact" className="section-bg wow fadeInUp mt-5">
+        <section id="contact" className="section-bg wow fadeInDown mt-5">
             <div className="container-fluid">
                 <div className="row contact-info">
                     <div className="col-md-6 offset-3">
