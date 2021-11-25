@@ -9,10 +9,10 @@ export default function MenuAdminEvento() {
       </div>
       <ul>
         <li>
-          <Link href="/oferta-de-cursos"><a><ListCheck className="iconoBoot" /> SALÓN 1</a></Link>
+          <Link href="/oferta-de-cursos"><a><ListCheck className="iconoBoot" /> SALÓN 1 | GERIATRÍA</a></Link>
         </li>
         <li>
-          <Link href="/oferta-de-cursos"><a><ListCheck className="iconoBoot" /> SALÓN 2</a></Link>
+          <Link href="/oferta-de-cursos"><a><ListCheck className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a></Link>
         </li>
       </ul>
     </div>
