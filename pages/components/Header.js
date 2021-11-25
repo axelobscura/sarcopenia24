@@ -56,7 +56,7 @@ export default function Header() {
                             </a>
                         </li>
                         <li>
-                            <img src="/images/logo_geriatrics.png" alt="Asociación Mexicana de geriatría y Gerontología" title="Asociación Mexicana de geriatría y Gerontología" style={{'width':'44px'}} />
+                            <img src="/images/logo_geriatrics.png" alt="Asociación Mexicana de geriatría y Gerontología" title="Asociación Mexicana de geriatría y Gerontología" style={{'width':'42px'}} />
                         </li>
                     </ul>
                 </nav>
