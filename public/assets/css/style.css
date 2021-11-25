@@ -1854,10 +1854,12 @@ text-transform: uppercase;
 }
 
 input.form-control {
-  border-radius: 0 !important;
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  background: #fff;
+font-size: 1rem;
+background: #fff;
+border-radius: 50px !important;
+padding: 20px;
+border: 2px solid #000;
 }
 
 .capsulaimg {
