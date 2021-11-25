@@ -50,6 +50,14 @@ export default function Header() {
                             :
                             <li className="buy-tickets"><Link href="/registro"><a>INGRESAR</a></Link></li>
                         }
+                        <li>
+                            <a href="https://www.amgg.com.mx/" target="_blank" style={{'padding':'0'}}>
+                                <img src="/images/logo-amgg-blanco.png" alt="Asociación Mexicana de geriatría y Gerontología" title="Asociación Mexicana de geriatría y Gerontología" style={{'width':'55px'}} />
+                            </a>
+                        </li>
+                        <li>
+                            <img src="/images/logo_geriatrics.png" alt="Asociación Mexicana de geriatría y Gerontología" title="Asociación Mexicana de geriatría y Gerontología" style={{'width':'44px'}} />
+                        </li>
                     </ul>
                 </nav>
             </div>
