@@ -1347,7 +1347,8 @@ align-items: center;
 }
 
 #buy-tickets #buy-ticket-modal input, #buy-tickets #buy-ticket-modal select {
-  border-radius: 0;
+  border-radius: 20px;
+  border: 2px solid #000;
 }
 
 #buy-tickets #buy-ticket-modal .btn {
