@@ -15,7 +15,7 @@ export default function Curso() {
               <div className="row vh-100">
                 <ReactPlayer 
                   className='react-player'
-                  url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+                  url='https://www.youtube.com/watch?v=FhRKmIeRQj8gv'
                   width='100%'
                   height='100vh'
                   config={{

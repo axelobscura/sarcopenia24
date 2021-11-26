@@ -8,6 +8,7 @@ export default function CardPonente({horario, dia, salon, modulo, ponente, tema,
         <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" />
         </div>
         */}
+        {tema}
         <h4 style={{'textTransform':'uppercase'}}>{tema}<br/>
         {tema === "RECESO" ? 
           ""

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Document, Page } from 'react-pdf';
 import Link from 'next/dist/client/link';
 import CardPonente from './components/CarPonente';
 import Loader from './components/Loader';
@@ -8,6 +9,8 @@ import { usePrograma } from '../lib/swr-hooks';
 export default function programa(){
   const [ eldia, setEldia ] = useState("2 DE DICIEMBRE");
   const { programa, isLoadingPrograma } = usePrograma();
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
   if (isLoadingPrograma && !programa) {
     return(
         <Loader/>
@@ -111,7 +114,9 @@ export default function programa(){
         especialidad={evento.especialidad}
     />
   ));
-
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
   return(
     <>
     <section id="schedule" className="section-with-bg wow fadeInUp mt-5">
@@ -127,6 +132,13 @@ export default function programa(){
           <div align="center">
             <a href="https://capuletbeta.com/congreso2021/programa.pdf" className="nav-descarga" target="_blank">DESCARGAR PROGRAMA DE ACTIVIDADES EN PDF</a>
           </div>
+          <Document
+            file="/programa.pdf"
+            onLoadSuccess={onDocumentLoadSuccess}
+          >
+            <Page pageNumber={pageNumber} />
+          </Document>
+          <p>Page {pageNumber} of {numPages}</p>
         </div>
 
         <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
@@ -162,9 +174,6 @@ export default function programa(){
 
             <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-1-S1">
               {ofertaPonentesDia1}
-            </div>
-            <div role="tabpanel" className="col-lg-12 tab-pane fade" id="geriatrico-day-2">
-
             </div>
 
           </div>
