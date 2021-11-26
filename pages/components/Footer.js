@@ -50,7 +50,7 @@ export default function Footer() {
                         <div className="col-lg-3 col-md-6 footer-links">
                             <h4>Próximos Eventos</h4>
                             <ul>
-                                <li><i className="fa fa-angle-right"></i> <a href="#">Calendario</a></li>
+                                <li><i className="fa fa-angle-right"></i> <Link href="/programa"><a>Programa</a></Link></li>
                                 <li><i className="fa fa-angle-right"></i> <a href="#">Exponentes</a></li>
                                 <li><i className="fa fa-angle-right"></i> <a href="#">Servicios</a></li>
                             </ul>
