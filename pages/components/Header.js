@@ -26,7 +26,9 @@ export default function Header() {
                         <li className={router.pathname == "/programa" ? "menu-active" : ""}><Link href="/programa"><a><i className="fa fa-angle-right"></i> PROGRAMA DE ACTIVIDADES</a></Link></li>
                         {usuario ?
                             <>
+                            {/* 
                             <li className={router.pathname == "/perfil" ? "menu-active" : ""}><Link href="/perfil"><a><i className="fa fa-angle-right"></i> SUS DATOS DE USUARIO</a></Link></li>
+                            */}
                             </>
                             :
                             ''

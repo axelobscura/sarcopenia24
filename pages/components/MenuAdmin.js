@@ -14,9 +14,11 @@ export default function MenuAdmin() {
         <li>
           <Link href="/patrocinadores"><a><BrightnessAltHighFill className="iconoBoot" /> PATROCINADORES</a></Link>
         </li>
+        {/* 
         <li>
           <Link href="/perfil-de-usuario"><a><PersonCircle className="iconoBoot" /> PERFIL DE USUARIO</a></Link>
         </li>
+        */}
       </ul>
     </div>
   )
