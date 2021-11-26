@@ -23,6 +23,13 @@ async function CreateStripeSession(req, res) {
       'card',
       'oxxo',
     ],
+    payment_method_options: {
+      card: {
+        installments: {
+          enabled: true,
+        },
+      },
+    },
     line_items: [transformedItem],
     mode: 'payment',
     success_url: redirectURL + '?status=success',
