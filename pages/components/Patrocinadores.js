@@ -15,6 +15,8 @@ export default function Patrocinadores() {
                             <img src="https://capuletbeta.com/nutricion/images/logo-angeles.png" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" style={{ 'width': '100px' }} />
                             <img src="https://capuletbeta.com/nutricion/images/Fresenius.jpeg" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" style={{ 'width': '130px' }} />
                             <img src="https://capuletbeta.com/nutricion/images/Fresubin.png" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" />
+                            <img src="/images/logo_affective.jpg" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" />
+                            <img src="/images/logo_deasa.png" alt="CAPULET SOLUCIONES DE ADMINISTRACIÓN DE DATOS Y COMUNICACIÓN" className="img-fluid" />
                         </div>
                     </div>
                 </div>
