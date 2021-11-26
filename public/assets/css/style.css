@@ -1989,4 +1989,7 @@ margin-top: 20px;
   .logospatro {
     flex-direction: column;
   }
+  .logospatro img {
+    margin: 10px;
+  }
 }
