@@ -15,9 +15,11 @@ export default function Curso() {
               <div className="row vh-100">
                 <ReactPlayer 
                   className='react-player'
-                  url='https://www.youtube.com/watch?v=FhRKmIeRQj8gv'
+                  url='https://www.youtube.com/watch?v=FhRKmIeRQj8gv?rel=0;autoplay=1'
                   width='100%'
                   height='100vh'
+                  loop='true'
+                  playing='true'
                   config={{
                     youtube: {
                       playerVars: { showinfo: 0 }
