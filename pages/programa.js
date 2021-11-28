@@ -132,13 +132,6 @@ export default function programa(){
           <div align="center">
             <a href="https://capuletbeta.com/congreso2021/programa.pdf" className="nav-descarga" target="_blank">DESCARGAR PROGRAMA DE ACTIVIDADES EN PDF</a>
           </div>
-          <Document
-            file="/programa.pdf"
-            onLoadSuccess={onDocumentLoadSuccess}
-          >
-            <Page pageNumber={pageNumber} />
-          </Document>
-          <p>Page {pageNumber} of {numPages}</p>
         </div>
 
         <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
