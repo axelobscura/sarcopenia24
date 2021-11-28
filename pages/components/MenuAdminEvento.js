@@ -4,7 +4,7 @@ import Chat from './Chat';
 
 export default function MenuAdminEvento() {
   return (
-    <div className="col-md-3 text-center m-0 p-0" style={{'marginTop':'70px !important'}}>
+    <div className="col-md-3 text-center m-0 p-0">
       <div className="organizador evento">
         <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'250px'}} />
       </div>

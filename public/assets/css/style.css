@@ -169,7 +169,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
-  position: fixed;
 }
 
 #header #logo h1 {
@@ -1997,6 +1996,57 @@ margin-top: 20px;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
+}
+
+.mensaje {
+  background: #1a2236;
+  margin: 2px 0;
+}
+
+.mensaje p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 10px;
+  padding-top: 0;
+  font-weight: bold;
+}
+
+p.fecha {
+  font-size: 0.8rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#administrador {
+  margin-top: 0px !important;
+}
+
+.chat-container {
+  height: 350px;
+  overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f82249;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media (max-width: 768px) {
