@@ -1,16 +1,25 @@
 import { useState } from "react";
 import Mensaje from "./Mensaje";
 import UserContext from "../../UserContext";
+import Loader from './Loader';
+
+import { useMensajes } from '../../lib/swr-hooks';
 
 export default function Chat() {
-    const [mensaje, setMensaje] = useState('');
+    const [mensajelocal, setMensajelocal] = useState('');
+    const { mensajes, isLoadingMensajes } = useMensajes();
     //const { usuario } = useContext(UserContext);
     const enviarMensaje = (e) => {
         e.preventDefault();
-        let mensaje = e.target.mensaje.value;
-        setMensaje(mensaje);
+        let mensajelocal = e.target.mensaje.value;
+        setMensajelocal(mensajelocal);
     }
-    console.log(mensaje);
+    if (isLoadingMensajes && !mensajes) {
+        return(
+            <Loader/>
+        )
+    };
+    console.log(mensajes);
     return (
         <div className="form-group chat">
             <form onSubmit={enviarMensaje}>
@@ -18,16 +27,15 @@ export default function Chat() {
                 <input type="submit" value="PUBLICAR COMENTARIO" className="btn_chat" />
             </form>
             <div className="chat-container">
-                <Mensaje />
-                <Mensaje />
-                <Mensaje />
-                <Mensaje />
-                <Mensaje />
-                <Mensaje />
-                <Mensaje />
-                <Mensaje />
-                <Mensaje />
-                <Mensaje />
+                {mensajes.map((msj, i) => (
+                    <Mensaje 
+                        key={i} 
+                        usuario={msj.nombre}
+                        mensaje={msj.mensaje}
+                        seccion={msj.seccion}
+                        time={msj.timestamp}
+                    />
+                ))}
             </div>
         </div>
     )

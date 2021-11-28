@@ -34,6 +34,16 @@ export function usePrograma() {
   }
 }
 
+export function useMensajes() {
+  const { data, error } = useSWR(`/api/get-mensajes`, fetcher)
+
+  return {
+    mensajes: data,
+    isLoadingMensajes: !error && !data,
+    isError: error,
+  }
+}
+
 export function useEntry(id: string) {
   return useSWR(`/api/get-entry?id=${id}`, fetcher)
 }

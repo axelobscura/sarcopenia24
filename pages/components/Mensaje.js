@@ -1,8 +1,9 @@
-export default function Mensaje(){
+export default function Mensaje({usuario, mensaje, seccion, time}){
     return(
         <div className="mensaje">
-            <p className="fecha"><small>02-12-2021</small></p>
-            <p>Este es un mensaje de prueba</p>
+            <p className="fecha"><small>{time}</small></p>
+            <p className="elusuario">{usuario}</p>
+            <p>{mensaje}</p>
         </div>
     )
 }

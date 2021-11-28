@@ -2029,7 +2029,7 @@ p.fecha {
 }
 
 #administrador {
-  margin-top: 75px !important;
+  margin-top: 85px !important;
 }
 
 .chat-container {
@@ -2055,6 +2055,10 @@ p.fecha {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+p.elusuario {
+  color: #f82249;
 }
 
 @media (max-width: 768px) {
