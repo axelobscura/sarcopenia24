@@ -28,7 +28,7 @@ export default function Administrador() {
     ));
     console.log(usuario);
     return (
-        <section id="administrador" className="section-bg wow fadeInDown m-0 p-0">
+        <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{'paddingTop':'100px'}}>
             <div className="container-fluid">
                 <div className="row">
                     <MenuAdmin/>
@@ -47,7 +47,7 @@ export default function Administrador() {
             </div>
             <style global jsx>{`
                 body {
-                background: #04091B;
+                    background: #04091B;
                 }
             `}</style>
         </section>

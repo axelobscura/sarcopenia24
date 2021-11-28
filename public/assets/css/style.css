@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  position: fixed;
 }
 
 @media (max-width: 991px) {
@@ -1987,6 +1988,7 @@ margin-top: 20px;
   background: #000;
   color: #fff;
   border: none;
+  padding: 10px;
 }
 
 .form-group.chat .btn_chat {
@@ -1996,6 +1998,12 @@ margin-top: 20px;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
+  transition: all 1s;
+  padding: 15px 0;
+}
+
+.form-group.chat .btn_chat:hover {
+  background: #222;
 }
 
 .mensaje {
@@ -2021,7 +2029,7 @@ p.fecha {
 }
 
 #administrador {
-  margin-top: 0px !important;
+  margin-top: 75px !important;
 }
 
 .chat-container {
