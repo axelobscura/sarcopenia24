@@ -19,7 +19,7 @@ async function CreateStripeSession(req, res) {
   };
 
   const session = await stripe.checkout.sessions.create({
-    payment_method_types: ['card','oxxo',],
+    payment_method_types: ['card','oxxo'],
     line_items: [transformedItem],
     mode: 'payment',
     success_url: redirectURL + '?status=success',

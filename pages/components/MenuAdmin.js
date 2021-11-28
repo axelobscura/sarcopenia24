@@ -5,7 +5,6 @@ export default function MenuAdmin() {
   return (
     <div className="col-md-3 text-center m-0 p-0">
       <div className="organizador">
-
       </div>
       <ul>
         <li>

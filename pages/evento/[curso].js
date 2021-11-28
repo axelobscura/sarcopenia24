@@ -7,7 +7,7 @@ export default function Curso() {
   const router = useRouter();
   const { curso } = router.query;
   return (
-      <section id="administrador" className="section-bg wow fadeInUp m-0 p-0 mt-4 pt-5">
+      <section id="administrador" className="section-bg wow fadeInUp m-0 p-0">
         <div className="container-fluid">
           <div className="row vh-80">
             <MenuAdminEvento />
@@ -29,14 +29,13 @@ export default function Curso() {
               </div>
             </div>
           </div>
-          
         </div>
         
         <style global jsx>{`
-                  body {
-                  background: #04091B;
-                  }
-              `}</style>
+            body {
+            background: #04091B;
+            }
+        `}</style>
       </section>
   )
 }

@@ -147,7 +147,6 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  position: fixed;
 }
 
 @media (max-width: 991px) {
@@ -1959,7 +1958,6 @@ p.dirigido {
 }
 
 .organizador.evento {
-  background: #fff;
   padding: 20px;
 }
 
@@ -1983,6 +1981,22 @@ padding: 10px 50px;
 margin: 2px;
     margin-top: 2px;
 margin-top: 20px;
+}
+
+.form-group.chat textarea {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+.form-group.chat .btn_chat {
+  width: 100%;
+  border: 0;
+  background: #f82249;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
 }
 
 @media (max-width: 768px) {
