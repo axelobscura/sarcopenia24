@@ -2020,6 +2020,7 @@ margin-top: 20px;
   padding: 5px 10px;
   padding-top: 0;
   font-weight: bold;
+  font-size: 0.8rem;
 }
 
 p.fecha {
@@ -2059,6 +2060,7 @@ p.fecha {
 
 p.elusuario {
   color: #f82249;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
