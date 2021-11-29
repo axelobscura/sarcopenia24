@@ -1,19 +1,22 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Mensaje from "./Mensaje";
 import UserContext from "../../UserContext";
 import Loader from './Loader';
 
 import { useMensajes } from '../../lib/swr-hooks';
 
-export default function Chat() {
+export default function Chat({ posts }) {
     const [mensajelocal, setMensajelocal] = useState('');
-    const { mensajes, isLoadingMensajes } = useMensajes();
+    let { mensajes, isLoadingMensajes } = useMensajes();
     const { usuario } = useContext(UserContext);
+
+    console.log('Los posts: '+posts);
 
     async function submitHandler(e) {
         e.preventDefault();
         let elusuario = e.target.usuario.value;
         let elmensaje = e.target.mensaje.value;
+        let seccion = "general";
         try {
           const res = await fetch('/api/create-entry', {
             method: 'POST',
@@ -23,9 +26,10 @@ export default function Chat() {
             body: JSON.stringify({
                 elusuario,
                 elmensaje,
+                seccion,
             }),
           })
-          const json = await res.json()
+          const json = await res.json();
           if (!res.ok) throw Error(json.message)
         } catch (e) {
           throw Error(e.message)
@@ -38,12 +42,11 @@ export default function Chat() {
         )
     };
     
-    console.log(mensajes);
     return (
         <div className="form-group chat">
             <form onSubmit={submitHandler}>
                 <input type="hidden" name="usuario" value={usuario} />
-                <textarea id="mensaje" name="mensaje" rows="4" />
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..." />
                 <input type="submit" value="PUBLICAR COMENTARIO" className="btn_chat" />
             </form>
             <div className="chat-container">
@@ -60,3 +63,15 @@ export default function Chat() {
         </div>
     )
 }
+
+export async function getServerSideProps() {
+    const res = await fetch('/api/create-entry')
+    const posts = await res.json()
+  
+    return {
+      props: {
+        posts,
+      },
+      revalidate: 1,
+    }
+  }

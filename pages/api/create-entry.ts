@@ -2,7 +2,7 @@ import { NextApiHandler } from 'next';
 import { query } from '../../lib/db';
 
 const handler: NextApiHandler = async (req, res) => {
-    const { elusuario, elmensaje } = req.body
+    const { elusuario, elmensaje, seccion } = req.body
     try {
         if (!elusuario || !elmensaje) {
             return res
@@ -11,12 +11,11 @@ const handler: NextApiHandler = async (req, res) => {
         }
         const results = await query(
             `
-            INSERT INTO chat_congreso2021 (nombre, mensaje)
-            VALUES (?, ?)
+            INSERT INTO chat_congreso2021 (nombre, mensaje, seccion )
+            VALUES (?, ?, ?)
             `,
-            [elusuario, elmensaje]
+            [elusuario, elmensaje, seccion]
         )
-
         return res.json(results)
     } catch (e) {
         res.status(500).json({ message: e.message })
