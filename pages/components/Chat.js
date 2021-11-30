@@ -5,9 +5,9 @@ import Loader from './Loader';
 
 import { useMensajes } from '../../lib/swr-hooks';
 
-export default function Chat({ posts }) {
+export default function Chat() {
     const [mensajelocal, setMensajelocal] = useState('');
-    let { mensajes, isLoadingMensajes } = useMensajes();
+    const { mensajes, isLoadingMensajes } = useMensajes();
     const { usuario } = useContext(UserContext);
 
     async function submitHandler(e) {
@@ -34,11 +34,11 @@ export default function Chat({ posts }) {
         }
     }
 
-    if(isLoadingMensajes){
-        <Loader />
+    if(isLoadingMensajes && !mensajes){
+        return(
+            <Loader />
+        )
     }
-
-    console.log(mensajes);
     
     return (
         <div className="form-group chat">
