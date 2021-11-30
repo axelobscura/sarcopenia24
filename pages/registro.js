@@ -7,24 +7,32 @@ export default function Registro() {
     const [userMsg, setUserMsg] = useState('');
     const { signIn } = useContext(UserContext);
 
-    const handleUsuario = async (e) => {
+    async function handleUsuario(e) {
         e.preventDefault();
         let email = e.target.nameUsuario.value;
         let password = e.target.passwordUsuario.value;
-
-        let res = await fetch(`/api/get-usuario?email=${email}&password=${password}`);
-        let json = await res.json()
-        //if (!res.ok) throw Error(json.message)
-        if (!res.ok) {
-            setUserMsg("El nombre de usuario no es correcto!");
-        } else {
-            signIn(email, password);
+        try {
+          const res = await fetch('/api/get-usuario', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email,
+                password
+            }),
+          })
+          const json = await res.json();
+          console.log(res);
+          console.log(json);
+          if (!res.ok) throw Error(json.message);
+          signIn(email, password);
+        } catch (e) {
+          throw Error(e.message)
         }
-    };
-    const handleRegistro = (e) => {
-        e.preventDefault();
-        console.log('Registro');
-    };
+    }
+
+
     return (
         <section id="contact" className="section-bg wow fadeInDown mt-5">
             <div className="container-fluid">

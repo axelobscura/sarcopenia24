@@ -1,24 +1,27 @@
 import { NextApiHandler } from 'next'
-import { query } from '../../lib/db'
+import { querydos } from '../../lib/db'
 
 const handler: NextApiHandler = async (req, res) => {
-  const { email, password } = req.query
+  const { email, password } = req.body
   try {
-    if (!email && !password) {
-      return res.status(400).json({ message: '`email` required' })
+    if (!email) {
+      return res
+        .status(400)
+        .json({ message: '`usuario` and `password` are both required' })
     }
-    const results = await query(
+    const results = await querydos(
       `
-      SELECT *
-      FROM registros
+      SELECT * FROM registros_congreso2021
       WHERE email = ?
+      LIMIT 1
       `,
       email,
     )
-    return res.json(results[0])
+    return res.json(results)
   } catch (e) {
     res.status(500).json({ message: e.message })
   }
+
 }
 
 export default handler
