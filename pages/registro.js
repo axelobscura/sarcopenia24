@@ -32,7 +32,6 @@ export default function Registro() {
         }
     }
 
-
     return (
         <section id="contact" className="section-bg wow fadeInDown mt-5">
             <div className="container-fluid">

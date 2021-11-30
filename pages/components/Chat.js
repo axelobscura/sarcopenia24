@@ -10,8 +10,6 @@ export default function Chat({ posts }) {
     let { mensajes, isLoadingMensajes } = useMensajes();
     const { usuario } = useContext(UserContext);
 
-    console.log('Los posts: '+posts);
-
     async function submitHandler(e) {
         e.preventDefault();
         let elusuario = e.target.usuario.value;
@@ -36,7 +34,9 @@ export default function Chat({ posts }) {
         }
     }
 
-    if (isLoadingMensajes && !mensajes) {
+    console.log('mensajes'+mensajes);
+
+    if (!mensajes) {
         return(
             <Loader/>
         )
@@ -63,15 +63,3 @@ export default function Chat({ posts }) {
         </div>
     )
 }
-
-export async function getServerSideProps() {
-    const res = await fetch('/api/create-entry')
-    const posts = await res.json()
-  
-    return {
-      props: {
-        posts,
-      },
-      revalidate: 1,
-    }
-  }
