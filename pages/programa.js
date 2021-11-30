@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Document, Page } from 'react-pdf';
 import Link from 'next/dist/client/link';
 import CardPonente from './components/CarPonente';
 import Loader from './components/Loader';

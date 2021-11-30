@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import Patrocinadores from './Patrocinadores';
+import { useRouter } from 'next/router';
 
 export default function Footer() {
+    const router = useRouter();
+
+    console.log(router.pathname);
+
     return (
         <footer id="footer">
-            <Patrocinadores />
+            {router.pathname === "/patrocinadores" ? '' : <Patrocinadores />}
             <div className="footer-top">
                 <div className="container-fluid">
                     <div className="row pl-1">

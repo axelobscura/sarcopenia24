@@ -33,21 +33,10 @@ export default function Header() {
                             :
                             ''
                         }
-                        
-                        {/* 
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#speakers">Speakers</a></li>
-                        <li><a href="#schedule">Schedule</a></li>
-                        <li><a href="#venue">Venue</a></li>
-                        <li><a href="#hotels">Hotels</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#supporters">Sponsors</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        */}
                         {usuario ?
                             <>
                                 <li className="buy-tickets"><Link href="/administrador"><a>PANEL</a></Link></li>
-                                <li className="buy-tickets"><a onClick={signOut}>SALIR</a></li>
+                                <li className="buy-tickets"><a onClick={signOut}>SALIR | {usuario}</a></li>
                             </>
                             :
                             <li className="buy-tickets"><Link href="/registro"><a>INGRESAR</a></Link></li>

@@ -2063,6 +2063,11 @@ p.elusuario {
   text-transform: uppercase;
 }
 
+#administrador .col-md-9.patrocinadores {
+  background: #fff;
+  min-height: 300px;
+}
+
 @media (max-width: 768px) {
   .logospatro {
     flex-direction: column;
