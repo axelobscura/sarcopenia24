@@ -15,11 +15,13 @@ export default function MenuAdminEvento() {
         <li>
           <Link href="/oferta-de-cursos"><a><ListCheck className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a></Link>
         </li>
+        {/* 
         <li>
           <Link href="/oferta-de-cursos"><a><PersonCircle className="iconoBoot" /> CHAT</a></Link>
         </li>
+        */}
       </ul>
-      <Chat/>
+      {/*<Chat/>*/}
     </div>
   )
 }
