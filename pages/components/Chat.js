@@ -34,13 +34,11 @@ export default function Chat({ posts }) {
         }
     }
 
-    console.log('mensajes'+mensajes);
+    if(isLoadingMensajes){
+        <Loader />
+    }
 
-    if (!mensajes) {
-        return(
-            <Loader/>
-        )
-    };
+    console.log(mensajes);
     
     return (
         <div className="form-group chat">

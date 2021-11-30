@@ -5,6 +5,7 @@ import CardCurso from './components/CardCurso';
 import MenuAdmin from './components/MenuAdmin';
 import Loader from './components/Loader';
 import UserContext from '../UserContext';
+import ReactPlayer from 'react-player';
 import { useEntries, useCursos } from '../lib/swr-hooks';
 
 export default function Administrador() {
@@ -13,8 +14,8 @@ export default function Administrador() {
     const { usuario } = useContext(UserContext);
     const { cursos, isLoadingCursos } = useCursos();
     if (isLoadingCursos && !cursos) {
-        return(
-            <Loader/>
+        return (
+            <Loader />
         )
     };
     const ofertaCursos = cursos.map(curso => (
@@ -28,16 +29,28 @@ export default function Administrador() {
     ));
     console.log(usuario);
     return (
-        <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{'paddingTop':'100px'}}>
+        <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
             <div className="container-fluid">
                 <div className="row">
-                    <MenuAdmin/>
+                    <MenuAdmin />
                     <div className="col-md-9">
                         {/*<h2><i className="fa fa-user-circle-o mr-3" aria-hidden="true"></i>Bienvenido {usuario}</h2>*/}
                         <div className="row">
                             <div className="col-md-12 mb-3">
                                 <Link href={`/evento/congreso2021`}>
-                                    <img src="https://capuletbeta.com/congreso2021/images/congreso2021_a.jpg" className="img-fluid" alt="35 congreso internacional AMGG" title="35 congreso internacional AMGG" />
+                                    <ReactPlayer
+                                        className='react-player'
+                                        url='https://www.youtube.com/watch?v=FhRKmIeRQj8gv?rel=0;autoplay=1'
+                                        width='100%'
+                                        height='100vh'
+                                        loop='true'
+                                        playing='true'
+                                        config={{
+                                            youtube: {
+                                                playerVars: { showinfo: 0 }
+                                            }
+                                        }}
+                                    />
                                 </Link>
                             </div>
                             {/*ofertaCursos*/}
