@@ -2062,7 +2062,7 @@ p.elusuario {
   color: #f82249;
   text-transform: uppercase;
 }
-
+/*
 #administrador .col-md-9.patrocinadores {
   background: #fff;
   min-height: 300px;
@@ -2078,6 +2078,15 @@ p.elusuario {
 
 .logospatro .img-fluid {
   width: 50%;
+}
+*/
+.html5-video-player:not(.ytp-big-mode) .ytp-chrome-top .ytp-copylink-button {
+  display: none !important;
+}
+
+h2.tipoevento {
+  width: 100%;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
