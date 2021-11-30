@@ -36,7 +36,6 @@ export default function Paquetes() {
                                     <li><span className="fa-li"><i className="fa fa-check"></i></span>Acceso a todas las conferencias en vivo y ondemand</li>
                                     <li><span className="fa-li"><i className="fa fa-check"></i></span>Constancia con valor curricular de 40 horas</li>
                                     <li><span className="fa-li"><i className="fa fa-check"></i></span>Chat en vivo</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Opción a 3 y 6 Meses sin intereses</li>
                                     {/*
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>Workshop Access</li>
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>After Party</li>
@@ -65,7 +64,6 @@ export default function Paquetes() {
                                 <li><span className="fa-li"><i className="fa fa-check"></i></span>Acceso a todas las conferencias en vivo y ondemand</li>
                                     <li><span className="fa-li"><i className="fa fa-check"></i></span>Constancia con valor curricular de 40 horas</li>
                                     <li><span className="fa-li"><i className="fa fa-check"></i></span>Chat en vivo</li>
-                                    <li><span className="fa-li"><i className="fa fa-check"></i></span>Opción a 3 y 6 Meses sin intereses</li>
                                     {/*
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>Workshop Access</li>
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times"></i></span>After Party</li>
