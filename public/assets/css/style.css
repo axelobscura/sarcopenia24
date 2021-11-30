@@ -1817,6 +1817,7 @@ font-weight: bold;
   font-weight: bold;
   padding: 10px;
   border-bottom: 1px solid #fff;
+  margin-bottom: 0;
 }
 
 #administrador .col-md-9 h3 {
