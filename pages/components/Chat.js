@@ -29,7 +29,8 @@ export default function Chat({tipo}) {
             }),
           })
           const json = await res.json();
-          if (!res.ok) throw Error(json.message)
+          if (!res.ok) throw Error(json.message);
+          useMensajes();
         } catch (e) {
           throw Error(e.message)
         }
