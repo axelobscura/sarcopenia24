@@ -1818,6 +1818,11 @@ font-weight: bold;
   padding: 10px;
   border-bottom: 1px solid #fff;
   margin-bottom: 0;
+  display: flex;
+}
+
+#administrador .col-md-9 h2 svg {
+  margin-right: 10px;
 }
 
 #administrador .col-md-9 h3 {
@@ -2096,5 +2101,8 @@ h2.tipoevento {
   }
   .logospatro img {
     margin: 10px;
+  }
+  #administrador .col-md-3 ul li a {
+    font-size: 0.8rem;
   }
 }

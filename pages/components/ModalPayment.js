@@ -10,6 +10,7 @@ var formater = new Intl.NumberFormat('en-US', {
 
 export default function ModalPayment({paquete}) {
   const [enviado, setEnviado] = useState(false);
+  const [btnenviar, setBtnenviar] = useState(true);
   const [nombre, setNombre] = useState('');
   const [loading, setLoading] = useState(false);
   const [item, setItem] = useState({
@@ -33,7 +34,8 @@ export default function ModalPayment({paquete}) {
 
   const enviarDatos = async (e) => {
     e.preventDefault();
-
+    setBtnenviar(false);
+    setLoading(true);
     let nombre = e.target.nombre.value;
     let apaterno = e.target.apaterno.value;
     let amaterno = e.target.amaterno.value;
@@ -42,8 +44,6 @@ export default function ModalPayment({paquete}) {
     let telefono = e.target.telefono.value;
     let nacimiento = e.target.nacimiento.value;
     let sexo = e.target.sexo.value;
-
-    setLoading(true);
 
     localStorage.setItem('usuario', email);
     
@@ -189,7 +189,12 @@ export default function ModalPayment({paquete}) {
                 </div>
                 <hr/>
                 <div className="text-center">
-                  <button type="submit" className="btn">REGISTRARSE</button>
+                  {btnenviar ? 
+                    <button type="submit" className="btn">REGISTRARSE</button>
+                  :
+                    <h4>¡Gracias, enviando sus datos!</h4>
+                  }
+                  
                 </div>
               </form>
             : 
