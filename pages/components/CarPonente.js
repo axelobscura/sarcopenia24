@@ -4,7 +4,7 @@ export default function CardPonente({horario, dia, salon, modulo, ponente, tema,
       <div className="col-md-3"><time className={elmomento}>{horario}</time></div>
       <div className="col-md-9 d-flex align-items-center">
         <div className="speaker">
-          <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" />
+          <img src="https://flagcdn.com/mx.svg" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" />
         </div>
         <div>
         <h4 style={{'textTransform':'uppercase'}}>{tema}</h4>
