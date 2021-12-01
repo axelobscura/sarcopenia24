@@ -10,6 +10,7 @@ export default function programa(){
   const { programa, isLoadingPrograma } = usePrograma();
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+  const [elmomento, setElmomento] = useState('geriatrico');
   if (isLoadingPrograma && !programa) {
     return(
         <Loader/>
@@ -174,72 +175,57 @@ export default function programa(){
 
             <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
               <li className="nav-item">
-                <a className="nav-link active" href="#geriatrico-day-2-S1" role="tab" data-toggle="tab" style={{
+                <a className="nav-link active" style={{
                   'background':'#6a9e00'
-                }}>MÓDULO GERIÁTRICO</a>
+                }} onClick={() => setElmomento('geriatrico')}>MÓDULO GERIÁTRICO</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#gerontologico-day-2-S2" role="tab" data-toggle="tab" style={{
+                <a className="nav-link" style={{
                   'background':'#2c5a00'
-                }}>MÓDULO GERONTOLÓGICO</a>
+                }} onClick={() => setElmomento('gerontologico')}>MÓDULO GERONTOLÓGICO</a>
               </li>
             </ul>
 
             <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-2-S1">
-              {ofertaPonentesDia2S1}
+              {elmomento === 'geriatrico' ? ofertaPonentesDia2S1 : ofertaPonentesDia2S2}
             </div>
-            <div role="tabpanel" className="col-lg-12 tab-pane fade" id="gerontologico-day-2-S2">
-              {ofertaPonentesDia2S2}
-            </div>
-
           </div>
 
           <div role="tabpanel" className="col-lg-9  tab-pane fade" id="day-3">
-
             <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
               <li className="nav-item">
-                <a className="nav-link active" href="#geriatrico-day-3-S1" role="tab" data-toggle="tab" style={{
+                <a className="nav-link active" style={{
                   'background':'#6a9e00'
-                }}>MÓDULO GERIÁTRICO</a>
+                }} onClick={() => setElmomento('geriatrico')}>MÓDULO GERIÁTRICO</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#geriatrico-day-3-S2" role="tab" data-toggle="tab" style={{
+                <a className="nav-link" style={{
                   'background':'#2c5a00'
-                }}>MÓDULO GERONTOLÓGICO</a>
+                }} onClick={() => setElmomento('gerontologico')}>MÓDULO GERONTOLÓGICO</a>
               </li>
             </ul>
 
             <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-3-S1">
-              {ofertaPonentesDia3S1}
+              {elmomento === 'geriatrico' ? ofertaPonentesDia3S1 : ofertaPonentesDia3S2}
             </div>
-            <div role="tabpanel" className="col-lg-12 tab-pane fade" id="gerontologico-day-3-S2">
-              {ofertaPonentesDia3S2}
-            </div>
-
           </div>
 
           <div role="tabpanel" className="col-lg-9  tab-pane fade" id="day-4">
-
             <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
               <li className="nav-item">
-                <a className="nav-link active" href="#geriatrico-day-4-S1" role="tab" data-toggle="tab" style={{
+                <a className="nav-link active" style={{
                   'background':'#6a9e00'
-                }}>MÓDULO GERIÁTRICO</a>
+                }} onClick={() => setElmomento('geriatrico')}>MÓDULO GERIÁTRICO</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#geriatrico-day-4-S2" role="tab" data-toggle="tab" style={{
+                <a className="nav-link" style={{
                   'background':'#2c5a00'
-                }}>MÓDULO GERONTOLÓGICO</a>
+                }} onClick={() => setElmomento('gerontologico')}>MÓDULO GERONTOLÓGICO</a>
               </li>
             </ul>
-
             <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-4-S1">
-              {ofertaPonentesDia4S1}
+              {elmomento === 'geriatrico' ? ofertaPonentesDia4S1 : ofertaPonentesDia4S2}
             </div>
-            <div role="tabpanel" className="col-lg-12 tab-pane fade" id="gerontologico-day-4-S2">
-              {ofertaPonentesDia4S2}
-            </div>
-
           </div>
 
         </div>
