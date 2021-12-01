@@ -1954,13 +1954,17 @@ p.dirigido {
 }
 
 .player-wrapper {
+  width: auto;
+  height: auto;
+}
+.react-player {
+  padding-top: 56.25%;
   position: relative;
-  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
 }
 
-.react-player {
+.react-player > div {
+  position: absolute;
   top: 0;
-  left: 0;
 }
 
 .organizador.evento {

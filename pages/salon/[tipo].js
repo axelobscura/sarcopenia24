@@ -11,23 +11,20 @@ export default function Salon() {
         <div className="container-fluid">
           <div className="row vh-80">
             <MenuAdminEvento />
-            <div className="col-md-9 vh-80">
-              <div className="row vh-100">
+            <div className="col-md-9">
+              <div className="row">
                 <h2 className="tipoevento"><ArrowRightCircle /> {tipo === "geriatria" ? 'SALÓN 1 - GERIATRÍA' : 'SALÓN 2 - GERONTOLOGÍA'}</h2>
-                <ReactPlayer 
+                <ReactPlayer
                   className='react-player'
                   url='https://www.youtube.com/watch?v=FhRKmIeRQj8gv?rel=0;autoplay=1'
-                  width='100%'
-                  height='100vh'
-                  loop={true}
-                  playing={true}
+                  width="100%"
+                  height="100%"
+                  loop='true'
+                  playing='true'
                   config={{
-                    youtube: {
-                      playerVars: { 
-                        showinfo: 0,
-                        modestbranding: 0
+                      youtube: {
+                          playerVars: { showinfo: 0 }
                       }
-                    }
                   }}
                 />
               </div>
