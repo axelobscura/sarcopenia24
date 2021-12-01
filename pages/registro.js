@@ -28,11 +28,9 @@ export default function Registro() {
                 setMensaje('¡Bienvenido, ingresando a su cuenta!');
                 setEsusuario(true);
             } else if (response.data === "fallo") {
-                setEnviado(false);
-                setMensaje('¡Lo sentimos, sus datos son incoreectos!');
+                setMensaje('¡Lo sentimos, sus datos son incorrectos!');
                 setEsusuario(false);
             } else {
-                setEnviado(true);
             }
         })
         .catch(function (error) {

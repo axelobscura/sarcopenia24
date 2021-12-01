@@ -3,7 +3,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 async function CreateStripeSession(req, res) {
   const { item } = req.body;
 
-  const redirectURL = process.env.NODE_ENV === 'development' ? 'http://localhost:5000' : 'https://capulet.vercel.app';
+  const redirectURL = process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : 'https://congreso.amgg.com.mx';
 
   const transformedItem = {
     price_data: {

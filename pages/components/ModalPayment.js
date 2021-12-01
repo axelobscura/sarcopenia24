@@ -45,8 +45,6 @@ export default function ModalPayment({paquete}) {
     let nacimiento = e.target.nacimiento.value;
     let sexo = e.target.sexo.value;
 
-    localStorage.setItem('usuario', email);
-    
     let url = `https://capuletbeta.com/apis/congreso/registro.php`;
 
     await axios.post(url, JSON.stringify({
@@ -72,6 +70,7 @@ export default function ModalPayment({paquete}) {
             if (result.error) {
               alert(result.error.message);
             }
+            localStorage.setItem('usuario', email);
             setEnviado(true);
             setNombre(nombre);
           }else if(response.data === "fallo"){
