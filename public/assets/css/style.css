@@ -2000,10 +2000,12 @@ margin-top: 20px;
 
 .form-group.chat textarea {
   width: 100%;
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 10px;
+background: #000;
+color: #fff;
+border: none;
+padding: 10px;
+height: 80px;
+font-size: 0.8rem;
 }
 
 .form-group.chat .btn_chat {
@@ -2049,7 +2051,7 @@ p.fecha {
 }
 
 .chat-container {
-  height: 350px;
+  max-height: 90px;
   overflow: auto;
 }
 

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ListCheck } from 'react-bootstrap-icons';
+import { ListCheck, PersonCircle, ArrowDownCircle } from 'react-bootstrap-icons';
 import Chat from './Chat';
 import { useRouter } from 'next/router';
 import Loader from './Loader';
@@ -27,13 +27,11 @@ export default function MenuAdminEvento() {
             }}><ListCheck className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a>
           </Link>
         </li>
-        {/* 
         <li>
-          <Link href="/oferta-de-cursos"><a><PersonCircle className="iconoBoot" /> CHAT</a></Link>
+          <a><ArrowDownCircle className="iconoBoot" /> CHAT</a>
         </li>
-        */}
       </ul>
-      {/*<Chat/>*/}
+      <Chat/>
     </div>
   )
 }
