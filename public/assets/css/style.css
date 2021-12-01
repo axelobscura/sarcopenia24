@@ -2099,6 +2099,16 @@ h2.tipoevento {
   text-transform: uppercase;
 }
 
+#schedule .schedule-item time.geriatrico {
+  background: #6a9e00;
+  color: #fff;
+}
+
+#schedule .schedule-item time.gerontologico {
+  background: #2c5a00;
+  color: #fff;
+} 
+
 @media (max-width: 768px) {
   .logospatro {
     flex-direction: column;

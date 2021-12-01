@@ -28,6 +28,7 @@ export default function programa(){
         tema={evento.tema}
         institucion={evento.institucion}
         especialidad={evento.especialidad}
+        elmomento={elmomento}
     />
   ));
   const ofertaPonentesDia2S1 = programa.filter(prog => prog.dia == '3' && prog.salon == '1').map(evento => (
@@ -42,6 +43,7 @@ export default function programa(){
         tema={evento.tema}
         institucion={evento.institucion}
         especialidad={evento.especialidad}
+        elmomento={elmomento}
     />
   ));
   const ofertaPonentesDia2S2 = programa.filter(prog => prog.dia == '3' && prog.salon == '2').map(evento => (
@@ -56,6 +58,7 @@ export default function programa(){
         tema={evento.tema}
         institucion={evento.institucion}
         especialidad={evento.especialidad}
+        elmomento={elmomento}
     />
   ));
   const ofertaPonentesDia3S1 = programa.filter(prog => prog.dia == '4' && prog.salon == '1').map(evento => (
@@ -70,6 +73,7 @@ export default function programa(){
         tema={evento.tema}
         institucion={evento.institucion}
         especialidad={evento.especialidad}
+        elmomento={elmomento}
     />
   ));
   const ofertaPonentesDia3S2 = programa.filter(prog => prog.dia == '4' && prog.salon == '2').map(evento => (
@@ -84,6 +88,7 @@ export default function programa(){
         tema={evento.tema}
         institucion={evento.institucion}
         especialidad={evento.especialidad}
+        elmomento={elmomento}
     />
   ));
   const ofertaPonentesDia4S1 = programa.filter(prog => prog.dia == '5' && prog.salon == '1').map(evento => (
@@ -98,6 +103,7 @@ export default function programa(){
         tema={evento.tema}
         institucion={evento.institucion}
         especialidad={evento.especialidad}
+        elmomento={elmomento}
     />
   ));
   const ofertaPonentesDia4S2 = programa.filter(prog => prog.dia == '5' && prog.salon == '2').map(evento => (
@@ -112,6 +118,7 @@ export default function programa(){
         tema={evento.tema}
         institucion={evento.institucion}
         especialidad={evento.especialidad}
+        elmomento={elmomento}
     />
   ));
   function onDocumentLoadSuccess({ numPages }) {
