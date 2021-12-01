@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { PersonCircle, FileEarmark, ListCheck, FileBinaryFill, BrightnessAltHighFill } from 'react-bootstrap-icons';
+import { ListCheck, ArrowRightCircle } from 'react-bootstrap-icons';
 
 export default function MenuAdmin() {
   return (
@@ -9,16 +9,16 @@ export default function MenuAdmin() {
       </div>
       <ul>
         <li>
-          <Link href="/evento/congreso2021"><a><ListCheck className="iconoBoot" /> CONFERENCIAS</a></Link>
+          <Link href="/evento/congreso2021"><a><ArrowRightCircle className="iconoBoot" /> CONFERENCIAS</a></Link>
         </li>
         <li>
           <Link href="/salon/geriatria">
-            <a style={{'background':'#6a9e00'}}><ListCheck className="iconoBoot" /> SALÓN 1 | GERIATRÍA</a>
+            <a style={{'background':'#6a9e00'}}><ArrowRightCircle className="iconoBoot" /> SALÓN 1 | GERIATRÍA</a>
           </Link>
         </li>
         <li>
           <Link href="/salon/gerontologia">
-            <a style={{'background':'#2c5a00'}}><ListCheck className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a>
+            <a style={{'background':'#2c5a00'}}><ArrowRightCircle className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a>
           </Link>
         </li>
         {/* 

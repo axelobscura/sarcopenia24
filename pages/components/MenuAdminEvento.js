@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ListCheck, PersonCircle, ArrowDownCircle } from 'react-bootstrap-icons';
+import { ListCheck, ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
 import Chat from './Chat';
 import { useRouter } from 'next/router';
 import Loader from './Loader';
@@ -17,21 +17,21 @@ export default function MenuAdminEvento() {
           <Link href="/salon/geriatria">
             <a style={{
             background: tipo === 'geriatria' ? '#f82249' : ''
-            }}><ListCheck className="iconoBoot" /> SALÓN 1 | GERIATRÍA</a>
+            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 1 | GERIATRÍA</a>
           </Link>
         </li>
         <li>
           <Link href="/salon/gerontologia">
             <a style={{
             background: tipo === 'gerontologia' ? '#f82249' : ''
-            }}><ListCheck className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a>
+            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a>
           </Link>
         </li>
-        <li>
-          <a><ArrowDownCircle className="iconoBoot" /> CHAT</a>
+        <li className="lichat">
+          <ArrowDownCircle className="iconoBoot" /> CHAT
         </li>
       </ul>
-      <Chat/>
+      <Chat tipo={tipo}/>
     </div>
   )
 }

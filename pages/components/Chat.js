@@ -1,11 +1,12 @@
 import { useState, useContext, useEffect } from "react";
+import { Check2Circle } from 'react-bootstrap-icons';
 import Mensaje from "./Mensaje";
 import UserContext from "../../UserContext";
 import Loader from './Loader';
 
 import { useMensajes } from '../../lib/swr-hooks';
 
-export default function Chat() {
+export default function Chat({tipo}) {
     const [mensajelocal, setMensajelocal] = useState('');
     const { mensajes, isLoadingMensajes } = useMensajes();
     const { usuario } = useContext(UserContext);
@@ -45,7 +46,7 @@ export default function Chat() {
             <form onSubmit={submitHandler}>
                 <input type="hidden" name="usuario" value={usuario} />
                 <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..." />
-                <input type="submit" value="PUBLICAR COMENTARIO" className="btn_chat" />
+                <button type="submit" className={`btn_chat ${tipo}`}><Check2Circle className="mr-2"/>DAR CLICK AQUÍ PARA PUBLICAR COMENTARIO</button>
             </form>
             <div className="chat-container">
                 {mensajes.map((msj, i) => (

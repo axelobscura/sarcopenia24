@@ -1902,7 +1902,6 @@ transition: all 1s;
 
 .iconoBoot {
   font-size: 2rem;
-background: #f82249;
 padding: 5px;
 margin-right: 10px;
 }
@@ -2000,8 +1999,8 @@ margin-top: 20px;
 
 .form-group.chat textarea {
   width: 100%;
-background: #000;
-color: #fff;
+background: #f2f2f2;
+color: #333;
 border: none;
 padding: 10px;
 height: 80px;
@@ -2011,12 +2010,22 @@ font-size: 0.8rem;
 .form-group.chat .btn_chat {
   width: 100%;
   border: 0;
-  background: #f82249;
+  background: #6a9e00;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
   transition: all 1s;
-  padding: 15px 0;
+  padding: 8px 0;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.form-group.chat .btn_chat.geriatria {
+  background: #6a9e00;
+}
+
+.form-group.chat .btn_chat.gerontologia {
+  background: #2c5a00;
 }
 
 .form-group.chat .btn_chat:hover {
@@ -2051,7 +2060,7 @@ p.fecha {
 }
 
 .chat-container {
-  max-height: 90px;
+  max-height: 210px;
   overflow: auto;
 }
 
@@ -2106,6 +2115,14 @@ h2.tipoevento {
   text-transform: uppercase;
 }
 
+h2.tipoevento.geriatria {
+  border-bottom: 5px solid #6a9e00 !important;
+}
+
+h2.tipoevento.gerontologia {
+  border-bottom: 5px solid #2c5a00 !important;
+}
+
 #schedule .schedule-item time.geriatrico {
   background: #6a9e00;
   color: #fff;
@@ -2122,6 +2139,14 @@ h2.tipoevento {
 
 .row.schedule-item h5.gerontologico {
   color: #2c5a00;
+}
+
+li.lichat {
+  background: #fff;
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
