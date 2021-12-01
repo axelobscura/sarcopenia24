@@ -29,6 +29,7 @@ export default function programa(){
         institucion={evento.institucion}
         especialidad={evento.especialidad}
         elmomento={elmomento}
+        bandera={evento.bandera}
     />
   ));
   const ofertaPonentesDia2S1 = programa.filter(prog => prog.dia == '3' && prog.salon == '1').map(evento => (
@@ -44,6 +45,7 @@ export default function programa(){
         institucion={evento.institucion}
         especialidad={evento.especialidad}
         elmomento={elmomento}
+        bandera={evento.bandera}
     />
   ));
   const ofertaPonentesDia2S2 = programa.filter(prog => prog.dia == '3' && prog.salon == '2').map(evento => (
@@ -59,6 +61,7 @@ export default function programa(){
         institucion={evento.institucion}
         especialidad={evento.especialidad}
         elmomento={elmomento}
+        bandera={evento.bandera}
     />
   ));
   const ofertaPonentesDia3S1 = programa.filter(prog => prog.dia == '4' && prog.salon == '1').map(evento => (
@@ -74,6 +77,7 @@ export default function programa(){
         institucion={evento.institucion}
         especialidad={evento.especialidad}
         elmomento={elmomento}
+        bandera={evento.bandera}
     />
   ));
   const ofertaPonentesDia3S2 = programa.filter(prog => prog.dia == '4' && prog.salon == '2').map(evento => (
@@ -89,6 +93,7 @@ export default function programa(){
         institucion={evento.institucion}
         especialidad={evento.especialidad}
         elmomento={elmomento}
+        bandera={evento.bandera}
     />
   ));
   const ofertaPonentesDia4S1 = programa.filter(prog => prog.dia == '5' && prog.salon == '1').map(evento => (
@@ -104,6 +109,7 @@ export default function programa(){
         institucion={evento.institucion}
         especialidad={evento.especialidad}
         elmomento={elmomento}
+        bandera={evento.bandera}
     />
   ));
   const ofertaPonentesDia4S2 = programa.filter(prog => prog.dia == '5' && prog.salon == '2').map(evento => (
@@ -119,6 +125,7 @@ export default function programa(){
         institucion={evento.institucion}
         especialidad={evento.especialidad}
         elmomento={elmomento}
+        bandera={evento.bandera}
     />
   ));
   function onDocumentLoadSuccess({ numPages }) {

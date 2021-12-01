@@ -7,8 +7,6 @@ import Loader from './Loader';
 export default function MenuAdminEvento() {
   const router = useRouter();
   const { tipo } = router.query;
-
-  console.log(tipo);
   return (
     <div className="col-md-3 text-center m-0 p-0">
       <div className="organizador evento">

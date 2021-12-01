@@ -1,10 +1,10 @@
-export default function CardPonente({horario, dia, salon, modulo, ponente, tema, institucion, especialidad, elmomento}) {
+export default function CardPonente({horario, dia, salon, modulo, ponente, tema, institucion, especialidad, elmomento, bandera}) {
   return (
     <div className="row schedule-item">
       <div className="col-md-3"><time className={elmomento}>{horario}</time></div>
       <div className="col-md-9 d-flex align-items-center">
         <div className="speaker">
-          <img src="https://flagcdn.com/mx.svg" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" />
+          <img src={`https://flagcdn.com/${bandera}.svg`} alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" />
         </div>
         <div>
         <h4 style={{'textTransform':'uppercase'}}>{tema}</h4>
