@@ -2107,7 +2107,15 @@ h2.tipoevento {
 #schedule .schedule-item time.gerontologico {
   background: #2c5a00;
   color: #fff;
-} 
+}
+
+.row.schedule-item h5.geriatrico {
+  color: #6a9e00;
+}
+
+.row.schedule-item h5.gerontologico {
+  color: #2c5a00;
+}
 
 @media (max-width: 768px) {
   .logospatro {
