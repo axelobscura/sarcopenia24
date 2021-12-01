@@ -21,10 +21,11 @@ export default function MenuAdmin() {
             <a style={{'background':'#2c5a00'}}><ListCheck className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a>
           </Link>
         </li>
+        {/* 
         <li>
           <Link href="/patrocinadores"><a><BrightnessAltHighFill className="iconoBoot" /> PATROCINADORES</a></Link>
         </li>
-        {/* 
+        
         <li>
           <Link href="/perfil-de-usuario"><a><PersonCircle className="iconoBoot" /> PERFIL DE USUARIO</a></Link>
         </li>
