@@ -38,6 +38,10 @@ export default function Registro() {
                         signIn(email, password);
                         setMensaje('¡Bienvenido, ingresando a su cuenta!');
                         setEsusuario(true);
+                    } else if(checkoutSession.data.status == "complete") {
+                        signIn(email, password);
+                        setMensaje('¡Bienvenido, ingresando a su cuenta!');
+                        setEsusuario(true);
                     } else if(checkoutSession.data.status == "requires_payment_method") {
                         setMensaje('¡Lo invitamos a realizar su pago para ingresar al evento!');
                     } else if(checkoutSession.data.status == "open") {
