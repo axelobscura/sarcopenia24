@@ -1800,6 +1800,7 @@ font-weight: bold;
   font-weight: bold;
   transition: all 1s;
   border-top: 1px solid #333;
+  font-size: 1.2rem;
 }
 
 #administrador .col-md-3 ul li a:hover {
@@ -1903,7 +1904,7 @@ transition: all 1s;
 .iconoBoot {
   font-size: 2rem;
 padding: 5px;
-margin-right: 10px;
+margin-right: 5px;
 }
 
 .loader {
@@ -2157,6 +2158,24 @@ li.lichat {
   background: rgba(0,0,0,0.3);
   right: 0;
   opacity: 0;
+}
+
+a.menuadminu {
+  background: #6a9e00 !important;
+  transition: all 1s;
+}
+
+a.menuadmind {
+  background: #2c5a00 !important;
+  transition: all 1s;
+}
+
+a.menuadminu:hover {
+  background: #333 !important;
+}
+
+a.menuadmind:hover {
+  background: #333 !important;
 }
 
 @media (max-width: 768px) {

@@ -9,16 +9,13 @@ export default function MenuAdmin() {
       </div>
       <ul>
         <li>
-          <Link href="/evento/congreso2021"><a><ArrowRightCircle className="iconoBoot" /> CONFERENCIAS</a></Link>
-        </li>
-        <li>
           <Link href="/salon/geriatria">
-            <a style={{'background':'#6a9e00'}}><ArrowRightCircle className="iconoBoot" /> SALÓN 1 | GERIATRÍA</a>
+            <a class="menuadminu"><ArrowRightCircle className="iconoBoot" /> SALÓN 1 | GERIATRÍA</a>
           </Link>
         </li>
         <li>
           <Link href="/salon/gerontologia">
-            <a style={{'background':'#2c5a00'}}><ArrowRightCircle className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a>
+            <a class="menuadmind"><ArrowRightCircle className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a>
           </Link>
         </li>
         {/* 
