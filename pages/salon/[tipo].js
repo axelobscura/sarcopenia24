@@ -14,6 +14,7 @@ export default function Salon() {
             <div className="col-md-9">
               <div className="row">
                 <h2 className={`tipoevento ${tipo}`}><ArrowRightCircle /> {tipo === "geriatria" ? 'SALÓN 1 - GERIATRÍA' : 'SALÓN 2 - GERONTOLOGÍA'}</h2>
+                <div className="cubrenlace"></div>
                 <ReactPlayer
                   className='react-player'
                   url='https://www.youtube.com/watch?v=FhRKmIeRQj8gv?rel=0;autoplay=1'

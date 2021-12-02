@@ -2056,7 +2056,7 @@ p.fecha {
 }
 
 #administrador {
-  margin-top: 80px !important;
+  margin-top: 75px !important;
 }
 
 .chat-container {
@@ -2147,6 +2147,16 @@ li.lichat {
   display: flex;
   align-items: center;
   font-weight: bold;
+}
+
+.cubrenlace {
+  position: absolute;
+  width: 130px;
+  height: 100%;
+  z-index: 1000;
+  background: rgba(0,0,0,0.3);
+  right: 0;
+  opacity: 0;
 }
 
 @media (max-width: 768px) {
