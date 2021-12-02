@@ -17,7 +17,7 @@ export default function Salon() {
                 <div className="cubrenlace"></div>
                 <ReactPlayer
                   className='react-player'
-                  url='https://www.youtube.com/watch?v=FhRKmIeRQj8gv?rel=0;autoplay=1'
+                  url='https://www.youtube.com/watch?v=OlRftXc5aTY?rel=0;autoplay=1'
                   width="100%"
                   height="100%"
                   loop='true'
