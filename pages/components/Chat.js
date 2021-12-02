@@ -1,4 +1,5 @@
 import { useState, useContext, useEffect } from "react";
+import useSWR, { useSWRConfig } from 'swr';
 import Mensaje from "./Mensaje";
 import UserContext from "../../UserContext";
 import Loader from './Loader';
@@ -6,6 +7,7 @@ import Loader from './Loader';
 import { useMensajes } from '../../lib/swr-hooks';
 
 export default function Chat({ posts, tipo }) {
+    const { mutate } = useSWRConfig()
     const [mensajelocal, setMensajelocal] = useState('');
     let { mensajes, isLoadingMensajes } = useMensajes();
     const { usuario } = useContext(UserContext);
@@ -30,6 +32,7 @@ export default function Chat({ posts, tipo }) {
             }),
           })
           const json = await res.json();
+          mutate('/api/get-mensajes');
           if (!res.ok) throw Error(json.message)
         } catch (e) {
           throw Error(e.message)
@@ -46,11 +49,11 @@ export default function Chat({ posts, tipo }) {
         <div className="form-group chat">
             <form onSubmit={submitHandler}>
                 <input type="hidden" name="usuario" value={usuario} />
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..." />
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..." required/>
                 <input type="submit" value="PUBLICAR COMENTARIO" className="btn_chat" />
             </form>
             <div className="chat-container">
-                {mensajes.map((msj, i) => (
+                {mensajes.filter(sec => sec.seccion === tipo).map((msj, i) => (
                     <Mensaje 
                         key={i} 
                         usuario={msj.nombre}
