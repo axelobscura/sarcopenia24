@@ -76,7 +76,7 @@ export default function Registro() {
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
                             <h3>POR FAVOR INGRESE SUS DATOS DE ACCESO</h3>
-                            <h3>{mensaje}</h3>
+                            <h1>{mensaje}</h1>
                             <p className={userMsg !== "" ? `errorLog` : ``}>{userMsg}</p>
                             <hr />
                             <form onSubmit={handleUsuario}>
