@@ -12,7 +12,9 @@ export default function Chat({ posts, tipo }) {
     let { mensajes, isLoadingMensajes } = useMensajes();
     const { usuario } = useContext(UserContext);
 
-    console.log('Los posts: '+posts);
+    useEffect(() => {
+      mutate('/api/get-mensajes');
+    });
 
     async function submitHandler(e) {
         e.preventDefault();
@@ -32,7 +34,7 @@ export default function Chat({ posts, tipo }) {
             }),
           })
           const json = await res.json();
-          mutate('/api/get-mensajes');
+          
           if (!res.ok) throw Error(json.message)
         } catch (e) {
           throw Error(e.message)
