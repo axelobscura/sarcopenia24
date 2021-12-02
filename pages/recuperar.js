@@ -1,7 +1,6 @@
 import { useState, useContext } from 'react';
 import Link from 'next/dist/client/link';
-import UserContext from '../UserContext';
-import Router from 'next/router';
+import axios from "axios";
 
 export default function Recuperar() {
 
@@ -43,11 +42,11 @@ export default function Recuperar() {
                             </div>
                             <hr/>
                             <h2>Recuperar sus datos de ingreso</h2>
-                            <h1>{mensaje}</h1>
                         </div>
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
                             <h3>POR FAVOR INGRESE SU CORREO ELECTRÓNICO</h3>
+                            <h1>{mensaje}</h1>
                             <hr />
                             <form onSubmit={handleRecuperar}>
                                 <div className="form-group col-md-12">
