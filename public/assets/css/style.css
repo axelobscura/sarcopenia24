@@ -2116,11 +2116,11 @@ h2.tipoevento {
 }
 
 h2.tipoevento.geriatria {
-  border-bottom: 5px solid #6a9e00 !important;
+  background: #6a9e00 !important;
 }
 
 h2.tipoevento.gerontologia {
-  border-bottom: 5px solid #2c5a00 !important;
+  background: #2c5a00 !important;
 }
 
 #schedule .schedule-item time.geriatrico {
