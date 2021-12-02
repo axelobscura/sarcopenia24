@@ -39,7 +39,6 @@ export default function Administrador() {
                             <div className="col-md-12 mb-3">
                                 <div className="cubrenlace"></div>
                                 <Link href={`/evento/congreso2021`}>
-                                
                                     <ReactPlayer
                                         className='react-player'
                                         url='https://www.youtube.com/watch?v=FhRKmIeRQj8gv?rel=0;autoplay=1'

@@ -28,7 +28,6 @@ export default function Registro() {
         }))
         .then(async (response) => {
             if (response.data.mensaje === "exito") {
-
                 if(response.data.cs !== ""){
                     const checkoutSession = await axios.post('/api/create-stripe-intent', {
                         item: response.data.cs,

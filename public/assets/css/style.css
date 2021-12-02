@@ -2011,7 +2011,8 @@ font-size: 0.8rem;
 .form-group.chat .btn_chat {
   width: 100%;
   border: 0;
-  background: #6a9e00;
+  background: rgb(66,98,0);
+background: linear-gradient(0deg, rgba(66,98,0,1) 0%, rgba(106,158,0,1) 98%);
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
