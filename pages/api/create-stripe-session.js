@@ -29,7 +29,10 @@ async function CreateStripeSession(req, res) {
     },
   });
 
-  res.json({ id: session.id });
+  res.json({ 
+    id: session.id,
+    intent: session.payment_intent
+  });
 }
 
 export default CreateStripeSession;

@@ -1,4 +1,5 @@
 import { useState, useContext } from 'react';
+import { loadStripe } from '@stripe/stripe-js';
 import Link from 'next/dist/client/link';
 import UserContext from '../UserContext';
 import Router from 'next/router';
@@ -10,6 +11,9 @@ export default function Registro() {
     const [mensaje, setMensaje] = useState('');
     const { signIn } = useContext(UserContext);
 
+    const publishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+    const stripePromise = loadStripe(publishableKey);
+
     async function handleUsuario(e) {
         e.preventDefault();
         let email = e.target.nameUsuario.value;
@@ -17,16 +21,34 @@ export default function Registro() {
         setMensaje('Enviando sus datos');
 
         let url = `https://capuletbeta.com/apis/congreso/usuario.php`;
-
+        
         await axios.post(url, JSON.stringify({
             email: email,
             token: password,
         }))
         .then(async (response) => {
-            if (response.data === "exito") {
-                signIn(email, password);
-                setMensaje('¡Bienvenido, ingresando a su cuenta!');
-                setEsusuario(true);
+            if (response.data.mensaje === "exito") {
+
+                if(response.data.cs !== ""){
+                    const checkoutSession = await axios.post('/api/create-stripe-intent', {
+                        item: response.data.cs,
+                    });
+                    
+                    if(checkoutSession.data.status == "succeeded"){
+                        signIn(email, password);
+                        setMensaje('¡Bienvenido, ingresando a su cuenta!');
+                        setEsusuario(true);
+                    } else if(checkoutSession.data.status == "requires_payment_method") {
+                        setMensaje('¡Lo invitamos a realizar su pago para ingresar al evento!');
+                    } else if(checkoutSession.data.status == "open") {
+                        setMensaje('¡Lo invitamos a realizar su pago para ingresar al evento!');
+                    } else {
+                        setMensaje('¡Lo invitamos a realizar su pago para ingresar al evento!');
+                    }
+                } else {
+                    setMensaje('¡Lo invitamos a realizar su pago para ingresar al evento!');
+                }
+                
             } else if (response.data === "fallo") {
                 setMensaje('¡Lo sentimos, sus datos son incorrectos!');
                 setEsusuario(false);
@@ -36,27 +58,6 @@ export default function Registro() {
         .catch(function (error) {
             console.log(error)
         })
-        /*
-        try {
-          const res = await fetch('/api/get-usuario', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email,
-                password
-            }),
-          })
-          const json = await res.json();
-          console.log(res);
-          console.log(json);
-          if (!res.ok) throw Error(json.message);
-          signIn(email, password);
-        } catch (e) {
-          throw Error(e.message)
-        }
-        */
     }
 
     return (

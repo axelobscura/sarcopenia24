@@ -52,6 +52,8 @@ export default function ModalPayment({paquete}) {
       item: item,
     });
 
+    //console.log(checkoutSession.data.intent);
+
     await axios.post(url, JSON.stringify({
         nombre: nombre,
         apaterno: apaterno,
@@ -62,12 +64,10 @@ export default function ModalPayment({paquete}) {
         nacimiento: nacimiento,
         sexo: sexo,
         precio: paquete[1],
-        cs: checkoutSession.data.id
+        cs: checkoutSession.data.intent
       }))
       .then(async (response) => {
           if(response.data === "exito"){
-            
-            console.log(checkoutSession.data.id);
             
             const result = await stripe.redirectToCheckout({
               sessionId: checkoutSession.data.id,
@@ -78,7 +78,6 @@ export default function ModalPayment({paquete}) {
             localStorage.setItem('usuario', email);
             setEnviado(true);
             setNombre(nombre);
-            
           }else if(response.data === "fallo"){
             setEnviado(false);
           }else{
