@@ -54,6 +54,7 @@ export default function Administrador() {
                                         }}
                                     />
                                 </Link>
+                                <p className="nimportante">NOTA IMPORTANTE: Si no puede ver el video por favor recargue la página.</p>
                             </div>
                             {/*ofertaCursos*/}
                         </div>

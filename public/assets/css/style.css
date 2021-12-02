@@ -2179,6 +2179,13 @@ a.menuadmind:hover {
   background: #333 !important;
 }
 
+p.nimportante {
+  color: #fff;
+    font-weight: 900;
+    padding: 2px 10px;
+    background: #f82149;
+}
+
 @media (max-width: 768px) {
   .logospatro {
     flex-direction: column;
