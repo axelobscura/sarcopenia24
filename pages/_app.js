@@ -1,4 +1,5 @@
 import React from 'react';
+import Script from 'next/script';
 import Router from 'next/router';
 import App from 'next/app';
 import Layout from './components/Layout';
@@ -40,11 +41,28 @@ export default class MyApp extends App {
     render() {
         const { Component, pageProps } = this.props;
         return (
-            <UserProvider value={{ usuario: this.state.usuario, signIn: this.signIn, signOut: this.signOut }}>
-                <Layout>
-                    <Component {...pageProps} />
-                </Layout>
-            </UserProvider>
+            <>
+                <Script
+                    strategy='lazyOnload'
+                    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+                />
+                <Script id='ga-analytics'>
+                    {
+                    `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                    `
+                    }
+                </Script>
+                <UserProvider value={{ usuario: this.state.usuario, signIn: this.signIn, signOut: this.signOut }}>
+                    <Layout>
+                        <Component {...pageProps} />
+                    </Layout>
+                </UserProvider>
+            </>
         )
     }
 }

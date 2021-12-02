@@ -4,6 +4,34 @@ import UserContext from '../UserContext';
 import Router from 'next/router';
 
 export default function Recuperar() {
+
+    const [mensaje, setMensaje] = useState('');
+
+    async function handleRecuperar(e) {
+        e.preventDefault();
+        let email = e.target.nameUsuario.value;
+        setMensaje('Enviando sus datos');
+
+        let url = `https://capuletbeta.com/apis/congreso/recuperar.php`;
+
+        await axios.post(url, JSON.stringify({
+            email: email
+        }))
+        .then(async (response) => {
+            if (response.data === "exito") {
+                setMensaje('¡Gracias, su contraseña ha sido enviada a su correo!');
+                setEsusuario(true);
+            } else if (response.data === "fallo") {
+                setMensaje('¡Lo sentimos, sus datos son incorrectos!');
+                setEsusuario(false);
+            } else {
+            }
+        })
+        .catch(function (error) {
+            console.log(error)
+        })
+    }
+
     return (
         <section id="contact" className="section-bg wow fadeInUp mt-5">
             <div className="container-fluid">
@@ -15,12 +43,13 @@ export default function Recuperar() {
                             </div>
                             <hr/>
                             <h2>Recuperar sus datos de ingreso</h2>
+                            <h1>{mensaje}</h1>
                         </div>
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
                             <h3>POR FAVOR INGRESE SU CORREO ELECTRÓNICO</h3>
                             <hr />
-                            <form>
+                            <form onSubmit={handleRecuperar}>
                                 <div className="form-group col-md-12">
                                     <input type="email" name="nameUsuario" className="form-control" id="nameUsuario" placeholder="Correo Electrónico" data-rule="email" data-msg="Ingrese su correo electrónico" />
                                     <div className="validate"></div>
