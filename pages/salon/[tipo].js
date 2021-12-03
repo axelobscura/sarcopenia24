@@ -6,6 +6,13 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 export default function Salon() {
   const router = useRouter();
   const { tipo } = router.query;
+  console.log(tipo);
+  let elvideo = tipo;
+  if(tipo === "geriatria"){
+    elvideo = 'OlRftXc5aTY';
+  } else {
+    elvideo = 'OlRftXc5aTY';
+  }
   return (
       <section id="administrador" className="section-bg wow fadeInUp m-0 p-0">
         <div className="container-fluid">
@@ -17,7 +24,7 @@ export default function Salon() {
                 <div className="cubrenlace"></div>
                 <ReactPlayer
                   className='react-player'
-                  url='https://www.youtube.com/watch?v=OlRftXc5aTY?rel=0;autoplay=1'
+                  url={`https://www.youtube.com/watch?v=${elvideo}?rel=0;autoplay=1`}
                   width="100%"
                   height="100%"
                   loop='true'
