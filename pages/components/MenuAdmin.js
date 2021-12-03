@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { ListCheck, ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
-import Chat from './Chat';
+import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
 
 export default function MenuAdmin() {
   return (
@@ -19,11 +18,7 @@ export default function MenuAdmin() {
             <a class="menuadmind"><ArrowRightCircle className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a>
           </Link>
         </li>
-        <li className="lichat">
-          <ArrowDownCircle className="iconoBoot" /> CHAT
-        </li>
       </ul>
-      <Chat tipo="geriatria"/>
     </div>
   )
 }

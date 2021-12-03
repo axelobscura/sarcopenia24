@@ -35,7 +35,10 @@ export function usePrograma() {
 }
 
 export function useMensajes() {
-  const { data, error } = useSWR(`/api/get-mensajes`, fetcher)
+  const { data, error } = useSWR(`/api/get-mensajes`, fetcher, {
+    // revalidate the data per second
+    refreshInterval: 1000
+  })
 
   return {
     mensajes: data,
