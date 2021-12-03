@@ -46,10 +46,11 @@ export default function Administrador() {
                                         height="100%"
                                         loop='true'
                                         playing='true'
+                                        controls='true'
                                         config={{
                                             youtube: {
                                                 preload: true,
-                                                playerVars: { showinfo: 0 }
+                                                playerVars: { showinfo: 1 }
                                             }
                                         }}
                                     />
