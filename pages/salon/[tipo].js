@@ -29,9 +29,10 @@ export default function Salon() {
                   height="100%"
                   loop='true'
                   playing='true'
+                  controls='true'
                   config={{
                       youtube: {
-                          playerVars: { showinfo: 0 }
+                        playerVars: { showinfo: 0 }
                       }
                   }}
                 />
