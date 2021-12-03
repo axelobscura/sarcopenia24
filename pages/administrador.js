@@ -37,6 +37,15 @@ export default function Administrador() {
                         {/*<h2><i className="fa fa-user-circle-o mr-3" aria-hidden="true"></i>Bienvenido {usuario}</h2>*/}
                         <div className="row">
                             <div className="col-md-12 mb-3">
+                                <div class="row">
+                                    <div className="col-md-6 mb-3 p-0 m-0">
+                                        <img src="/images/s1.jpeg" alt="amgg" title="amgg" className="img-fluid" />
+                                    </div>
+                                    <div className="col-md-6 mb-3 p-0 m-0">
+                                        <img src="/images/s2.jpeg" alt="amgg" title="amgg" className="img-fluid" />
+                                    </div>
+                                </div>
+                                {/* 
                                 <div className="cubrenlace"></div>
                                 <Link href={`/evento/congreso2021`}>
                                     <ReactPlayer
@@ -56,6 +65,7 @@ export default function Administrador() {
                                     />
                                 </Link>
                                 <p className="nimportante">NOTA IMPORTANTE: Si no puede ver el video por favor recargue la página.</p>
+                                */}
                             </div>
                             {/*ofertaCursos*/}
                         </div>
