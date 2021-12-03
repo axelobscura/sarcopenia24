@@ -39,10 +39,10 @@ export default function Administrador() {
                             <div className="col-md-12 mb-3">
                                 <div class="row">
                                     <div className="col-md-6 mb-3 p-0 m-0">
-                                        <img src="/images/s1.jpeg" alt="amgg" title="amgg" className="img-fluid" />
+                                        <img src="/images/s1.jpeg" alt="amgg" title="amgg" />
                                     </div>
                                     <div className="col-md-6 mb-3 p-0 m-0">
-                                        <img src="/images/s2.jpeg" alt="amgg" title="amgg" className="img-fluid" />
+                                        <img src="/images/s2.jpeg" alt="amgg" title="amgg" />
                                     </div>
                                 </div>
                                 {/* 
