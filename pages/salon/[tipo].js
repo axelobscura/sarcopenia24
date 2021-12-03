@@ -11,7 +11,7 @@ export default function Salon() {
   if(tipo === "geriatria"){
     elvideo = 'mT1nhqEmmrs';
   } else {
-    elvideo = 'yb63Cy-4rF0';
+    elvideo = 'yRDc4p-Q10k';
   }
   return (
       <section id="administrador" className="section-bg wow fadeInUp m-0 p-0">
