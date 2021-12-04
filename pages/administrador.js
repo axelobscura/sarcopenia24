@@ -38,10 +38,14 @@ export default function Administrador() {
                         <div className="row">
                             <div className="col-md-12 d-flex">
                                     <div className="col-md-6 p-0 m-0">
-                                        <img src="/images/s11.jpeg" alt="amgg" title="amgg" className="img-fluid" />
+                                        <Link href="/salon/geriatria">
+                                            <img src="/images/s11.jpeg" alt="amgg" title="amgg" className="img-fluid" />
+                                        </Link>
                                     </div>
                                     <div className="col-md-6 p-0 m-0">
-                                        <img src="/images/s22.jpeg" alt="amgg" title="amgg" className="img-fluid" />
+                                        <Link href="/salon/gerontologia">
+                                            <img src="/images/s22.jpeg" alt="amgg" title="amgg" className="img-fluid" />
+                                        </Link>
                                     </div>
                                 {/* 
                                 <div className="cubrenlace"></div>
