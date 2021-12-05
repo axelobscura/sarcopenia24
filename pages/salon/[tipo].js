@@ -9,9 +9,9 @@ export default function Salon() {
   console.log(tipo);
   let elvideo = tipo;
   if(tipo === "geriatria"){
-    elvideo = '7aTdIeu2gEs';
+    elvideo = 'fVwRXEfZDOQ';
   } else {
-    elvideo = 'vbCK_GwtXSY';
+    elvideo = 'UxOV008jm_g';
   }
   return (
       <section id="administrador" className="section-bg wow fadeInUp m-0 p-0">
