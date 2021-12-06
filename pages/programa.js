@@ -170,7 +170,7 @@ export default function programa(){
 
         <div className="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
-          <div role="tabpanel" className="col-lg-9 tab-pane fade show active" id="day-1">
+          <div role="tabpanel" className="col-lg-9 tab-pane fade" id="day-1">
             <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
               <li className="nav-item">
                 <a className="nav-link active" href="#geriatrico-day-1-S1" role="tab" data-toggle="tab" style={{
@@ -224,7 +224,7 @@ export default function programa(){
             </div>
           </div>
 
-          <div role="tabpanel" className="col-lg-9  tab-pane fade" id="day-4">
+          <div role="tabpanel" className="col-lg-9  tab-pane fade show active" id="day-4">
             <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
               <li className="nav-item">
                 <a className="nav-link active" style={{

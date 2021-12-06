@@ -14,24 +14,68 @@ export default function MenuAdminEvento() {
       </div>
       <ul>
         <li>
-          <Link href="/salon/geriatria">
+          <Link href="/salon/uno-geriatria">
             <a style={{
             background: tipo === 'geriatria' ? '#f82249' : ''
-            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 1 | GERIATRÍA</a>
+            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 1 | 2 DE DIC. | GERIATRÍA</a>
           </Link>
         </li>
         <li>
-          <Link href="/salon/gerontologia">
+          <Link href="/salon/uno-gerontologia">
             <a style={{
             background: tipo === 'gerontologia' ? '#f82249' : ''
-            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 2 | GERONTOLOGÍA</a>
+            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 2 | 2 DE DIC. | GERONTOLOGÍA</a>
           </Link>
         </li>
+        <li>
+          <Link href="/salon/dos-geriatria">
+            <a style={{
+            background: tipo === 'geriatria' ? '#f82249' : ''
+            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 1 | 3 DE DIC. | GERIATRÍA</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/salon/dos-gerontologia">
+            <a style={{
+            background: tipo === 'gerontologia' ? '#f82249' : ''
+            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 2 | 3 DE DIC. | GERONTOLOGÍA</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/salon/tres-geriatria">
+            <a style={{
+            background: tipo === 'geriatria' ? '#f82249' : ''
+            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 1 | 4 DE DIC. | GERIATRÍA</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/salon/tres-gerontologia">
+            <a style={{
+            background: tipo === 'gerontologia' ? '#f82249' : ''
+            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 2 | 4 DE DIC. | GERONTOLOGÍA</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/salon/cuatro-geriatria">
+            <a style={{
+            background: tipo === 'geriatria' ? '#f82249' : ''
+            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 1 | 5 DE DIC. | GERIATRÍA</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/salon/cuatro-gerontologia">
+            <a style={{
+            background: tipo === 'gerontologia' ? '#f82249' : ''
+            }}><ArrowRightCircle className="iconoBoot" /> SALÓN 2 | 5 DE DIC. | GERONTOLOGÍA</a>
+          </Link>
+        </li>
+        {/* 
         <li className="lichat">
           <ArrowDownCircle className="iconoBoot" /> CHAT
         </li>
+        */}
       </ul>
-      <Chat tipo={tipo}/>
+      {/*<Chat tipo={tipo}/>*/}
     </div>
   )
 }

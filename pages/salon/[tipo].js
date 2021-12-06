@@ -8,10 +8,31 @@ export default function Salon() {
   const { tipo } = router.query;
   console.log(tipo);
   let elvideo = tipo;
-  if(tipo === "geriatria"){
+  let titulo = "";
+  if(tipo === "uno-geriatria"){
+    elvideo = 'OlRftXc5aTY';
+    titulo = "2 DE DICIEMBRE - GERIATRÍA";
+  } else if(tipo === "uno-gerontologia"){
+    elvideo = 'OlRftXc5aTY';
+    titulo = "2 DE DICIEMBRE - GERONTOLOGÍA";
+  } else if(tipo === "dos-geriatria"){
+    elvideo = 'mT1nhqEmmrs';
+    titulo = "3 DE DICIEMBRE - GERIATRÍA";
+  } else if(tipo === "dos-gerontologia"){
+    elvideo = 'yRDc4p-Q10k';
+    titulo = "3 DE DICIEMBRE - GERONTOLOGÍA";
+  } else if(tipo === "tres-geriatria"){
+    elvideo = '7aTdIeu2gEs';
+    titulo = "4 DE DICIEMBRE - GERIATRÍA";
+  } else if(tipo === "tres-gerontologia"){
+    elvideo = 'vbCK_GwtXSY';
+    titulo = "4 DE DICIEMBRE - GERONTOLOGÍA";
+  } else if(tipo === "cuatro-geriatria"){
     elvideo = 'fVwRXEfZDOQ';
-  } else {
+    titulo = "5 DE DICIEMBRE - GERIATRÍA";
+  } else if(tipo === "cuatro-gerontologia"){
     elvideo = 'UxOV008jm_g';
+    titulo = "5 DE DICIEMBRE - GERONTOLOGÍA";
   }
   return (
       <section id="administrador" className="section-bg wow fadeInUp m-0 p-0">
@@ -20,7 +41,7 @@ export default function Salon() {
             <MenuAdminEvento />
             <div className="col-md-9">
               <div className="row">
-                <h2 className={`tipoevento ${tipo}`}><ArrowRightCircle /> {tipo === "geriatria" ? 'SALÓN 1 - GERIATRÍA' : 'SALÓN 2 - GERONTOLOGÍA'}</h2>
+                <h2 className={`tipoevento ${tipo}`}><ArrowRightCircle /> {titulo}</h2>
                 <div className="cubrenlace"></div>
                 <ReactPlayer
                   className='react-player'
