@@ -2186,6 +2186,58 @@ p.nimportante {
     background: #f82149;
 }
 
+.col-md-12.tarjetaevento a {
+  padding: 10px !important;
+  text-align: center;
+  background: #ff8d1c;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff !important;
+  width: 100%;
+  display: block;
+  transition: all 1s;
+}
+
+.col-md-12.tarjetaevento a:hover {
+  background: #333;
+}
+
+.col-md-6.tarjetaevento a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 3px;
+  font-size: 2rem;
+  line-height: 2rem;
+  background: #457600;
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #333;
+  transition: all 1s;
+}
+
+.col-md-6.tarjetaevento:nth-child(3) a, .col-md-6.tarjetaevento:nth-child(4) a{
+  background: #2c4b00;
+}
+
+.col-md-6.tarjetaevento:nth-child(5) a, .col-md-6.tarjetaevento:nth-child(6) a{
+  background: #182900;
+}
+
+.col-md-6.tarjetaevento:nth-child(7) a, .col-md-6.tarjetaevento:nth-child(8) a{
+  background: #0c1500;
+}
+
+.col-md-6.tarjetaevento a:hover {
+  background: #333;
+}
+
+.col-md-6.tarjetaevento a span.lafe{
+  font-weight: 100;
+  display: block;
+}
+
 @media (max-width: 768px) {
   .logospatro {
     flex-direction: column;

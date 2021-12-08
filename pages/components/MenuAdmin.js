@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 import { useRouter } from 'next/router';
 
 export default function MenuAdmin() {
@@ -10,7 +10,7 @@ export default function MenuAdmin() {
       <div className="organizador evento">
         <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'250px'}} />
       </div>
-      <ul>
+      <ul className="d-none">
         <li>
           <Link href="/salon/uno-geriatria">
             <a style={{
