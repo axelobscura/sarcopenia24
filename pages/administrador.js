@@ -13,17 +13,16 @@ import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
 
 const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 3
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 3
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -47,6 +46,7 @@ export default function Administrador() {
             <Loader />
         )
     };
+    //console.log(programa);
     const ofertaCursos = cursos.map(curso => (
         <CardCurso
             id={curso.id}
@@ -59,7 +59,7 @@ export default function Administrador() {
     console.log(programa);
     return (
         <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
-            <div className="container-fluid">
+            <div className="container-fluid d-none">
                 <div className="row">
                     <MenuAdmin />
                     <div className="col-md-9">
@@ -140,9 +140,136 @@ export default function Administrador() {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid">
+            <div className="container-fluid tetes">
                 <div className="row">
                     <div className="col-md-12">
+                    <h3><div><ArrowRightCircle/> PRE-CONGRESO</div><span className='rojo'>(2 DE DICIEMBRE)</span></h3>
+                    <Carousel 
+                        responsive={responsive}
+                        infinite={true}
+                    >
+                        {programa.filter(name => name.dia == "2" && name.tema !== "RECESO").map(cc => (
+                                <Link href="/">
+                                    <div className='programaimg'>
+                                        <img 
+                                            src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                    </div>
+                                </Link>
+                        ))}
+                    </Carousel>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                    <h3><div><ArrowRightCircle/> SALÓN 1 - GERIATRÍA</div><span className='rojo'>(3 DE DICIEMBRE)</span></h3>
+                    <Carousel 
+                        responsive={responsive}
+                        infinite={true}
+                    >
+                        {programa.filter(name => name.dia == "3" && name.salon == "1" && name.tema !== "RECESO").map(cc => (
+                                <Link href="/">
+                                    <div className='programaimg'>
+                                        <img 
+                                            src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                    </div>
+                                </Link>
+                        ))}
+                    </Carousel>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                    <h3><div><ArrowRightCircle/> SALÓN 2 - GERONTOLOGÍA</div><span className='rojo'>(3 DE DICIEMBRE)</span></h3>
+                    <Carousel 
+                        responsive={responsive}
+                        infinite={true}
+                    >
+                        {programa.filter(name => name.dia == "3" && name.salon == "2" && name.tema !== "RECESO").map(cc => (
+                                <Link href="/">
+                                    <div className='programaimg'>
+                                        <img 
+                                            src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                    </div>
+                                </Link>
+                        ))}
+                    </Carousel>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                    <h3><div><ArrowRightCircle/> SALÓN 1 - GERIATRÍA</div><span className='rojo'>(4 DE DICIEMBRE)</span></h3>
+                    <Carousel 
+                        responsive={responsive}
+                        infinite={true}
+                    >
+                        {programa.filter(name => name.dia == "4" && name.salon == "1" && name.tema !== "RECESO").map(cc => (
+                                <Link href="/">
+                                    <div className='programaimg'>
+                                        <img 
+                                            src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                    </div>
+                                </Link>
+                        ))}
+                    </Carousel>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                    <h3><div><ArrowRightCircle/> SALÓN 2 - GERONTOLOGÍA</div><span className='rojo'>(4 DE DICIEMBRE)</span></h3>
+                    <Carousel 
+                        responsive={responsive}
+                        infinite={true}
+                    >
+                        {programa.filter(name => name.dia == "4" && name.salon == "2" && name.tema !== "RECESO").map(cc => (
+                                <Link href="/">
+                                    <div className='programaimg'>
+                                        <img 
+                                            src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                    </div>
+                                </Link>
+                        ))}
+                    </Carousel>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                    <h3><div><ArrowRightCircle/> SALÓN 1 - GERIATRÍA</div><span className='rojo'>(5 DE DICIEMBRE)</span></h3>
+                    <Carousel 
+                        responsive={responsive}
+                        infinite={true}
+                    >
+                        {programa.filter(name => name.dia == "5" && name.salon == "1" && name.tema !== "RECESO").map(cc => (
+                                <Link href="/">
+                                    <div className='programaimg'>
+                                        <img 
+                                            src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                    </div>
+                                </Link>
+                        ))}
+                    </Carousel>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                    <h3><div><ArrowRightCircle/> SALÓN 2 - GERONTOLOGÍA</div><span className='rojo'>(5 DE DICIEMBRE)</span></h3>
                     <Carousel 
                         responsive={responsive}
                         infinite={true}
@@ -150,12 +277,16 @@ export default function Administrador() {
                         autoPlaySpeed={5000}
                         transitionDuration={500}
                     >
-                        {programa.map(cc => (
-                            <div className='programaimg'>
+                        {programa.filter(name => name.dia == "5" && name.salon == "2" && name.tema !== "RECESO").map(cc => (
                                 <Link href="/">
-                                    <img src='https://www.capuletbeta.com/congreso2021/imagenes/AIDA_DIAZ_Mesa_de_trabajo_1.png' alt='' title='' />
+                                    <div className='programaimg'>
+                                        <img 
+                                            src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                    </div>
                                 </Link>
-                            </div>
                         ))}
                     </Carousel>
                     </div>

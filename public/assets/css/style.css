@@ -194,7 +194,6 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
 }
 
 /*--------------------------------------------------------------
@@ -2239,11 +2238,31 @@ p.nimportante {
 }
 
 .programaimg {
-  max-width: 300px;
+  max-width: 600px;
+  margin: 5px 0;
+  margin-bottom: 10px;
 }
 
 .programaimg img {
   width: 100%;
+}
+
+.container-fluid.tetes h3 {
+  margin: 0;
+  padding: 10px 0;
+  font-weight: 100;
+  color: #fff;
+}
+
+.container-fluid.tetes h3 span.rojo {
+  color: #F52248;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 40px;
+}
+
+.react-multi-carousel-item {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
