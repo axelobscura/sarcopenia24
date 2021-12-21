@@ -14,15 +14,15 @@ import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
 const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 3
+      items: 4
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 4
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3
+      items: 4
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -141,6 +141,11 @@ export default function Administrador() {
                 </div>
             </div>
             <div className="container-fluid tetes">
+                <div className="row">
+                    <div className="col-md-12 p-0 m-0 tarjetaevento">
+                        <a href={`https://capuletbeta.com/apis/congreso/diploma?usuario=${usuario}`} target="_blank">DESCARGUE SU CONSTANCIA AQUÍ <ArrowRightCircle /></a>
+                    </div>
+                </div>
                 <div className="row">
                     <div className="col-md-12">
                     <h3><div><ArrowRightCircle/> PRE-CONGRESO</div><span className='rojo'>(2 DE DICIEMBRE)</span></h3>
