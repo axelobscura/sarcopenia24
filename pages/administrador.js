@@ -5,16 +5,44 @@ import CardCurso from './components/CardCurso';
 import MenuAdmin from './components/MenuAdmin';
 import Loader from './components/Loader';
 import UserContext from '../UserContext';
+import Carousel from "react-multi-carousel";
+
 import ReactPlayer from 'react-player';
-import { useEntries, useCursos } from '../lib/swr-hooks';
+import { useEntries, useCursos, usePrograma } from '../lib/swr-hooks';
 import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
+
+const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+};
 
 export default function Administrador() {
     const router = useRouter();
-    //const { entries, isLoading } = useEntries();
+    const { entries, isLoading } = useEntries();
+    const { programa, isLoadingPrograma } = usePrograma();
     const { usuario } = useContext(UserContext);
     const { cursos, isLoadingCursos } = useCursos();
     if (isLoadingCursos && !cursos) {
+        return (
+            <Loader />
+        )
+    };
+    if (isLoadingPrograma && !programa) {
         return (
             <Loader />
         )
@@ -28,6 +56,7 @@ export default function Administrador() {
             link={curso.link}
         />
     ));
+    console.log(programa);
     return (
         <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
             <div className="container-fluid">
@@ -108,6 +137,27 @@ export default function Administrador() {
                             </div>
                             {/*ofertaCursos*/}
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-md-12">
+                    <Carousel 
+                        responsive={responsive}
+                        infinite={true}
+                        autoPlay={true}
+                        autoPlaySpeed={5000}
+                        transitionDuration={500}
+                    >
+                        {programa.map(cc => (
+                            <div className='programaimg'>
+                                <Link href="/">
+                                    <img src='https://www.capuletbeta.com/congreso2021/imagenes/AIDA_DIAZ_Mesa_de_trabajo_1.png' alt='' title='' />
+                                </Link>
+                            </div>
+                        ))}
+                    </Carousel>
                     </div>
                 </div>
             </div>

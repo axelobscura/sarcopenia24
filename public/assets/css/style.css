@@ -2238,6 +2238,14 @@ p.nimportante {
   display: block;
 }
 
+.programaimg {
+  max-width: 300px;
+}
+
+.programaimg img {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .logospatro {
     flex-direction: column;

@@ -3,6 +3,7 @@ import Router from 'next/router';
 import App from 'next/app';
 import Layout from './components/Layout';
 import { UserProvider } from '../UserContext';
+import "react-multi-carousel/lib/styles.css";
 
 export default class MyApp extends App {
     state = {

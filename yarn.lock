@@ -4797,6 +4797,11 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
+"react-multi-carousel@^2.6.5":
+  "integrity" "sha512-i5iuAm5XRT/h7uBL9/pGWeRsQXzqvjBrPVP1sobKgDKEvfZuKFpYp/alaQhTRM56Jtkb8jZpSqLn52Ku6jJbDg=="
+  "resolved" "https://registry.npmjs.org/react-multi-carousel/-/react-multi-carousel-2.6.5.tgz"
+  "version" "2.6.5"
+
 "react-pdf@^5.5.0":
   "integrity" "sha512-0Sk0lFd95py7H7/G0+fPzUrLsGHQ6SzC+3eJChgSnLtEmrRV36uNAjuMgf5mz2ds55MK4vYCJHGuP9CyvaSEOA=="
   "resolved" "https://registry.npmjs.org/react-pdf/-/react-pdf-5.5.0.tgz"
