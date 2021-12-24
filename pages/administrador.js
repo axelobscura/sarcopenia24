@@ -174,17 +174,21 @@ export default function Administrador() {
                         responsive={responsive}
                         infinite={true}
                     >
-                        {programa.filter(name => name.dia == "3" && name.salon == "1" && name.tema !== "RECESO").map(cc => (
-                            <Link href={`/salon/${cc.video}`}>
-                                <div className='programaimg'>
-                                    <img 
-                                        src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
-                                        alt={cc.tema}
-                                        title={cc.tema}
-                                    />
-                                </div>
-                            </Link>
-                        ))}
+                        {programa.filter(name => name.dia == "3" && name.salon == "1" && name.tema !== "RECESO").map(cc => {
+                            if(cc.imagen){
+                                return(
+                                    <Link href={`/salon/${cc.video}`}>
+                                        <div className='programaimg'>
+                                            <img 
+                                                src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                                alt={cc.tema}
+                                                title={cc.tema}
+                                            />
+                                        </div>
+                                    </Link>
+                                )
+                            }
+                        })}
                     </Carousel>
                     </div>
                 </div>
@@ -195,17 +199,21 @@ export default function Administrador() {
                         responsive={responsive}
                         infinite={true}
                     >
-                        {programa.filter(name => name.dia == "3" && name.salon == "2" && name.tema !== "RECESO").map(cc => (
-                            <Link href={`/salon/${cc.video}`}>
-                                <div className='programaimg'>
-                                    <img 
-                                        src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
-                                        alt={cc.tema}
-                                        title={cc.tema}
-                                    />
-                                </div>
-                            </Link>
-                        ))}
+                        {programa.filter(name => name.dia == "3" && name.salon == "2" && name.tema !== "RECESO").map(cc => {
+                            if(cc.imagen){
+                                return(
+                                    <Link href={`/salon/${cc.video}`}>
+                                        <div className='programaimg'>
+                                            <img 
+                                                src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                                alt={cc.tema}
+                                                title={cc.tema}
+                                            />
+                                        </div>
+                                    </Link>
+                                )
+                            }
+                        })}
                     </Carousel>
                     </div>
                 </div>
