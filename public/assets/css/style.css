@@ -2194,6 +2194,7 @@ p.nimportante {
   color: #fff !important;
   transition: all 1s;
   border-radius: 50px;
+  padding: 10px 90px !important;
 }
 
 .col-md-12.tarjetaevento a:hover {
@@ -2330,5 +2331,6 @@ p.nimportante {
   }
   .col-md-12.tarjetaevento a {
     font-size: 1rem;
+    padding: 10px !important;
   }
 }
