@@ -2239,12 +2239,40 @@ p.nimportante {
 
 .programaimg {
   max-width: 600px;
-  margin: 5px 0;
+  margin: 5px;
   margin-bottom: 10px;
 }
 
 .programaimg img {
   width: 100%;
+  z-index: 1;
+}
+
+.programaimg .tit-lamx {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.programaimg .tit-lamx h5 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 70px;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.programaimg .tit-lamx p {
+  font-size: 0.5rem;
+  font-weight: bold;
+  margin-top: 0px;
+  width: 100%;
+  padding: 0px;
 }
 
 .container-fluid.tetes h3 {
@@ -2254,13 +2282,14 @@ p.nimportante {
   color: #fff;
   line-height: 1rem;
   margin-top: 10px;
+  display: flex;
 }
 
 .container-fluid.tetes h3 span.rojo {
   color: #F52248;
   font-weight: bold;
   font-size: 1rem;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 .react-multi-carousel-item {

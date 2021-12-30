@@ -157,10 +157,14 @@ export default function Administrador() {
                             <Link href={`/salon/${cc.video}`}>
                                 <div className='programaimg'>
                                     <img 
-                                        src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                        src='/images/portada-precongreso.jpg' 
                                         alt={cc.tema}
                                         title={cc.tema}
                                     />
+                                    <div className='tit-lamx'>
+                                        <h5>{cc.tema}</h5>
+                                        <p>{cc.ponente}</p>
+                                    </div>
                                 </div>
                             </Link>
                         ))}
@@ -180,10 +184,14 @@ export default function Administrador() {
                                     <Link href={`/salon/${cc.video}`}>
                                         <div className='programaimg'>
                                             <img 
-                                                src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                                src='/images/portada-geriatria.jpg'
                                                 alt={cc.tema}
                                                 title={cc.tema}
                                             />
+                                            <div className='tit-lamx'>
+                                                <h5>{cc.tema}</h5>
+                                                <p>{cc.ponente}</p>
+                                            </div>
                                         </div>
                                     </Link>
                                 )
@@ -205,10 +213,14 @@ export default function Administrador() {
                                     <Link href={`/salon/${cc.video}`}>
                                         <div className='programaimg'>
                                             <img 
-                                                src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                                src='/images/portada-neuro.jpg'
                                                 alt={cc.tema}
                                                 title={cc.tema}
                                             />
+                                            <div className='tit-lamx'>
+                                                <h5>{cc.tema}</h5>
+                                                <p>{cc.ponente}</p>
+                                            </div>
                                         </div>
                                     </Link>
                                 )
@@ -228,10 +240,14 @@ export default function Administrador() {
                             <Link href={`/salon/${cc.video}`}>
                                 <div className='programaimg'>
                                     <img 
-                                        src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                        src='/images/portada-geriatria.jpg'
                                         alt={cc.tema}
                                         title={cc.tema}
                                     />
+                                    <div className='tit-lamx'>
+                                        <h5>{cc.tema}</h5>
+                                        <p>{cc.ponente}</p>
+                                    </div>
                                 </div>
                             </Link>
                         ))}
@@ -249,10 +265,14 @@ export default function Administrador() {
                             <Link href={`/salon/${cc.video}`}>
                                 <div className='programaimg'>
                                     <img 
-                                        src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                        src='/images/portada-neuro.jpg'
                                         alt={cc.tema}
                                         title={cc.tema}
                                     />
+                                    <div className='tit-lamx'>
+                                        <h5>{cc.tema}</h5>
+                                        <p>{cc.ponente}</p>
+                                    </div>
                                 </div>
                             </Link>
                         ))}
@@ -270,10 +290,14 @@ export default function Administrador() {
                             <Link href={`/salon/${cc.video}`}>
                                 <div className='programaimg'>
                                     <img 
-                                        src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                        src='/images/portada-geriatria.jpg'
                                         alt={cc.tema}
                                         title={cc.tema}
                                     />
+                                    <div className='tit-lamx'>
+                                        <h5>{cc.tema}</h5>
+                                        <p>{cc.ponente}</p>
+                                    </div>
                                 </div>
                             </Link>
                         ))}
@@ -294,10 +318,14 @@ export default function Administrador() {
                             <Link href={`/salon/${cc.video}`}>
                                 <div className='programaimg'>
                                     <img 
-                                        src={`https://www.capuletbeta.com/congreso2021/imagenes/${cc.imagen}`} 
+                                        src='/images/portada-neuro.jpg'
                                         alt={cc.tema}
                                         title={cc.tema}
                                     />
+                                    <div className='tit-lamx'>
+                                        <h5>{cc.tema}</h5>
+                                        <p>{cc.ponente}</p>
+                                    </div>
                                 </div>
                             </Link>
                         ))}
