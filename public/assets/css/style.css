@@ -2296,6 +2296,12 @@ p.nimportante {
   cursor: pointer;
 }
 
+@media (max-width: 2500px) {
+  .programaimg .tit-lamx h5 {
+    margin-top: 120px;
+  }
+}
+
 @media (max-width: 1900px) {
   .programaimg .tit-lamx h5 {
     margin-top: 90px;
