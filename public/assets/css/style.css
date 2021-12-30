@@ -2192,9 +2192,8 @@ p.nimportante {
   font-weight: bold;
   font-size: 2rem;
   color: #fff !important;
-  width: 100%;
-  display: block;
   transition: all 1s;
+  border-radius: 50px;
 }
 
 .col-md-12.tarjetaevento a:hover {
@@ -2296,6 +2295,11 @@ p.nimportante {
   cursor: pointer;
 }
 
+.tarjetaevento {
+  text-align: center;
+  width: 100%;
+}
+
 @media (max-width: 2500px) {
   .programaimg .tit-lamx h5 {
     margin-top: 120px;
@@ -2323,5 +2327,8 @@ p.nimportante {
   }
   #administrador .col-md-3 ul li a {
     font-size: 0.8rem;
+  }
+  .col-md-12.tarjetaevento a {
+    font-size: 1rem;
   }
 }
