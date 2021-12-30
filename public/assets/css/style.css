@@ -2296,6 +2296,12 @@ p.nimportante {
   cursor: pointer;
 }
 
+@media (max-width: 1150px) {
+  .programaimg .tit-lamx h5 {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .logospatro {
     flex-direction: column;
