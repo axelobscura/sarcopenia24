@@ -2195,6 +2195,11 @@ p.nimportante {
   transition: all 1s;
   border-radius: 50px;
   padding: 10px 90px !important;
+  display: block;
+  width: 59%;
+  margin: 0 auto;
+    margin-top: 0px;
+  margin-top: 20px;
 }
 
 .col-md-12.tarjetaevento a:hover {
@@ -2278,18 +2283,18 @@ p.nimportante {
 .container-fluid.tetes h3 {
   margin: 0;
   padding: 10px 0;
-  font-weight: 100;
+  font-weight: bold;
   color: #fff;
   line-height: 1rem;
   margin-top: 10px;
   display: flex;
 }
 
-.container-fluid.tetes h3 span.rojo {
-  color: #F52248;
-  font-weight: bold;
+.container-fluid.tetes p span.rojo {
+  color: #F2f2f2;
+  font-weight: 100;
   font-size: 1rem;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .react-multi-carousel-item {
@@ -2309,7 +2314,7 @@ p.nimportante {
 
 @media (max-width: 1900px) {
   .programaimg .tit-lamx h5 {
-    margin-top: 90px;
+    margin-top: 70px;
   }
 }
 

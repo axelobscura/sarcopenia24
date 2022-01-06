@@ -148,7 +148,8 @@ export default function Administrador() {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                    <h3><div><ArrowRightCircle/> PRE-CONGRESO</div><span className='rojo'>(2 DE DICIEMBRE)</span></h3>
+                    <h3><div><ArrowRightCircle/> PRE-CONGRESO</div><br/></h3>
+                    <p className='mb-2 ml-2'><span className='rojo'>(2 DE DICIEMBRE)</span></p>
                     <Carousel 
                         responsive={responsive}
                         infinite={true}
@@ -173,12 +174,13 @@ export default function Administrador() {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                    <h3><div><ArrowRightCircle/> SALÓN 1 - GERIATRÍA</div><span className='rojo'>(3 DE DICIEMBRE)</span></h3>
+                    <h3><div><ArrowRightCircle/> SALÓN 1 - GERIATRÍA</div></h3>
+                    <p className='mb-2 ml-2'><span className='rojo'>(3 DE DICIEMBRE)</span></p>
                     <Carousel 
                         responsive={responsive}
                         infinite={true}
                     >
-                        {programa.filter(name => name.dia == "3" && name.salon == "1" && name.tema !== "RECESO").map(cc => {
+                        {programa.filter(name => name.dia == "3" && name.salon == "1" && name.tema !== "RECESO" && name.tema !== "Inauguración").map(cc => {
                             if(cc.imagen){
                                 return(
                                     <Link href={`/salon/${cc.video}`}>
@@ -202,12 +204,13 @@ export default function Administrador() {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                    <h3><div><ArrowRightCircle/> SALÓN 2 - GERONTOLOGÍA</div><span className='rojo'>(3 DE DICIEMBRE)</span></h3>
+                    <h3><div><ArrowRightCircle/> SALÓN 2 - GERONTOLOGÍA</div></h3>
+                    <p className='mb-2 ml-2'><span className='rojo'>(3 DE DICIEMBRE)</span></p>
                     <Carousel 
                         responsive={responsive}
                         infinite={true}
                     >
-                        {programa.filter(name => name.dia == "3" && name.salon == "2" && name.tema !== "RECESO").map(cc => {
+                        {programa.filter(name => name.dia == "3" && name.salon == "2" && name.tema !== "RECESO" && name.tema !== "Inauguración").map(cc => {
                             if(cc.imagen){
                                 return(
                                     <Link href={`/salon/${cc.video}`}>
@@ -231,12 +234,13 @@ export default function Administrador() {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                    <h3><div><ArrowRightCircle/> SALÓN 1 - GERIATRÍA</div><span className='rojo'>(4 DE DICIEMBRE)</span></h3>
+                    <h3><div><ArrowRightCircle/> SALÓN 1 - GERIATRÍA</div></h3>
+                    <p className='mb-2 ml-2'><span className='rojo'>(4 DE DICIEMBRE)</span></p>
                     <Carousel 
                         responsive={responsive}
                         infinite={true}
                     >
-                        {programa.filter(name => name.dia == "4" && name.salon == "1" && name.tema !== "RECESO").map(cc => (
+                        {programa.filter(name => name.dia == "4" && name.salon == "1" && name.tema !== "RECESO" && name.tema !== "Inauguración").map(cc => (
                             <Link href={`/salon/${cc.video}`}>
                                 <div className='programaimg'>
                                     <img 
@@ -256,12 +260,13 @@ export default function Administrador() {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                    <h3><div><ArrowRightCircle/> SALÓN 2 - GERONTOLOGÍA</div><span className='rojo'>(4 DE DICIEMBRE)</span></h3>
+                    <h3><div><ArrowRightCircle/> SALÓN 2 - GERONTOLOGÍA</div></h3>
+                    <p className='mb-2 ml-2'><span className='rojo'>(4 DE DICIEMBRE)</span></p>
                     <Carousel 
                         responsive={responsive}
                         infinite={true}
                     >
-                        {programa.filter(name => name.dia == "4" && name.salon == "2" && name.tema !== "RECESO").map(cc => (
+                        {programa.filter(name => name.dia == "4" && name.salon == "2" && name.tema !== "RECESO" && name.tema !== "Inauguración").map(cc => (
                             <Link href={`/salon/${cc.video}`}>
                                 <div className='programaimg'>
                                     <img 
@@ -281,12 +286,13 @@ export default function Administrador() {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                    <h3><div><ArrowRightCircle/> SALÓN 1 - GERIATRÍA</div><span className='rojo'>(5 DE DICIEMBRE)</span></h3>
+                    <h3><div><ArrowRightCircle/> SALÓN 1 - GERIATRÍA</div></h3>
+                    <p className='mb-2 ml-2'><span className='rojo'>(5 DE DICIEMBRE)</span></p>
                     <Carousel 
                         responsive={responsive}
                         infinite={true}
                     >
-                        {programa.filter(name => name.dia == "5" && name.salon == "1" && name.tema !== "RECESO").map(cc => (
+                        {programa.filter(name => name.dia == "5" && name.salon == "1" && name.tema !== "RECESO" && name.tema !== "Inauguración").map(cc => (
                             <Link href={`/salon/${cc.video}`}>
                                 <div className='programaimg'>
                                     <img 
@@ -306,7 +312,8 @@ export default function Administrador() {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                    <h3><div><ArrowRightCircle/> SALÓN 2 - GERONTOLOGÍA</div><span className='rojo'>(5 DE DICIEMBRE)</span></h3>
+                    <h3><div><ArrowRightCircle/> SALÓN 2 - GERONTOLOGÍA</div></h3>
+                    <p className='mb-2 ml-2'><span className='rojo'>(5 DE DICIEMBRE)</span></p>
                     <Carousel 
                         responsive={responsive}
                         infinite={true}
@@ -314,7 +321,7 @@ export default function Administrador() {
                         autoPlaySpeed={5000}
                         transitionDuration={500}
                     >
-                        {programa.filter(name => name.dia == "5" && name.salon == "2" && name.tema !== "RECESO").map(cc => (
+                        {programa.filter(name => name.dia == "5" && name.salon == "2" && name.tema !== "RECESO" && name.tema !== "Inauguración").map(cc => (
                             <Link href={`/salon/${cc.video}`}>
                                 <div className='programaimg'>
                                     <img 
