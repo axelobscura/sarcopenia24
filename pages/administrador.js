@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import CardCurso from './components/CardCurso';
@@ -35,6 +35,8 @@ export default function Administrador() {
     const { entries, isLoading } = useEntries();
     const { programa, isLoadingPrograma } = usePrograma();
     const { usuario } = useContext(UserContext);
+    const [ programaBuscador, setProgramaBuscador ] = useState();
+    const [ buscador, setBuscador ] = useState('');
     const { cursos, isLoadingCursos } = useCursos();
     if (isLoadingCursos && !cursos) {
         return (
@@ -46,6 +48,9 @@ export default function Administrador() {
             <Loader />
         )
     };
+    useEffect(() => {
+
+    }, []);
     //console.log(programa);
     const ofertaCursos = cursos.map(curso => (
         <CardCurso
@@ -56,7 +61,13 @@ export default function Administrador() {
             link={curso.link}
         />
     ));
-    console.log(programa);
+
+    const elBuscador = (e) => {
+        setBuscador(e.target.value);
+    }
+
+    console.log(buscador);
+
     return (
         <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
             <div className="container-fluid d-none">
@@ -67,7 +78,7 @@ export default function Administrador() {
                         <div className="row">
                             <div className="col-md-12">
                                 <div className="row">
-                                    <div className="col-md-12 p-0 m-0 tarjetaevento">
+                                    <div className="col-md-6 p-0 m-0 tarjetaevento">
                                         <a href={`https://capuletbeta.com/apis/congreso/diploma?usuario=${usuario}`} target="_blank">DESCARGUE SU CONSTANCIA AQUÍ <ArrowRightCircle /></a>
                                     </div>
                                 </div>
@@ -142,10 +153,20 @@ export default function Administrador() {
             </div>
             <div className="container-fluid tetes">
                 <div className="row">
-                    <div className="col-md-12 p-0 m-0 tarjetaevento">
+                    <div className="col-md-6 p-0 m-0 tarjetaevento">
+                        <div className="form-group col-md-12">
+                            <input type="text" onChange={elBuscador} name="buscador" className="form-control buscadorUsuario" placeholder="Buscar por tema o ponente" />
+                        </div>
+                    </div>
+                    <div className="col-md-6 p-0 m-0 tarjetaevento">
                         <a href={`https://capuletbeta.com/apis/congreso/diploma?usuario=${usuario}`} target="_blank">DESCARGUE SU CONSTANCIA AQUÍ <ArrowRightCircle /></a>
                     </div>
                 </div>
+                {buscador !== "" ? 
+                    <>
+                    <h3>- Resultados para: <span style={{"color":"#f82249"}}>{buscador}</span></h3>
+                    </>
+                : ""}
                 <div className="row">
                     <div className="col-md-12">
                     <h3><div><ArrowRightCircle/> PRE-CONGRESO</div><br/></h3>

@@ -2306,6 +2306,14 @@ p.nimportante {
   width: 100%;
 }
 
+.form-control.buscadorUsuario {
+  min-height: 80px;
+  border-radius: 10px !important;
+  background: #333;
+  color: #fff;
+  font-size: 2rem;
+}
+
 @media (max-width: 2500px) {
   .programaimg .tit-lamx h5 {
     margin-top: 120px;
