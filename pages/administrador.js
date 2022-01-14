@@ -34,10 +34,11 @@ export default function Administrador() {
     const router = useRouter();
     const { entries, isLoading } = useEntries();
     const { programa, isLoadingPrograma } = usePrograma();
-    const { usuario } = useContext(UserContext);
     const [ programaBuscador, setProgramaBuscador ] = useState();
+    const { usuario } = useContext(UserContext);
     const [ buscador, setBuscador ] = useState('');
     const { cursos, isLoadingCursos } = useCursos();
+
     if (isLoadingCursos && !cursos) {
         return (
             <Loader />
@@ -48,10 +49,7 @@ export default function Administrador() {
             <Loader />
         )
     };
-    useEffect(() => {
 
-    }, []);
-    //console.log(programa);
     const ofertaCursos = cursos.map(curso => (
         <CardCurso
             id={curso.id}
@@ -64,9 +62,16 @@ export default function Administrador() {
 
     const elBuscador = (e) => {
         setBuscador(e.target.value);
+        let termino = e.target.value;
+        if (e.target.value !== '') {
+            const filteredData = programa.filter((item) => {
+              return Object.values(item).join('').toLowerCase().includes(termino.toLowerCase())
+            });
+            setProgramaBuscador(filteredData);
+          } else{
+            setProgramaBuscador(programa);
+          }
     }
-
-    console.log(buscador);
 
     return (
         <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
@@ -155,7 +160,7 @@ export default function Administrador() {
                 <div className="row">
                     <div className="col-md-6 p-0 m-0 tarjetaevento">
                         <div className="form-group col-md-12">
-                            <input type="text" onChange={elBuscador} name="buscador" className="form-control buscadorUsuario" placeholder="Buscar por tema o ponente" />
+                            <input type="text" onChange={(e) => elBuscador(e)} name="buscador" className="form-control buscadorUsuario" placeholder="Buscar por tema o ponente" />
                         </div>
                     </div>
                     <div className="col-md-6 p-0 m-0 tarjetaevento">
@@ -165,6 +170,35 @@ export default function Administrador() {
                 {buscador !== "" ? 
                     <>
                     <h3>- Resultados para: <span style={{"color":"#f82249"}}>{buscador}</span></h3>
+                    <hr/>
+                    </>
+                : ""}
+                {programaBuscador ? 
+                    <>
+                    <div className="row">
+                        <div className="col-md-12">
+                        <Carousel 
+                            responsive={responsive}
+                            infinite={true}
+                        >
+                            {programaBuscador.filter(name => name.dia == "2" && name.tema !== "RECESO").map(cc => (
+                                <Link href={`/salon/${cc.video}`}>
+                                    <div className='programaimg'>
+                                        <img 
+                                            src='/images/portada-precongreso.jpg' 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                        <div className='tit-lamx'>
+                                            <h5>{cc.tema}</h5>
+                                            <p>{cc.ponente}</p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))}
+                        </Carousel>
+                        </div>
+                    </div>
                     </>
                 : ""}
                 <div className="row">
