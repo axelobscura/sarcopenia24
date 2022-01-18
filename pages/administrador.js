@@ -59,7 +59,6 @@ export default function Administrador() {
             link={curso.link}
         />
     ));
-
     const elBuscador = (e) => {
         setBuscador(e.target.value);
         let termino = e.target.value;
