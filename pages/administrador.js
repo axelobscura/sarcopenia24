@@ -168,7 +168,7 @@ export default function Administrador() {
                 </div>
                 {buscador !== "" ? 
                     <>
-                    <h3>Resultados para: <span style={{"color":"#f82249"}}>{buscador}</span></h3>
+                    <h3>Resultados para:_ <span style={{"color":"#f82249"}}>{buscador}</span></h3>
                     <hr/>
                     </>
                 : ""}
