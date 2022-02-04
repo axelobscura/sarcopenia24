@@ -71,7 +71,6 @@ export default function Administrador() {
             setProgramaBuscador(programa);
           }
     }
-
     return (
         <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
             <div className="container-fluid d-none">
