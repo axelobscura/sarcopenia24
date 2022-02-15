@@ -64,13 +64,13 @@ export default function Administrador() {
         setBuscador(e.target.value);
         let termino = e.target.value;
         if (e.target.value !== '') {
-            const filteredData = programa.filter((item) => {
-              return Object.values(item).join('').toLowerCase().includes(termino.toLowerCase())
-            });
+        const filteredData = programa.filter((item) => {
+            return Object.values(item).join('').toLowerCase().includes(termino.toLowerCase())
+        });
             setProgramaBuscador(filteredData);
-          } else{
-            setProgramaBuscador(programa);
-          }
+        } else{
+            setProgramaBuscador();
+        }
     }
 
     return (
