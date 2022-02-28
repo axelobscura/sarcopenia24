@@ -209,7 +209,7 @@ export default function Administrador() {
                                 <Link href={`/salon/${cc.video}`}>
                                     <div className='programaimg'>
                                         <img 
-                                            src='/images/portada-precongreso.jpg' 
+                                            src='/images/portada-geariatria.jpg' 
                                             alt={cc.tema}
                                             title={cc.tema}
                                         />
@@ -232,7 +232,7 @@ export default function Administrador() {
                                 <Link href={`/salon/${cc.video}`}>
                                     <div className='programaimg'>
                                         <img 
-                                            src='/images/portada-precongreso.jpg' 
+                                            src='/images/portada-neuro.jpg' 
                                             alt={cc.tema}
                                             title={cc.tema}
                                         />
@@ -255,7 +255,7 @@ export default function Administrador() {
                                 <Link href={`/salon/${cc.video}`}>
                                     <div className='programaimg'>
                                         <img 
-                                            src='/images/portada-precongreso.jpg' 
+                                            src='/images/portada-neuro.jpg' 
                                             alt={cc.tema}
                                             title={cc.tema}
                                         />
