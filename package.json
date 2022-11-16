@@ -17,7 +17,7 @@
     "dotenv": "^10.0.0",
     "isomorphic-fetch": "^2.2.1",
     "micro": "^9.3.4",
-    "next": "9.4.4",
+    "next": "13.0.3",
     "react": "16.13.1",
     "react-bootstrap-icons": "^1.5.0",
     "react-dom": "16.13.1",
