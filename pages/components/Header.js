@@ -7,7 +7,7 @@ export default function Header() {
     const { usuario, signOut } = useContext(UserContext);
     const router = useRouter();
     return (
-        <header id="header" className="header-scrolled">
+        <header id="header" className={router.pathname == "/programa" || router.pathname == "/registro" || router.pathname == "/recuperar" ? "header-scrolled programa" : "header-scrolled"}>
             <div className="container-fluid">
                 <div id="logo" className="pull-left">
                     {usuario ?
@@ -21,7 +21,7 @@ export default function Header() {
                     }
                 </div>
                 <nav id="nav-menu-container">
-                    <ul className="nav-menu sf-js-enabled sf-arrows">
+                    <ul className="nav-menu">
                         <li className={router.pathname == "/" ? "menu-active" : ""}><Link href="/"><a><i className="fa fa-angle-right"></i> INICIO</a></Link></li>
                         <li className={router.pathname == "/programa" ? "menu-active" : ""}><Link href="/programa"><a><i className="fa fa-angle-right"></i> PROGRAMA DE ACTIVIDADES</a></Link></li>
                         {usuario ?

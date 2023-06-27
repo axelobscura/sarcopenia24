@@ -2390,3 +2390,7 @@ p.nimportante {
 .ytp-pause-overlay-container {
   display: none !important;
 }
+
+.plyr__video-embed {
+  width: 100%;
+}

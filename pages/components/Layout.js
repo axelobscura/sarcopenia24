@@ -18,10 +18,6 @@ class Layout extends Component {
                     <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet" />
                     <link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
                     <link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
-                    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-                    <script>
-                        const player = new Plyr('#player');
-                    </script>
                     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
                     <link href="/assets/css/style.css" rel="stylesheet" />
                     <script
@@ -55,7 +51,7 @@ class Layout extends Component {
                 <script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
                 <script src="/assets/vendor/superfish/superfish.min.js"></script>
                 <script src="/assets/vendor/hoverIntent/hoverIntent.js"></script>
-
+                
                 <script src="/assets/js/main.js"></script>
             </>
         );

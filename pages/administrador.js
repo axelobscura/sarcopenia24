@@ -38,7 +38,18 @@ export default function Administrador() {
                 <div className="col-md-12">
                 <div className="row">
                     <div className="cubrenlace"></div>
+                    <div className="plyr__video-embed" id="player">
+                    {/* 
+                    <iframe
+                        src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&iv_load_policy=0&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                        allowfullscreen
+                        allowtransparency
+                        allow="autoplay"
+                        style={{"width": "100%;"}}
+                    ></iframe>
+                    */}
                     <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="bTqVqk7FSmY"></div>
+                    </div>
                 </div>
                 </div>
             </div>
