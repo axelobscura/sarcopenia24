@@ -20,38 +20,18 @@ export default function Registro() {
         let password = e.target.passwordUsuario.value;
         setMensaje('Enviando sus datos');
 
-        let url = `https://capuletbeta.com/apis/congreso/usuario.php`;
+        let url = `https://webinarimcyc.com/testemail/usuario.php`;
         
         await axios.post(url, JSON.stringify({
             email: email,
             token: password,
         }))
         .then(async (response) => {
-            if (response.data.mensaje === "exito") {
-                if(response.data.cs !== ""){
-                    const checkoutSession = await axios.post('/api/create-stripe-intent', {
-                        item: response.data.cs,
-                    });
-                    
-                    if(checkoutSession.data.status == "succeeded"){
-                        signIn(email, password);
-                        setMensaje('¡Bienvenido, ingresando a su cuenta!');
-                        setEsusuario(true);
-                    } else if(checkoutSession.data.status == "complete") {
-                        signIn(email, password);
-                        setMensaje('¡Bienvenido, ingresando a su cuenta!');
-                        setEsusuario(true);
-                    } else if(checkoutSession.data.status == "requires_payment_method") {
-                        setMensaje('¡Lo invitamos a realizar su pago para ingresar al evento!');
-                    } else if(checkoutSession.data.status == "open") {
-                        setMensaje('¡Lo invitamos a realizar su pago para ingresar al evento!');
-                    } else {
-                        setMensaje('¡Lo invitamos a realizar su pago para ingresar al evento!');
-                    }
-                } else {
-                    setMensaje('¡Lo invitamos a realizar su pago para ingresar al evento!');
-                }
-                
+
+            if (response.data === "exito") {
+                signIn(email, password);
+                setMensaje('¡Bienvenido, ingresando a su cuenta!');
+                setEsusuario(true);
             } else if (response.data === "fallo") {
                 setMensaje('¡Lo sentimos, sus datos son incorrectos!');
                 setEsusuario(false);
@@ -70,14 +50,12 @@ export default function Registro() {
                     <div className="col-md-6 offset-3">
                         <div className="section-header mt-2 text-center">
                             <div align="center">
-                                <img src="/images/logo-congreso21.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '250px' }} />
+                                <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '250px' }} />
                             </div>
                             <hr />
                             <h2>Ingreso de usuarios</h2>
-                            <p>Ingrese a su plataforma personalizada del congreso.</p>
                         </div>
                         <div className="contact-address">
-                            <i className="ion-ios-location-outline"></i>
                             <h3>POR FAVOR INGRESE SUS DATOS DE ACCESO</h3>
                             <h1>{mensaje}</h1>
                             <p className={userMsg !== "" ? `errorLog` : ``}>{userMsg}</p>

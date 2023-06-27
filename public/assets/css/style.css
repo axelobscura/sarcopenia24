@@ -2386,3 +2386,7 @@ p.nimportante {
     padding: 10px !important;
   }
 }
+
+.ytp-pause-overlay-container {
+  display: none !important;
+}

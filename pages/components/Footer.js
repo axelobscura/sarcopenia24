@@ -11,7 +11,7 @@ export default function Footer() {
             {router.pathname === "/patrocinadores" ? '' : <Patrocinadores />}
             <div className="container">
                 <div className="copyright">
-                    &copy; 2019 - 2023 <strong>AMGG MÉXICO</strong>. Todos Los Derechos Reservados.
+                    &copy; 1983 - 2023 <strong>AMGG MÉXICO</strong>. Todos Los Derechos Reservados.
                 </div>
             </div>
         </footer>
