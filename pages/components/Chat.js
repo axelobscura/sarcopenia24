@@ -16,7 +16,7 @@ export default function Chat({ posts, tipo }) {
         e.preventDefault();
         let elusuario = e.target.usuario.value;
         let elmensaje = e.target.mensaje.value;
-        let seccion = tipo;
+        let seccion = "29 de junio";
         try {
           const res = await fetch('/api/create-entry', {
             method: 'POST',
@@ -48,10 +48,10 @@ export default function Chat({ posts, tipo }) {
             <form onSubmit={submitHandler}>
                 <input type="hidden" name="usuario" value={usuario} />
                 <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..." required/>
-                <input type="submit" value="PUBLICAR COMENTARIO" className="btn_chat" />
+                <input type="submit" value="ENVIAR COMENTARIO" className="btn_chat" />
             </form>
             <div className="chat-container">
-                {mensajes.filter(sec => sec.seccion === tipo).map((msj, i) => (
+                {mensajes.map((msj, i) => (
                     <Mensaje 
                         key={i} 
                         usuario={msj.nombre}

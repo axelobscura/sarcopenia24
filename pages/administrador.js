@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import Loader from './components/Loader';
 import { usePrograma } from '../lib/swr-hooks';
+import Chat from './components/Chat';
 import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
 
 const responsive = {
@@ -46,7 +47,7 @@ export default function Administrador() {
                         </div>
                         <ReactPlayer
                             className='react-player'
-                            url={`https://www.youtube.com/watch?v=HmHzSxaifbU?rel=0;autoplay=1`}
+                            url={`https://www.youtube.com/watch?v=SpmgdqO8mXw?rel=0;autoplay=1`}
                             width="100%"
                             height="100%"
                             loop='true'
@@ -63,6 +64,7 @@ export default function Administrador() {
                     </div>
                     <div className="col-md-3 chat">
                         <h2>CHAT</h2>
+                        <Chat />
                     </div>
                 </div>
                 <div className="row nota p-0 m-0">
@@ -77,7 +79,10 @@ export default function Administrador() {
                 body {
                     background: #04091B;
                 }
-                .ytp-copylink-title {
+                .ytp-copylink-title, ytp-pause-overlay-container {
+                    display: none !important;
+                }
+                .ytp-expand-pause-overlay .ytp-pause-overlay {
                     display: none !important;
                 }
             `}</style>

@@ -11,7 +11,7 @@ const handler: NextApiHandler = async (req, res) => {
         }
         const results = await query(
             `
-            INSERT INTO chat_congreso2021 (nombre, mensaje, seccion )
+            INSERT INTO chat (nombre, mensaje, seccion )
             VALUES (?, ?, ?)
             `,
             [elusuario, elmensaje, seccion]

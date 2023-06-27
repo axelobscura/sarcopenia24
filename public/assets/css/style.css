@@ -2397,8 +2397,10 @@ p.nimportante {
 }
 
 .chat h2 {
-  background: #fff;
+  background: #242d44;
   padding: 10px;
+  color: #fff;
+  border-bottom: 2px solid #222;
 }
 
 .nota p {
@@ -2406,4 +2408,9 @@ p.nimportante {
   background: #f82249;
   margin: 0;
   color: #fff;
+}
+
+.form-group.chat .btn_chat {
+  background: #f82249;
+  font-weight: 100;
 }
