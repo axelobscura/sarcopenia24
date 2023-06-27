@@ -2395,3 +2395,15 @@ p.nimportante {
 #player {
   width: 100%;
 }
+
+.chat h2 {
+  background: #fff;
+  padding: 10px;
+}
+
+.nota p {
+  padding: 10px;
+  background: #f82249;
+  margin: 0;
+  color: #fff;
+}

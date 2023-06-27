@@ -38,6 +38,7 @@ export default function Administrador() {
             <div className="row vh-80">
                 {/*<MenuAdminEvento />*/}
                 <div className="col-md-12">
+                
                 <div className="row">
                     <div className="col-md-9">
                         <div className="cubrenlace">
@@ -62,6 +63,11 @@ export default function Administrador() {
                     </div>
                     <div className="col-md-3 chat">
                         <h2>CHAT</h2>
+                    </div>
+                </div>
+                <div className="row nota p-0 m-0">
+                    <div className="col-md-12 p-0 m-0">
+                        <p><b>NOTA IMPORTANTE</b>: Si el video no comienza a reproducirse, por favor de click en el botón.</p>
                     </div>
                 </div>
                 </div>
