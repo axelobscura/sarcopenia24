@@ -51,7 +51,10 @@ class Layout extends Component {
                 <script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
                 <script src="/assets/vendor/superfish/superfish.min.js"></script>
                 <script src="/assets/vendor/hoverIntent/hoverIntent.js"></script>
-                
+                <script async src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js" strategy="beforeInteractive"></script>
+                <script>
+                    const player = new Plyr('#player');
+                </script>
                 <script src="/assets/js/main.js"></script>
             </>
         );

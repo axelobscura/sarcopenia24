@@ -22,10 +22,6 @@ export default class MyDocument extends Document {
           `,
             }}
           />
-          <script async src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js" strategy="beforeInteractive"></script>
-                <script>
-                    const player = new Plyr('#player');
-                </script>
         </Head>
         <body>
           <Main />

@@ -544,14 +544,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-
-
 #intro h1 {
   color: #ffffff;
   font-size: 56px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  padding-top: 20px;
+  padding: 20px 90px;
 }
 
 #intro h1 span {
@@ -2185,12 +2183,11 @@ li.lichat {
 
 .cubrenlace {
   position: absolute;
-  width: 130px;
-  height: 100%;
+  width: 200px;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.9);
   right: 0;
-  opacity: 0;
+  top: 0;
 }
 
 a.menuadminu {
@@ -2392,5 +2389,9 @@ p.nimportante {
 }
 
 .plyr__video-embed {
+  width: 100%;
+}
+
+#player {
   width: 100%;
 }

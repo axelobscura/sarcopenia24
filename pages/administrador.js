@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+import ReactPlayer from 'react-player';
 import Loader from './components/Loader';
 import { usePrograma } from '../lib/swr-hooks';
 import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
@@ -37,18 +39,29 @@ export default function Administrador() {
                 {/*<MenuAdminEvento />*/}
                 <div className="col-md-12">
                 <div className="row">
-                    <div className="cubrenlace"></div>
-                    <div className="plyr__video-embed" id="player">
-                    {/* 
-                    <iframe
-                        src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&iv_load_policy=0&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
-                        allowfullscreen
-                        allowtransparency
-                        allow="autoplay"
-                        style={{"width": "100%;"}}
-                    ></iframe>
-                    */}
-                    <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="bTqVqk7FSmY"></div>
+                    <div className="col-md-9">
+                        <div className="cubrenlace">
+                        <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '100%' }} />
+                        </div>
+                        <ReactPlayer
+                            className='react-player'
+                            url={`https://www.youtube.com/watch?v=HmHzSxaifbU?rel=0;autoplay=1`}
+                            width="100%"
+                            height="100%"
+                            loop='true'
+                            playing='true'
+                            controls='true'
+                            config={{
+                                youtube: {
+                                    playerVars: { 
+                                        showinfo: 0 
+                                    }
+                                }
+                            }}
+                        />
+                    </div>
+                    <div className="col-md-3 chat">
+                        <h2>CHAT</h2>
                     </div>
                 </div>
                 </div>
@@ -58,11 +71,11 @@ export default function Administrador() {
                 body {
                     background: #04091B;
                 }
-                #player {
-                    width: 100%;
-                    height: 900px;
+                .ytp-copylink-title {
+                    display: none !important;
                 }
             `}</style>
+            
         </section>
     )
 }
