@@ -6,7 +6,7 @@ import Loader from './components/Loader';
 import { usePrograma } from '../lib/swr-hooks';
 
 export default function programa(){
-  const [ eldia, setEldia ] = useState("2 DE DICIEMBRE");
+  const [ eldia, setEldia ] = useState("29 DE JUNIO");
   const { programa, isLoadingPrograma } = usePrograma();
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -144,11 +144,8 @@ export default function programa(){
 
       <div className="container" data-aos="fade-up">
         <div className="section-header">
-          <div align="center">
-            <img src="/images/logo-congreso21.png" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{'width':'250px'}} />
-          </div>
           <h2 className="pt-3">Programa de Actividades</h2>
-          <p>35<sup>vo</sup> Congreso Internacional AMGG 2021<br/><b>Asociación Mexicana de Gerontología y Geriatría</b></p>
+          <p>II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA<br/>29 y 30 de JUNIO 2023</p>
           <hr/>
           <div align="center">
             <a href="https://capuletbeta.com/congreso2021/programa.pdf" className="nav-descarga" target="_blank">DESCARGAR PROGRAMA DE ACTIVIDADES EN PDF</a>
@@ -157,93 +154,18 @@ export default function programa(){
 
         <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
           <li className="nav-item">
-            <a className="nav-link active" href="#day-1" role="tab" data-toggle="tab" onClick={() => setEldia('2 DE DICIEMBRE')}>2 DE DICIEMBRE</a>
+            <a className="nav-link active" href="#day-1" role="tab" data-toggle="tab" onClick={() => setEldia('29 DE JUNIO')}>29 DE JUNIO</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#day-2" role="tab" data-toggle="tab" onClick={() => setEldia('3 DE DICIEMBRE')}>3 DE DICIEMBRE</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#day-3" role="tab" data-toggle="tab" onClick={() => setEldia('4 DE DICIEMBRE')}>4 DE DICIEMBRE</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#day-4" role="tab" data-toggle="tab" onClick={() => setEldia('5 DE DICIEMBRE')}>5 DE DICIEMBRE</a>
+            <a className="nav-link" href="#day-2" role="tab" data-toggle="tab" onClick={() => setEldia('30 DE JUNIO')}>30 DE JUNIO</a>
           </li>
         </ul>
-
-        <h3 className="sub-heading d-none">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
-          necessitatibus voluptatem quis labore perspiciatis quia.</h3>
 
         <h5 className="text-center font-weight-bold">CONFERENCIAS DEL DÍA {eldia}</h5>
 
         <div className="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
-          <div role="tabpanel" className="col-lg-9 tab-pane fade" id="day-1">
-            <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-              <li className="nav-item">
-                <a className="nav-link active" href="#geriatrico-day-1-S1" role="tab" data-toggle="tab" style={{
-                  'background':'#6a9e00'
-                }}>PRE-CONGRESO</a>
-              </li>
-            </ul>
-
-            <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-1-S1">
-              {ofertaPonentesDia1}
-            </div>
-
-          </div>
-
-          <div role="tabpanel" className="col-lg-9 tab-pane fade" id="day-2">
-
-            <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-              <li className="nav-item">
-                <a className="nav-link active" style={{
-                  'background':'#6a9e00'
-                }} onClick={() => setElmomento('geriatrico')}>MÓDULO GERIÁTRICO</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" style={{
-                  'background':'#2c5a00'
-                }} onClick={() => setElmomento('gerontologico')}>MÓDULO GERONTOLÓGICO</a>
-              </li>
-            </ul>
-
-            <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-2-S1">
-              {elmomento === 'geriatrico' ? ofertaPonentesDia2S1 : ofertaPonentesDia2S2}
-            </div>
-          </div>
-
-          <div role="tabpanel" className="col-lg-9  tab-pane fade" id="day-3">
-            <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-              <li className="nav-item">
-                <a className="nav-link active" style={{
-                  'background':'#6a9e00'
-                }} onClick={() => setElmomento('geriatrico')}>MÓDULO GERIÁTRICO</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" style={{
-                  'background':'#2c5a00'
-                }} onClick={() => setElmomento('gerontologico')}>MÓDULO GERONTOLÓGICO</a>
-              </li>
-            </ul>
-
-            <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-3-S1">
-              {elmomento === 'geriatrico' ? ofertaPonentesDia3S1 : ofertaPonentesDia3S2}
-            </div>
-          </div>
-
           <div role="tabpanel" className="col-lg-9  tab-pane fade show active" id="day-4">
-            <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-              <li className="nav-item">
-                <a className="nav-link active" style={{
-                  'background':'#6a9e00'
-                }} onClick={() => setElmomento('geriatrico')}>MÓDULO GERIÁTRICO</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" style={{
-                  'background':'#2c5a00'
-                }} onClick={() => setElmomento('gerontologico')}>MÓDULO GERONTOLÓGICO</a>
-              </li>
-            </ul>
             <div role="tabpanel" className="col-lg-12 tab-pane fade show active" id="geriatrico-day-4-S1">
               {elmomento === 'geriatrico' ? ofertaPonentesDia4S1 : ofertaPonentesDia4S2}
             </div>

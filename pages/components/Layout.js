@@ -9,7 +9,7 @@ class Layout extends Component {
         return (
             <>
                 <Head>
-                    <title>35 Congreso Internacional AMGG 2021 | Asociación Mexicana de Gerontología y Geriatría A.C.</title>
+                    <title>II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA | Asociación Mexicana de Gerontología y Geriatría A.C.</title>
                     <link rel="icon" type="image/png" href="/favicon.png" />
                     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
                     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@100;900&display=swap" rel="stylesheet" />

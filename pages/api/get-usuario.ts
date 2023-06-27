@@ -11,11 +11,11 @@ const handler: NextApiHandler = async (req, res) => {
     }
     const results = await querydos(
       `
-      SELECT * FROM registros_congreso2021
-      WHERE email = ?
+      SELECT * FROM sarcopenia23
+      WHERE email = ? AND password = ?
       LIMIT 1
       `,
-      email,
+      [email, password],
     )
     return res.json(results)
   } catch (e) {

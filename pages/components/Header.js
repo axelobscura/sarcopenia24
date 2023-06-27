@@ -12,11 +12,11 @@ export default function Header() {
                 <div id="logo" className="pull-left">
                     {usuario ?
                         <Link href="/administrador">
-                            <a><img src="/images/logo-blanco.svg" alt="capulet méxico" title="capulet méxico" style={{ width: '170px' }} /></a>
+                            <a><img src="/images/logo_header.jpg" alt="II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA" title="capulet méxico" style={{ width: '350px' }} /></a>
                         </Link>
                         :
                         <Link href="/">
-                            <a><img src="/images/logo-blanco.svg" alt="capulet méxico" title="capulet méxico" style={{ width: '170px' }} /></a>
+                            <a><img src="/images/logo_header.jpg" alt="II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA" title="capulet méxico" style={{ width: '350px' }} /></a>
                         </Link>
                     }
                 </div>
@@ -24,15 +24,6 @@ export default function Header() {
                     <ul className="nav-menu">
                         <li className={router.pathname == "/" ? "menu-active" : ""}><Link href="/"><a><i className="fa fa-angle-right"></i> INICIO</a></Link></li>
                         <li className={router.pathname == "/programa" ? "menu-active" : ""}><Link href="/programa"><a><i className="fa fa-angle-right"></i> PROGRAMA DE ACTIVIDADES</a></Link></li>
-                        {usuario ?
-                            <>
-                            {/* 
-                            <li className={router.pathname == "/perfil" ? "menu-active" : ""}><Link href="/perfil"><a><i className="fa fa-angle-right"></i> SUS DATOS DE USUARIO</a></Link></li>
-                            */}
-                            </>
-                            :
-                            ''
-                        }
                         {usuario ?
                             <>
                                 <li className="buy-tickets"><a style={{'background':'#333'}}>{usuario}</a></li>

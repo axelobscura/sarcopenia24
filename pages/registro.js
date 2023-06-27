@@ -75,7 +75,6 @@ export default function Registro() {
                             <hr />
                             <h2>Ingreso de usuarios</h2>
                             <p>Ingrese a su plataforma personalizada del congreso.</p>
-                            
                         </div>
                         <div className="contact-address">
                             <i className="ion-ios-location-outline"></i>
