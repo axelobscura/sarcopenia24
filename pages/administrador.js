@@ -59,18 +59,20 @@ export default function Administrador() {
             link={curso.link}
         />
     ));
+
     const elBuscador = (e) => {
         setBuscador(e.target.value);
         let termino = e.target.value;
         if (e.target.value !== '') {
-            const filteredData = programa.filter((item) => {
-              return Object.values(item).join('').toLowerCase().includes(termino.toLowerCase())
-            });
+        const filteredData = programa.filter((item) => {
+            return Object.values(item).join('').toLowerCase().includes(termino.toLowerCase())
+        });
             setProgramaBuscador(filteredData);
-          } else{
-            setProgramaBuscador(programa);
-          }
+        } else{
+            setProgramaBuscador();
+        }
     }
+
     return (
         <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
             <div className="container-fluid d-none">
@@ -173,17 +175,87 @@ export default function Administrador() {
                 : ""}
                 {programaBuscador ? 
                     <>
-                    <div className="row">
+                    <div className="row" style={{'background': '#F82149','padding': '20px'}}>
                         <div className="col-md-12">
                         <Carousel 
                             responsive={responsive}
                             infinite={true}
+                            
                         >
                             {programaBuscador.filter(name => name.dia == "2" && name.tema !== "RECESO").map(cc => (
                                 <Link href={`/salon/${cc.video}`}>
                                     <div className='programaimg'>
                                         <img 
                                             src='/images/portada-precongreso.jpg' 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                        <div className='tit-lamx'>
+                                            <h5>{cc.tema}</h5>
+                                            <p>{cc.ponente}</p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))}
+                        </Carousel>
+                        </div>
+                        <div className="col-md-12">
+                        <Carousel 
+                            responsive={responsive}
+                            infinite={true}
+                            
+                        >
+                            {programaBuscador.filter(name => name.dia == "3" && name.tema !== "RECESO").map(cc => (
+                                <Link href={`/salon/${cc.video}`}>
+                                    <div className='programaimg'>
+                                        <img 
+                                            src='/images/portada-geariatria.jpg' 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                        <div className='tit-lamx'>
+                                            <h5>{cc.tema}</h5>
+                                            <p>{cc.ponente}</p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))}
+                        </Carousel>
+                        </div>
+                        <div className="col-md-12">
+                        <Carousel 
+                            responsive={responsive}
+                            infinite={true}
+                            
+                        >
+                            {programaBuscador.filter(name => name.dia == "4" && name.tema !== "RECESO").map(cc => (
+                                <Link href={`/salon/${cc.video}`}>
+                                    <div className='programaimg'>
+                                        <img 
+                                            src='/images/portada-neuro.jpg' 
+                                            alt={cc.tema}
+                                            title={cc.tema}
+                                        />
+                                        <div className='tit-lamx'>
+                                            <h5>{cc.tema}</h5>
+                                            <p>{cc.ponente}</p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))}
+                        </Carousel>
+                        </div>
+                        <div className="col-md-12">
+                        <Carousel 
+                            responsive={responsive}
+                            infinite={true}
+                            
+                        >
+                            {programaBuscador.filter(name => name.dia == "5" && name.tema !== "RECESO").map(cc => (
+                                <Link href={`/salon/${cc.video}`}>
+                                    <div className='programaimg'>
+                                        <img 
+                                            src='/images/portada-neuro.jpg' 
                                             alt={cc.tema}
                                             title={cc.tema}
                                         />
