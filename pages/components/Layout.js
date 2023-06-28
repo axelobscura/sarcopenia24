@@ -10,7 +10,7 @@ class Layout extends Component {
             <>
                 <Head>
                     <title>II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA | Asociación Mexicana de Gerontología y Geriatría A.C.</title>
-                    <link rel="icon" type="image/png" href="/favicon.png" />
+                    <link rel="icon" type="image/png" href="/images/sello_amgg.png" />
                     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
                     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@100;900&display=swap" rel="stylesheet" />
                     <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />

@@ -28,10 +28,10 @@ export default function Registro() {
         }))
         .then(async (response) => {
 
-            console.log('RESPUESTA, ', response);
+            console.log('RESPUESTA, ', response.data);
 
-            if (response.data === "exito") {
-                signIn(email, password);
+            if (response.data[0] === "exito") {
+                signIn(email, password, response.data[2], response.data[3]);
                 setMensaje('¡Bienvenido, ingresando a su cuenta!');
                 setEsusuario(true);
             } else if (response.data === "fallo") {

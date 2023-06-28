@@ -10,7 +10,7 @@ export default function Chat({ posts, tipo }) {
     const { mutate } = useSWRConfig()
     const [mensajelocal, setMensajelocal] = useState('');
     let { mensajes, isLoadingMensajes } = useMensajes();
-    const { usuario } = useContext(UserContext);
+    const { usuario, nombre } = useContext(UserContext);
 
     async function submitHandler(e) {
         e.preventDefault();
@@ -46,7 +46,7 @@ export default function Chat({ posts, tipo }) {
     return (
         <div className="form-group chat">
             <form onSubmit={submitHandler}>
-                <input type="hidden" name="usuario" value={usuario} />
+                <input type="hidden" name="usuario" value={nombre} />
                 <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..." required/>
                 <input type="submit" value="ENVIAR COMENTARIO" className="btn_chat" />
             </form>
