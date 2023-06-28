@@ -27,7 +27,6 @@ export default function Header() {
                         {usuario ?
                             <>
                                 <li className="buy-tickets"><a style={{'background':'#333'}}>{usuario}</a></li>
-                                <li className="buy-tickets"><Link href="/administrador"><a>PANEL</a></Link></li>
                                 <li className="buy-tickets"><a onClick={signOut}>SALIR</a></li>
                             </>
                             :
