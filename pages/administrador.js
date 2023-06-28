@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useContext } from 'react';
 import ReactPlayer from 'react-player';
 import Loader from './components/Loader';
 import { usePrograma } from '../lib/swr-hooks';
 import Chat from './components/Chat';
+import UserContext from '../UserContext';
 import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
 
 const responsive = {
@@ -25,8 +26,8 @@ const responsive = {
 };
 
 export default function Administrador() {
+    const { usuario, signOut } = useContext(UserContext);
     const { programa, isLoadingPrograma } = usePrograma();
-
     if (isLoadingPrograma && !programa) {
         return (
             <Loader />
@@ -39,7 +40,7 @@ export default function Administrador() {
             <div className="row vh-80">
                 {/*<MenuAdminEvento />*/}
                 <div className="col-md-12">
-                
+                {usuario ? usuario : 'no'}
                 <div className="row">
                     <div className="col-md-9">
                         <div className="cubrenlace">

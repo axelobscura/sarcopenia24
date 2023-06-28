@@ -28,6 +28,8 @@ export default function Registro() {
         }))
         .then(async (response) => {
 
+            console.log('RESPUESTA, ', response);
+
             if (response.data === "exito") {
                 signIn(email, password);
                 setMensaje('¡Bienvenido, ingresando a su cuenta!');
@@ -36,6 +38,8 @@ export default function Registro() {
                 setMensaje('¡Lo sentimos, sus datos son incorrectos!');
                 setEsusuario(false);
             } else {
+                setMensaje('¡Lo sentimos, sus datos son incorrectos!');
+                setEsusuario(false);
             }
         })
         .catch(function (error) {
