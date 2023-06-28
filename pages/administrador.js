@@ -45,15 +45,12 @@ export default function Administrador() {
         )
     };
 
-
-
     return (
         <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
             <div className="container-fluid">
             <div className="row vh-80">
                 {/*<MenuAdminEvento />*/}
                 <div className="col-md-12">
-                {usuario ? usuario : 'no'}
                 <div className="row">
                     <div className="col-md-9">
                         <div className="cubrenlace">
