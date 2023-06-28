@@ -1,9 +1,10 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import Loader from './components/Loader';
 import { usePrograma } from '../lib/swr-hooks';
 import Chat from './components/Chat';
 import UserContext from '../UserContext';
+import { useRouter } from 'next/router';
 import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
 
 const responsive = {
@@ -26,13 +27,25 @@ const responsive = {
 };
 
 export default function Administrador() {
+    const router = useRouter();
     const { usuario, signOut } = useContext(UserContext);
     const { programa, isLoadingPrograma } = usePrograma();
+    
+    console.log(router);
+
+    useEffect(() => {
+        if (!usuario) {
+            router.push('/');
+        }
+    }, [])
+
     if (isLoadingPrograma && !programa) {
         return (
             <Loader />
         )
     };
+
+
 
     return (
         <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
