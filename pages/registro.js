@@ -60,7 +60,7 @@ export default function Registro() {
                             <h2>Ingreso de usuarios</h2>
                         </div>
                         <div className="contact-address">
-                            <h3>POR FAVOR INGRESE SUS DATOS DE ACCESO</h3>
+                            <h3>II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA</h3>
                             <h1>{mensaje}</h1>
                             <p className={userMsg !== "" ? `errorLog` : ``}>{userMsg}</p>
                             <hr />
