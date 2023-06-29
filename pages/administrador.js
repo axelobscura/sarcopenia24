@@ -57,8 +57,8 @@ export default function Administrador() {
                         <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '100%' }} />
                         </div>
                         <ReactPlayer
-                            className='react-player d-none'
-                            url={`https://www.youtube.com/watch?v=3cO2eanqWBA?rel=0;autoplay=1`}
+                            className='react-player'
+                            url={`https://www.youtube.com/watch?v=sjqfdr14JPU?rel=0;autoplay=1`}
                             width="100%"
                             height="100%"
                             loop='true'
