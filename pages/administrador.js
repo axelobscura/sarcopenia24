@@ -54,7 +54,7 @@ export default function Administrador() {
                 <div className="row">
                     <div className="col-md-9">
                         <div className="cubrenlace">
-                        <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '100%' }} />
+                        <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '70px', 'float': 'right' }} />
                         </div>
                         <ReactPlayer
                             className='react-player'

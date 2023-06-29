@@ -2183,7 +2183,7 @@ li.lichat {
 
 .cubrenlace {
   position: absolute;
-  width: 100px;
+  width: 200px;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.9);
   right: 0;
