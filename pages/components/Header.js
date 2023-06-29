@@ -30,7 +30,7 @@ export default function Header() {
                                 <li className="buy-tickets"><a onClick={signOut}>SALIR</a></li>
                             </>
                             :
-                            <li className="buy-tickets"><Link href="/"><a>INGRESAR AL SIMPOSIO</a></Link></li>
+                            <li className="buy-tickets"><Link href="/registro"><a>INGRESAR AL SIMPOSIO</a></Link></li>
                         }
                         <li>
                             <a href="https://www.amgg.com.mx/" target="_blank" style={{'padding':'0'}}>

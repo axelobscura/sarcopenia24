@@ -28,7 +28,7 @@ export default function Home() {
           <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           */}
           <div className="d-flex">
-            {/*<Link href="/registro"><a className="about-btn" style={{'background':'#151515'}}>INGRESAR AL SIMPOSIO</a></Link>*/}
+            <Link href="/registro"><a className="about-btn" style={{'background':'#151515'}}>INGRESAR AL SIMPOSIO</a></Link>
           </div>
         </div>
       </section>
