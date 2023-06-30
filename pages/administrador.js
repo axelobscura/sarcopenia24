@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import Loader from './components/Loader';
 import { usePrograma } from '../lib/swr-hooks';
@@ -30,6 +30,7 @@ export default function Administrador() {
     const router = useRouter();
     const { usuario, signOut } = useContext(UserContext);
     const { programa, isLoadingPrograma } = usePrograma();
+    const [ dia, setDia ] = useState('sjqfdr14JPU');
     
     console.log(router);
 
@@ -45,6 +46,15 @@ export default function Administrador() {
         )
     };
 
+    const selectDia = (sdia) => {
+        console.log(sdia);
+        if(sdia === "29-de-junio"){
+            setDia('sjqfdr14JPU');
+        } else {
+            setDia('gmqZwfER1F0');
+        }
+    }
+
     return (
         <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
             <div className="container-fluid">
@@ -52,13 +62,21 @@ export default function Administrador() {
                 {/*<MenuAdminEvento />*/}
                 <div className="col-md-12">
                 <div className="row">
-                    <div className="col-md-9">
+                    <div className="col-md-6">
+                        <button className={`boton a ${dia === "sjqfdr14JPU" ? 'activo' : ''}`} onClick={() => selectDia('29-de-junio')}>VER PONENCIAS 29 de JUNIO</button>
+                    </div>
+                    <div className="col-md-6">
+                        <button className={`boton b ${dia === "gmqZwfER1F0" ? 'activo' : ''}`} onClick={() => selectDia('30-de-junio')}>VER PONENCIAS 30 de JUNIO</button>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
                         <div className="cubrenlace">
                         <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '70px', 'float': 'right' }} />
                         </div>
                         <ReactPlayer
                             className='react-player'
-                            url={`https://www.youtube.com/watch?v=gmqZwfER1F0?rel=0;autoplay=1`}
+                            url={`https://www.youtube.com/watch?v=${dia}?rel=0;autoplay=1`}
                             width="100%"
                             height="100%"
                             loop='true'
@@ -72,10 +90,6 @@ export default function Administrador() {
                                 }
                             }}
                         />
-                    </div>
-                    <div className="col-md-3 chat">
-                        <h2>CHAT</h2>
-                        <Chat />
                     </div>
                 </div>
                 <div className="row nota p-0 m-0">
