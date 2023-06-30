@@ -2188,6 +2188,7 @@ li.lichat {
   background: rgba(0, 0, 0, 0.9);
   right: 0;
   top: 0;
+  border-radius: 20px;
 }
 
 a.menuadminu {

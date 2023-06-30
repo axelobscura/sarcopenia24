@@ -58,7 +58,7 @@ export default function Administrador() {
                         </div>
                         <ReactPlayer
                             className='react-player'
-                            url={`https://www.youtube.com/watch?v=sjqfdr14JPU?rel=0;autoplay=1`}
+                            url={`https://www.youtube.com/watch?v=gmqZwfER1F0?rel=0;autoplay=1`}
                             width="100%"
                             height="100%"
                             loop='true'
