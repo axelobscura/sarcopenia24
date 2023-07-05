@@ -62,6 +62,11 @@ export default function Administrador() {
                 {/*<MenuAdminEvento />*/}
                 <div className="col-md-12">
                 <div className="row">
+                    <div className="col-md-12 p-0 m-0 mb-3 tarjetaevento">
+                        <a href={`https://amgg.com.mx/diplomas/diplomapdf.php?email=${usuario}`} target="_blank">DESCARGUE SU CONSTANCIA AQUÍ <ArrowRightCircle /></a>
+                    </div>
+                </div>
+                <div className="row">
                     <div className="col-md-6">
                         <button className={`boton a ${dia === "sjqfdr14JPU" ? 'activo' : ''}`} onClick={() => selectDia('29-de-junio')}>VER PONENCIAS 29 de JUNIO</button>
                     </div>
