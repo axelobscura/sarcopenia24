@@ -16,7 +16,7 @@ export default function programa(){
         <Loader/>
     )
   };
-  const ofertaPonentesDia1 = programa.filter(prog => prog.dia == '2').map(evento => (
+  const ofertaPonentesDia1 = programa.filter(prog => prog.dia == '29 JUNIO').map(evento => (
     <CardPonente
         key={evento.id}
         id={evento.id}
@@ -33,92 +33,7 @@ export default function programa(){
         video={evento.video}
     />
   ));
-  const ofertaPonentesDia2S1 = programa.filter(prog => prog.dia == '3' && prog.salon == '1').map(evento => (
-    <CardPonente
-        key={evento.id}
-        id={evento.id}
-        horario={evento.horario}
-        dia={evento.dia}
-        salon={evento.salon}
-        modulo={evento.modulo}
-        ponente={evento.ponente}
-        tema={evento.tema}
-        institucion={evento.institucion}
-        especialidad={evento.especialidad}
-        elmomento={elmomento}
-        bandera={evento.bandera}
-        video={evento.video}
-    />
-  ));
-  const ofertaPonentesDia2S2 = programa.filter(prog => prog.dia == '3' && prog.salon == '2').map(evento => (
-    <CardPonente
-        key={evento.id}
-        id={evento.id}
-        horario={evento.horario}
-        dia={evento.dia}
-        salon={evento.salon}
-        modulo={evento.modulo}
-        ponente={evento.ponente}
-        tema={evento.tema}
-        institucion={evento.institucion}
-        especialidad={evento.especialidad}
-        elmomento={elmomento}
-        bandera={evento.bandera}
-        video={evento.video}
-    />
-  ));
-  const ofertaPonentesDia3S1 = programa.filter(prog => prog.dia == '4' && prog.salon == '1').map(evento => (
-    <CardPonente
-        key={evento.id}
-        id={evento.id}
-        horario={evento.horario}
-        dia={evento.dia}
-        salon={evento.salon}
-        modulo={evento.modulo}
-        ponente={evento.ponente}
-        tema={evento.tema}
-        institucion={evento.institucion}
-        especialidad={evento.especialidad}
-        elmomento={elmomento}
-        bandera={evento.bandera}
-        video={evento.video}
-    />
-  ));
-  const ofertaPonentesDia3S2 = programa.filter(prog => prog.dia == '4' && prog.salon == '2').map(evento => (
-    <CardPonente
-        key={evento.id}
-        id={evento.id}
-        horario={evento.horario}
-        dia={evento.dia}
-        salon={evento.salon}
-        modulo={evento.modulo}
-        ponente={evento.ponente}
-        tema={evento.tema}
-        institucion={evento.institucion}
-        especialidad={evento.especialidad}
-        elmomento={elmomento}
-        bandera={evento.bandera}
-        video={evento.video}
-    />
-  ));
-  const ofertaPonentesDia4S1 = programa.filter(prog => prog.dia == '5' && prog.salon == '1').map(evento => (
-    <CardPonente
-        key={evento.id}
-        id={evento.id}
-        horario={evento.horario}
-        dia={evento.dia}
-        salon={evento.salon}
-        modulo={evento.modulo}
-        ponente={evento.ponente}
-        tema={evento.tema}
-        institucion={evento.institucion}
-        especialidad={evento.especialidad}
-        elmomento={elmomento}
-        bandera={evento.bandera}
-        video={evento.video}
-    />
-  ));
-  const ofertaPonentesDia4S2 = programa.filter(prog => prog.dia == '5' && prog.salon == '2').map(evento => (
+  const ofertaPonentesDia2S1 = programa.filter(prog => prog.dia == '30 JUNIO').map(evento => (
     <CardPonente
         key={evento.id}
         id={evento.id}

@@ -1,4 +1,5 @@
 import { useState, useContext, useEffect } from 'react';
+import Link from 'next/dist/client/link';
 import ReactPlayer from 'react-player';
 import Loader from './components/Loader';
 import { usePrograma } from '../lib/swr-hooks';
@@ -6,6 +7,7 @@ import Chat from './components/Chat';
 import UserContext from '../UserContext';
 import { useRouter } from 'next/router';
 import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
+import Carousel from "react-multi-carousel";
 
 const responsive = {
     superLargeDesktop: {
@@ -32,7 +34,7 @@ export default function Administrador() {
     const { programa, isLoadingPrograma } = usePrograma();
     const [ dia, setDia ] = useState('sjqfdr14JPU');
     
-    console.log(router);
+    console.log(programa);
 
     useEffect(() => {
         if (!usuario) {
@@ -61,47 +63,72 @@ export default function Administrador() {
             <div className="row vh-80">
                 {/*<MenuAdminEvento />*/}
                 <div className="col-md-12">
-                <div className="row">
-                    <div className="col-md-12 p-0 m-0 mb-3 tarjetaevento">
-                        <a href={`https://amgg.com.mx/diplomas/diplomapdf.php?email=${usuario}`} target="_blank">DESCARGUE SU CONSTANCIA AQUÍ <ArrowRightCircle /></a>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6">
-                        <button className={`boton a ${dia === "sjqfdr14JPU" ? 'activo' : ''}`} onClick={() => selectDia('29-de-junio')}>VER PONENCIAS 29 de JUNIO</button>
-                    </div>
-                    <div className="col-md-6">
-                        <button className={`boton b ${dia === "gmqZwfER1F0" ? 'activo' : ''}`} onClick={() => selectDia('30-de-junio')}>VER PONENCIAS 30 de JUNIO</button>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-12">
-                        <div className="cubrenlace">
-                        <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '70px', 'float': 'right' }} />
+                    <div className="row">
+                        <div className="col-md-12 p-0 m-0 mb-3 tarjetaevento">
+                            <a href={`https://amgg.com.mx/diplomas/diplomapdf.php?email=${usuario}`} target="_blank">DESCARGUE SU CONSTANCIA AQUÍ <ArrowRightCircle /></a>
                         </div>
-                        <ReactPlayer
-                            className='react-player'
-                            url={`https://www.youtube.com/watch?v=${dia}?rel=0;autoplay=1`}
-                            width="100%"
-                            height="100%"
-                            loop='true'
-                            playing='true'
-                            controls='true'
-                            config={{
-                                youtube: {
-                                    playerVars: { 
-                                        showinfo: 0 
-                                    }
+                    </div>
+                    
+                    <div className="row prog">
+                        <div className="col-md-12">
+                        <h3><div><ArrowRightCircle/> 29 DE JUNIO 2023</div></h3>
+                        <Carousel 
+                            responsive={responsive}
+                            infinite={true}
+                        >
+                            {programa.filter(name => name.dia == "29 JUNIO").map(cc => {
+                                if(cc.video){
+                                    return(
+                                        <Link href={`/salon/${cc.video}`}>
+                                            <div className='programaimg'>
+                                                <img 
+                                                    src='/images/back_sarcopenia.jpg'
+                                                    alt={cc.titulo}
+                                                    title={cc.tema}
+                                                />
+                                                <div className='tit-lamx'>
+                                                    <h5>{cc.titulo} {cc.video}</h5>
+                                                    <p>{cc.ponente}</p>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    )
                                 }
-                            }}
-                        />
+                            })}
+                        </Carousel>
+                        </div>
                     </div>
-                </div>
-                <div className="row nota p-0 m-0">
-                    <div className="col-md-12 p-0 m-0">
-                        <p><b>NOTA IMPORTANTE</b>: Si el video no comienza a reproducirse, por favor de click en el botón.</p>
+
+                    <div className="row prog">
+                        <div className="col-md-12">
+                        <h3><div><ArrowRightCircle/> 30 DE JUNIO 2023</div></h3>
+                        <Carousel 
+                            responsive={responsive}
+                            infinite={true}
+                        >
+                            {programa.filter(name => name.dia == "30 JUNIO").map(cc => {
+                                if(cc.video){
+                                    return(
+                                        <Link href={`/salon/${cc.video}`}>
+                                            <div className='programaimg'>
+                                                <img 
+                                                    src='/images/back_sarcopenia.jpg'
+                                                    alt={cc.titulo}
+                                                    title={cc.tema}
+                                                />
+                                                <div className='tit-lamx'>
+                                                    <h5>{cc.titulo}</h5>
+                                                    <p>{cc.ponente}</p>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    )
+                                }
+                            })}
+                        </Carousel>
+                        </div>
                     </div>
-                </div>
+                
                 </div>
             </div>
             </div>
