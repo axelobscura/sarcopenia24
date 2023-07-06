@@ -14,7 +14,9 @@ export default function Salon() {
             {/*<MenuAdminEvento />*/}
             <div className="col-md-12">
               <div className="row">
-                <div className="cubrenlace"></div>
+                <div className="cubrenlace">
+                  <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '70px', 'float': 'right' }} />
+                </div>
                 <ReactPlayer
                   className='react-player'
                   url={`https://www.youtube.com/watch?v=${elvideo}?rel=0;autoplay=1`}
