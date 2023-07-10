@@ -87,7 +87,7 @@ export default function Administrador() {
                                                     title={cc.tema}
                                                 />
                                                 <div className='tit-lamx'>
-                                                    <h5>{cc.titulo} {cc.video}</h5>
+                                                    <h5>{cc.titulo}</h5>
                                                     <p>{cc.ponente}</p>
                                                 </div>
                                             </div>
