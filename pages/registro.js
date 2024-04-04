@@ -2,7 +2,6 @@ import { useState, useContext } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import Link from 'next/dist/client/link';
 import UserContext from '../UserContext';
-import Router from 'next/router';
 import axios from "axios";
 
 export default function Registro() {
@@ -58,7 +57,7 @@ export default function Registro() {
                             <h2>Ingreso de usuarios</h2>
                         </div>
                         <div className="contact-address">
-                            <h3>II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA</h3>
+                            <h3>III SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA</h3>
                             <h1>{mensaje}</h1>
                             <p className={userMsg !== "" ? `errorLog` : ``}>{userMsg}</p>
                             <hr />

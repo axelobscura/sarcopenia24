@@ -10,7 +10,6 @@ export default function CardPonente({horario, dia, salon, modulo, ponente, tema,
         </div>
         <div>
           <Link href={`/salon/${video}`}>
-            <a>
               <h4 style={{'textTransform':'uppercase'}}>{tema}</h4>
               <h5 style={{'fontWeight': 'bold','margin':'0','fontSize':'0.9rem'}} className={elmomento}>{ponente}</h5>
               {tema === "RECESO" ? 
@@ -18,7 +17,6 @@ export default function CardPonente({horario, dia, salon, modulo, ponente, tema,
                 :
                 <p>Especialidad: {especialidad}</p>
               }
-            </a>
           </Link>
         </div>
       </div>

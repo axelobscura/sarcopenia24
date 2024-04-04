@@ -6,23 +6,24 @@ import Link from 'next/link';
 export default function Header() {
     const { usuario, signOut } = useContext(UserContext);
     const router = useRouter();
+
     return (
         <header id="header" className={router.pathname == "/programa" || router.pathname == "/registro" || router.pathname == "/recuperar" ? "header-scrolled programa" : "header-scrolled"}>
             <div className="container-fluid">
                 <div id="logo" className="pull-left">
                     {usuario ?
                         <Link href="/administrador">
-                            <a><img src="/images/logo_header.jpg" alt="II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA" title="capulet méxico" style={{ width: '350px' }} /></a>
+                            <img src="/images/logo_header.jpg" alt="II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA" title="capulet méxico" style={{ width: '350px' }} />
                         </Link>
                         :
                         <Link href="/">
-                            <a><img src="/images/logo_header.jpg" alt="II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA" title="capulet méxico" style={{ width: '350px' }} /></a>
+                            <img src="/images/logo_header.jpg" alt="II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA" title="capulet méxico" style={{ width: '350px' }} />
                         </Link>
                     }
                 </div>
                 <nav id="nav-menu-container">
                     <ul className="nav-menu">
-                        <li className={router.pathname == "/" ? "menu-active" : ""}><Link href="/"><a><i className="fa fa-angle-right"></i> INICIO</a></Link></li>
+                        <li className={router.pathname == "/" ? "menu-active" : ""}><Link href="/"><i className="fa fa-angle-right"></i> INICIO</Link></li>
                         <li className={router.pathname == "/programa" ? "menu-active" : ""}><a href="https://amgg.com.mx/sarcopenia2023/#programa" target="_blank"><i className="fa fa-angle-right"></i> PROGRAMA ACADÉMICO</a></li>
                         {usuario ?
                             <>
@@ -30,7 +31,7 @@ export default function Header() {
                                 <li className="buy-tickets"><a onClick={signOut}>SALIR</a></li>
                             </>
                             :
-                            <li className="buy-tickets"><Link href="/registro"><a>INGRESAR AL SIMPOSIO</a></Link></li>
+                            <li className="buy-tickets"><Link href="/registro">INGRESAR AL SIMPOSIO</Link></li>
                         }
                         <li>
                             <a href="https://www.amgg.com.mx/" target="_blank" style={{'padding':'0'}}>
