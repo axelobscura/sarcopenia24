@@ -21,7 +21,7 @@ export default function Home() {
       <section id="intro">
         <div className="intro-container wow fadeIn">
           <h1>III SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA</h1>
-          <h2 className="mt-3 mb-1 pb-0 font-weight-bold" style={{'color':'#f72249'}}>{status === 'success' ? '¡Se ha registrado con éxito!' : '29 y 30 de junio, 2023'}</h2>
+          <h2 className="mt-3 mb-1 pb-0" style={{'color':'#ffffff',fontSize:'4rem'}}>{status === 'success' ? '¡Se ha registrado con éxito!' : '18 y 19 de abril, 2024'}</h2>
           <p className="m-0 text-white">CONSTANCIA CON VALOR CURRICULAR</p>
           {status === 'success' ? <p className="mb-1 pt-0">¡BIENVENIDO!</p> : <p className="mb-1 pt-0 dirigido">Dirigido a Médicos Generales, Médicos internistas, Médicos Familiares, Geriatras, Gerontólogos<br/>Nutriólogos, Estudiantes, Personal de Enfermería, Cuidadores y especialidades afines</p>}
           <div className="d-flex">
