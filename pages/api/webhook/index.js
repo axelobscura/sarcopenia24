@@ -25,7 +25,7 @@ export default async function handler(req, res) {
     try {
       
     } catch (err) {
-      console.log(`❌ Error message: ${err.message}`);
+      console.log(`Error message: ${err.message}`);
       res.status(400).send(`Webhook Error: ${err.message}`);
       return;
     }
