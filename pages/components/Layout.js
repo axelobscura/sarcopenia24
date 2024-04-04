@@ -11,14 +11,9 @@ class Layout extends Component {
                 <Head>
                     <title>III SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA | Asociación Mexicana de Gerontología y Geriatría A.C.</title>
                 </Head>
-
-
-
+                <Header/>
                 <main>{children}</main>
-
                 <Footer />
-
-                
             </>
         );
     }

@@ -48,7 +48,7 @@ export default function Registro() {
         <section id="contact" className="section-bg wow fadeInDown mt-5">
             <div className="container-fluid">
                 <div className="row contact-info">
-                    <div className="col-md-6 offset-3">
+                    <div className="col-md-6 offset-sm-0 offset-md-3">
                         <div className="section-header mt-2 text-center">
                             <div align="center">
                                 <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '250px' }} />

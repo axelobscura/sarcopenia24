@@ -504,7 +504,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact {
   width: 100%;
-  background: url(/images/back_congreso.png) top center;
+  background: rgb(244,165,28);
+  background: linear-gradient(331deg, rgba(244,165,28,1) 0%, rgba(244,210,17,1) 100%);
   background-size: cover;
   overflow: hidden;
   position: relative;
