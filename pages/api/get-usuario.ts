@@ -11,7 +11,7 @@ const handler: NextApiHandler = async (req, res) => {
     }
     const results = await querydos(
       `
-      SELECT * FROM sarcopenia23
+      SELECT * FROM sarcopenia24
       WHERE email = ? AND password = ?
       LIMIT 1
       `,
