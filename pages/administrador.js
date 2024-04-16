@@ -20,7 +20,7 @@ const responsive = {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 4
+      items: 2
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -63,32 +63,38 @@ export default function Administrador() {
             <div className="row vh-80">
                 {/*<MenuAdminEvento />*/}
                 <div className="col-md-12">
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="col-md-12 p-0 m-0 mb-3 tarjetaevento">
                             <a href={`https://amgg.com.mx/diplomas/diplomapdf.php?email=${usuario}`} target="_blank">DESCARGUE SU CONSTANCIA AQUÍ <ArrowRightCircle /></a>
+                        </div>
+                    </div> */}
+                    <div className="row">
+                        <div className="col-md-12 p-0 m-0 mb-3 tarjetaevento">
+                            <h2 style={{textAlign:'center',color:'#fff',fontWeight:'bold',paddingTop:'30px'}}>¡BIENVENIDOS!</h2>
+                            <h3 style={{textAlign:'center',color:'#fff',fontWeight:'100',paddingBottom:'30px'}}>III SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN SARCOPENIA Y FRAGILIDAD</h3>
                         </div>
                     </div>
                     
                     <div className="row prog">
                         <div className="col-md-12">
-                        <h3><div><ArrowRightCircle/> 29 DE JUNIO 2023</div></h3>
+                        <h3><div><ArrowRightCircle/> JUEVES 18 DE ABRIL 2024</div></h3>
                         <Carousel 
                             responsive={responsive}
                             infinite={true}
                         >
-                            {programa.filter(name => name.dia == "29 JUNIO").map(cc => {
+                            {programa.filter(name => name.dia == "18 ABRIL").map(cc => {
                                 if(cc.video){
                                     return(
                                         <Link href={`/salon/${cc.video}`}>
                                             <div className='programaimg'>
                                                 <img 
-                                                    src='/images/back_sarcopenia.jpg'
+                                                    src='/images/back_sarcopenia24.jpg'
                                                     alt={cc.titulo}
                                                     title={cc.tema}
                                                 />
                                                 <div className='tit-lamx'>
                                                     <h5>{cc.titulo}</h5>
-                                                    <p>{cc.ponente}</p>
+                                                    <p style={{color:'#fff'}}>{cc.ponente}</p>
                                                 </div>
                                             </div>
                                         </Link>
@@ -101,7 +107,7 @@ export default function Administrador() {
 
                     <div className="row prog">
                         <div className="col-md-12">
-                        <h3><div><ArrowRightCircle/> 30 DE JUNIO 2023</div></h3>
+                        <h3><div><ArrowRightCircle/> VIERNES 18 DE ABRIL 2024</div></h3>
                         <Carousel 
                             responsive={responsive}
                             infinite={true}
@@ -112,7 +118,7 @@ export default function Administrador() {
                                         <Link href={`/salon/${cc.video}`}>
                                             <div className='programaimg'>
                                                 <img 
-                                                    src='/images/back_sarcopenia.jpg'
+                                                    src='/images/back_sarcopenia24.jpg'
                                                     alt={cc.titulo}
                                                     title={cc.tema}
                                                 />
@@ -134,7 +140,7 @@ export default function Administrador() {
             </div>
             <style global jsx>{`
                 body {
-                    background: #04091B;
+                    background: #0585a8;
                 }
                 .ytp-copylink-title, ytp-pause-overlay-container {
                     display: none !important;

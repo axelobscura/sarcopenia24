@@ -9,6 +9,7 @@ export default class MyDocument extends Document {
           <link rel="icon" type="image/png" href="/images/sello_amgg.png" />
           <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
           <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@100;900&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"></link>
           <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
           <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
           <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet" />
@@ -41,19 +42,19 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
           <script src="/assets/vendor/jquery/jquery.min.js"></script>
-                <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-                <script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-                <script src="/assets/vendor/php-email-form/validate.js"></script>
-                <script src="/assets/vendor/wow/wow.min.js"></script>
-                <script src="/assets/vendor/venobox/venobox.min.js"></script>
-                <script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-                <script src="/assets/vendor/superfish/superfish.min.js"></script>
-                <script src="/assets/vendor/hoverIntent/hoverIntent.js"></script>
-                <script async src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js" strategy="beforeInteractive"></script>
-                <script>
-                    const player = new Plyr('#player');
-                </script>
-                <script src="/assets/js/main.js"></script>
+          <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+          <script src="/assets/vendor/php-email-form/validate.js"></script>
+          <script src="/assets/vendor/wow/wow.min.js"></script>
+          <script src="/assets/vendor/venobox/venobox.min.js"></script>
+          <script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+          <script src="/assets/vendor/superfish/superfish.min.js"></script>
+          <script src="/assets/vendor/hoverIntent/hoverIntent.js"></script>
+          <script async src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js" strategy="beforeInteractive"></script>
+          <script>
+              const player = new Plyr('#player');
+          </script>
+          <script src="/assets/js/main.js"></script>
         </body>
       </Html>
     )

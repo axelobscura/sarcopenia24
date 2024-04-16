@@ -9,7 +9,6 @@ export default function Patrocinadores() {
                     }}>
                         <div className="logospatro">
                             <img src="/images/kurppen.png" alt="II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA" className="img-fluid" style={{ 'width': '150px' }} />
-                            <img src="/images/affective.png" alt="II SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA" className="img-fluid" style={{ 'width': '150px' }} />
                         </div>
                     </div>
                 </div>

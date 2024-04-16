@@ -19,7 +19,7 @@ export default function Registro() {
         let password = e.target.passwordUsuario.value;
         setMensaje('Enviando sus datos');
 
-        let url = `https://webinarimcyc.com/testemail/usuario.php`;
+        let url = `https://webinarimcyc.com/testemail/usuario24.php`;
         
         await axios.post(url, JSON.stringify({
             email: email,
@@ -57,8 +57,8 @@ export default function Registro() {
                             <h2>Ingreso de usuarios</h2>
                         </div>
                         <div className="contact-address">
-                            <h3>III SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA</h3>
-                            <h1>{mensaje}</h1>
+                            <h3 style={{color:'#ffffff',background:'#29add4',padding:'10px'}}>III SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN FRAGILIDAD Y SARCOPENIA</h3>
+                            <h1 style={{color:'#111111',fontWeight:'bold'}}>{mensaje}</h1>
                             <p className={userMsg !== "" ? `errorLog` : ``}>{userMsg}</p>
                             <hr />
                             <form onSubmit={handleUsuario}>
@@ -84,7 +84,7 @@ export default function Registro() {
                 border-radius: 50px;
                 padding: 10px 40px;
                 transition: all 0.2s;
-                background-color: #f82249;
+                background-color: #29add4;
                 border: 0;
                 color: #fff;
                 text-transform: uppercase;

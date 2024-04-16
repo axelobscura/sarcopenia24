@@ -11,7 +11,7 @@
 body {
   background: #101522;
   color: #2f3138;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -325,10 +325,10 @@ h6 {
 
 .nav-menu li.buy-tickets a {
   color: #fff;
-  background: #f82249;
+  background: #29add4;
   padding: 7px 22px;
   border-radius: 50px;
-  border: 2px solid #f82249;
+  border: 2px solid #29add4;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   margin-left: 8px;
@@ -506,6 +506,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
   background: rgb(244,165,28);
   background: linear-gradient(331deg, rgba(244,165,28,1) 0%, rgba(244,210,17,1) 100%);
+  background: url(/images/bkg.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
