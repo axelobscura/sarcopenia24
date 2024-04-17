@@ -46,6 +46,7 @@ export default function Chat({ posts, tipo }) {
     return (
         <div className="form-group chat">
             <form onSubmit={submitHandler}>
+                <label htmlFor="mensaje" style={{color:'#fff'}}>Mensaje/Pregunta:</label>
                 <input type="hidden" name="usuario" value={nombre} />
                 <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..." required/>
                 <input type="submit" value="ENVIAR COMENTARIO" className="btn_chat" />

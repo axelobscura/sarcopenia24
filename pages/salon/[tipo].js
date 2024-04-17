@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import MenuAdminEvento from '../components/MenuAdminEvento';
 import ReactPlayer from 'react-player';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import Chat from '../components/Chat';
 
 export default function Salon() {
   const router = useRouter();
@@ -12,7 +13,7 @@ export default function Salon() {
         <div className="container-fluid">
           <div className="row vh-80">
             {/*<MenuAdminEvento />*/}
-            <div className="col-md-12">
+            <div className="col-md-9">
               <div className="row">
                 <div className="cubrenlace">
                   <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" style={{ 'width': '70px', 'float': 'right' }} />
@@ -33,6 +34,9 @@ export default function Salon() {
                 />
               </div>
             </div>
+            <div className="col-md-3">
+                  <Chat />
+              </div>
           </div>
         </div>
         <style global jsx>{`
