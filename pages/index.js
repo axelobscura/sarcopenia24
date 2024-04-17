@@ -6,7 +6,6 @@ export default function Home() {
   const router = useRouter();
   const {status} = router.query;
 
-  
   useEffect(() => {
     const usuario = localStorage.getItem('usuario');
     if (usuario) {

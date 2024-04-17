@@ -2309,6 +2309,7 @@ p.nimportante {
   padding-bottom: 20px;
   margin-bottom: 0;
   padding-bottom: 0;
+  text-transform: uppercase;
 }
 
 .programaimg .tit-lamx p {
@@ -2355,13 +2356,13 @@ p.nimportante {
 
 @media (max-width: 2500px) {
   .programaimg .tit-lamx h5 {
-    margin-top: 120px;
+    margin-top: 70px;
   }
 }
 
 @media (max-width: 1900px) {
   .programaimg .tit-lamx h5 {
-    margin-top: 70px;
+    margin-top: 40px;
   }
 }
 

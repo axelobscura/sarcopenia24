@@ -89,7 +89,8 @@ export default function Administrador() {
                                                 />
                                                 <div className='tit-lamx'>
                                                     <h5>{cc.titulo}</h5>
-                                                    <p style={{color:'#fff'}}>{cc.ponente}</p>
+                                                    <p style={{color:'#fff',marginBottom:'0'}}>{cc.ponente}</p>
+                                                    <p style={{color:'#fff',marginTop:'0'}}>{cc.pais}</p>
                                                 </div>
                                             </div>
                                         </Link>
