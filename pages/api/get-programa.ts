@@ -3,7 +3,7 @@ import { query } from '../../lib/db';
 
 const handler: NextApiHandler = async (_, res) => {
   try {
-    const results = await query(`SELECT * FROM programa24 ORDER BY id ASC`)
+    const results = await query(`SELECT * FROM programadoscuatro ORDER BY id ASC`)
     return res.json(results)
   } catch (e) {
     res.status(500).json({ message: e.message })

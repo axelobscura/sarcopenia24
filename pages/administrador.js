@@ -63,11 +63,6 @@ export default function Administrador() {
             <div className="row vh-80">
                 {/*<MenuAdminEvento />*/}
                 <div className="col-md-12">
-                    {/* <div className="row">
-                        <div className="col-md-12 p-0 m-0 mb-3 tarjetaevento">
-                            <a href={`https://amgg.com.mx/diplomas/diplomapdf.php?email=${usuario}`} target="_blank">DESCARGUE SU CONSTANCIA AQUÍ <ArrowRightCircle /></a>
-                        </div>
-                    </div> */}
                     <div className="row">
                         <div className="col-md-12 p-0 m-0 mb-3 tarjetaevento">
                             <h2 style={{textAlign:'center',color:'#fff',fontWeight:'bold',paddingTop:'30px'}}>¡BIENVENIDOS!</h2>
@@ -107,12 +102,12 @@ export default function Administrador() {
 
                     <div className="row prog">
                         <div className="col-md-12">
-                        <h3><div><ArrowRightCircle/> VIERNES 18 DE ABRIL 2024</div></h3>
+                        <h3><div><ArrowRightCircle/> VIERNES 19 DE ABRIL 2024</div></h3>
                         <Carousel 
                             responsive={responsive}
                             infinite={true}
                         >
-                            {programa.filter(name => name.dia == "30 JUNIO").map(cc => {
+                            {programa.filter(name => name.dia == "19 ABRIL").map(cc => {
                                 if(cc.video){
                                     return(
                                         <Link href={`/salon/${cc.video}`}>
