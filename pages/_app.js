@@ -31,7 +31,7 @@ export default class MyApp extends App {
                 a_paterno: a_paterno,
             },
             () => {
-                Router.push('/salon/lT1-Mql6lf0');
+                Router.push('/salon/_ijAz64CEmc');
             }
         );
     };
