@@ -2206,6 +2206,16 @@ li.lichat {
   border-radius: 20px;
 }
 
+.cubrenlace img {
+  width: 70px;
+  float: right;
+}
+
+.cubrenlace2 img {
+  width: 70px;
+  float: right;
+}
+
 a.menuadminu {
   background: #6a9e00 !important;
   transition: all 1s;
@@ -2398,6 +2408,36 @@ p.nimportante {
   .col-md-12.tarjetaevento a {
     font-size: 1rem;
     padding: 10px !important;
+  }
+
+  .cubrenlace {
+    position: absolute;
+    width: 100px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+  }
+
+  .cubrenlace img {
+    width: 30px;
+    float: right;
+  }
+  
+  .cubrenlace2 {
+    position: absolute;
+    width: 100px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  .cubrenlace2 img {
+    width: 30px;
+    float: right;
   }
 }
 
