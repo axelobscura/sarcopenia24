@@ -2196,6 +2196,16 @@ li.lichat {
   border-radius: 20px;
 }
 
+.cubrenlace2 {
+  position: absolute;
+  width: 200px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9);
+  right: 0;
+  top: 0;
+  border-radius: 20px;
+}
+
 a.menuadminu {
   background: #6a9e00 !important;
   transition: all 1s;
