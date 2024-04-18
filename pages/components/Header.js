@@ -24,7 +24,7 @@ export default function Header() {
                 <nav id="nav-menu-container">
                     <ul className="nav-menu">
                         <li className={router.pathname == "/" ? "menu-active" : ""}><Link href="/"><i className="fa fa-angle-right"></i> INICIO</Link></li>
-                        <li className={router.pathname == "/programa" ? "menu-active" : ""}><a href="https://amgg.com.mx/sarcopenia2023/#programa" target="_blank"><i className="fa fa-angle-right"></i> PROGRAMA ACADÉMICO</a></li>
+                        <li className={router.pathname == "/programa" ? "menu-active" : ""}><a href="https://amgg.com.mx/simposio-sarcopenia-y-fragilidad-2024/" target="_blank"><i className="fa fa-angle-right"></i> PROGRAMA ACADÉMICO</a></li>
                         {usuario ?
                             <>
                                 <li className="buy-tickets"><a style={{'background':'#333'}}>{usuario}</a></li>
