@@ -31,7 +31,7 @@ export default class MyApp extends App {
                 a_paterno: a_paterno,
             },
             () => {
-                Router.push('/administrador');
+                Router.push('/salon/lT1-Mql6lf0');
             }
         );
     };

@@ -30,6 +30,7 @@ export default function Chat({ posts, tipo }) {
             }),
           })
           const json = await res.json();
+          elmensaje = '';
           mutate('/api/get-mensajes');
           if (!res.ok) throw Error(json.message)
         } catch (e) {
@@ -46,9 +47,9 @@ export default function Chat({ posts, tipo }) {
     return (
         <div className="form-group chat">
             <form onSubmit={submitHandler}>
-                <label htmlFor="mensaje" style={{color:'#fff'}}>Mensaje/Pregunta:</label>
+                <label htmlFor="mensaje" style={{color:'#fff'}}>Comentario y/o Pregunta:</label>
                 <input type="hidden" name="usuario" value={nombre} />
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..." required/>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su comentario aquí..." required/>
                 <input type="submit" value="ENVIAR COMENTARIO" className="btn_chat" />
             </form>
             <div className="chat-container">
