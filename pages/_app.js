@@ -35,6 +35,7 @@ export default class MyApp extends App {
             }
         );
     };
+    
     signOut = () => {
         localStorage.removeItem('usuario');
         localStorage.removeItem('password');
