@@ -13,7 +13,7 @@ export default function Salon() {
         <div className="container-fluid">
           <div className="row vh-80">
             {/*<MenuAdminEvento />*/}
-            <div className="col-md-9">
+            <div className="col-md-12">
               <div className="row">
                 <div className="cubrenlace2">
                   <img src="/images/sello_amgg.png" className="img-fluid" alt="Congreso Internacional AMGG 2021" title="Congreso Internacional AMGG 2021" />
@@ -37,9 +37,9 @@ export default function Salon() {
                 />
               </div>
             </div>
-            <div className="col-md-3">
+            {/* <div className="col-md-3">
                   <Chat />
-              </div>
+              </div> */}
           </div>
         </div>
         <style global jsx>{`
