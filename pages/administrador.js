@@ -48,15 +48,6 @@ export default function Administrador() {
         )
     };
 
-    const selectDia = (sdia) => {
-        console.log(sdia);
-        if(sdia === "29-de-junio"){
-            setDia('sjqfdr14JPU');
-        } else {
-            setDia('gmqZwfER1F0');
-        }
-    }
-
     return (
         <section id="administrador" className="section-bg wow fadeInDown m-0 p-0" style={{ 'paddingTop': '100px' }}>
             <div className="container-fluid">
@@ -64,12 +55,16 @@ export default function Administrador() {
                 {/*<MenuAdminEvento />*/}
                 <div className="col-md-12">
                     <div className="row">
-                        <div className="col-md-12 p-0 m-0 mb-3 tarjetaevento">
+                        <div className="col-md-12 p-0 m-0 mb-1 tarjetaevento">
                             <h2 style={{textAlign:'center',color:'#fff',fontWeight:'bold',paddingTop:'30px'}}>¡BIENVENIDOS!</h2>
-                            <h3 style={{textAlign:'center',color:'#fff',fontWeight:'100',paddingBottom:'30px'}}>III SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN SARCOPENIA Y FRAGILIDAD</h3>
+                            <h3 style={{textAlign:'center',color:'#fff',fontWeight:'100',paddingBottom:'0px'}}>III SIMPOSIO LATINOAMERICANO DE ACTUALIDADES EN SARCOPENIA Y FRAGILIDAD</h3>
                         </div>
                     </div>
-                    
+                    <div className="row">
+                        <div className="col-md-12 p-0 mb-3 m-0 tarjetaevento">
+                            <a href={`https://amgg.com.mx/diplomas/diplomapdf24.php?email=${usuario}`} target="_blank">DESCARGUE SU CONSTANCIA AQUÍ <ArrowRightCircle /></a>
+                        </div>
+                    </div>
                     <div className="row prog">
                         <div className="col-md-12">
                         <h3><div><ArrowRightCircle/> JUEVES 18 DE ABRIL 2024</div></h3>
