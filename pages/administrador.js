@@ -78,7 +78,7 @@ export default function Administrador() {
                                         <Link href={`/salon/${cc.video}`}>
                                             <div className='programaimg'>
                                                 <img 
-                                                    src='/images/back_sarcopenia24.jpg'
+                                                    src='/images/bkg.jpg'
                                                     alt={cc.titulo}
                                                     title={cc.tema}
                                                 />
@@ -109,7 +109,7 @@ export default function Administrador() {
                                         <Link href={`/salon/${cc.video}`}>
                                             <div className='programaimg'>
                                                 <img 
-                                                    src='/images/back_sarcopenia24.jpg'
+                                                    src='/images/bkg.jpg'
                                                     alt={cc.titulo}
                                                     title={cc.tema}
                                                 />
