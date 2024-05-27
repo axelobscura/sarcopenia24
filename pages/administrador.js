@@ -126,6 +126,16 @@ export default function Administrador() {
                         </Carousel>
                         </div>
                     </div>
+
+                    <div className='banner' style={{
+                        textAlign: 'center',
+                        width: '100%',
+                        marginBottom: '20px'
+                    }}>
+                        <Link href="https://kurppen.com.mx/" target='_blank'>
+                            <img src='/images/banner_kurpen.png' alt='banner' title='banner'/>
+                        </Link>
+                    </div>
                 
                 </div>
             </div>
